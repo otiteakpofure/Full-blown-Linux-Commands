@@ -22,7 +22,7 @@ ctrl + alt + t
 
 ###to list the network interfaces you can use this command 
 
-ip a or ip link (and these interfacess are usually called  eth0 or ens18)
+ip a or ip link (and these interfacess are usually called  Wired connection 1, eth0 or ens18)
 
 
 ##to edit network setting on the ubuntu server you check the netplan configuration file and these files are usually called (01-netcfg.yaml or 50-cloud-init.yaml:) 
@@ -33,13 +33,32 @@ ip a or ip link (and these interfacess are usually called  eth0 or ens18)
 ctrl +o and ctrl + x 
 
 
-###to check the changes to make on any file in link the  try command is used  so to check if a file as the user 
-
+############to check the changes to make on any file in link the  try command is used  so to check if a file as the user 
 
 sudo try  ( name of the the file you want to check)
 
 
 
+
+
+#################to check if the changes have been made on the file you want to check
+
+sudo (filename) apply
+
+
+############if you cant use the netplan file you can therefore use these command below to make changes to the configuration 
+
+nmcli 
+
+##########to list the number of connections 
+
+nmcli connection show
+
+
+####to add multiple addresses using the nmcli ( run the ip a or ip link command to see the present NIC on your server it can be 
+wiredconnection1 or eth8 or ens18)  #####so to add the multiple addresses the followiung command can be ran 
+
+$ sudo nmcli connection modify '(the name of the interface (Wired connection 1)' +ipv4.addresses "( the list of ip address like these 192.168.1.22/24,192.168.1.23/24,192.168.1.24/24)"
 
 
 
