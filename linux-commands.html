@@ -11,10 +11,35 @@ sudo apt update = for update all packages
 sudo apt full-upgrade 
 
 
-executing script in linux (there are other ways)
+####executing script in linux (there are other ways)
 
 sudo bash (and the name of the file)
 
-to open termina
+#####to open terminal
 
 ctrl + alt + t
+
+
+###to list the network interfaces you can use this command 
+
+ip a or ip link (and these interfacess are usually called  eth0 or ens18)
+
+
+##to edit network setting on the ubuntu server you check the netplan configuration file and these files are usually called (01-netcfg.yaml or 50-cloud-init.yaml:) 
+##this configuration file is a YAML file and in this netplan file you can add more ip addresses or any configuration settings
+
+## to save aand close a file 
+
+ctrl +o and ctrl + x 
+
+
+###to check the changes to make on any file in link the  try command is used  so to check if a file as the user 
+
+
+sudo try  ( name of the the file you want to check)
+
+
+
+
+
+
