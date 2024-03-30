@@ -171,10 +171,32 @@ you press   CTRL + R and it will display a (reverse-i-searched)' ' between the e
 
 
 
-to remOve a command from history for example number 20 command you run the followig 
+to remOve a command from history for example number 20 command you run the following 
 
                                       HISTORY-D (THE LINE NUMBER OF THE COMMAND)
 
 to clear the whole history file , the followuing command can be pressed 
 
- history -c 
+                                                history -c 
+
+
+ to run a command that should not be saved in history  so that they 
+
+  first create a space and then run the command for exampple   ( create  space by pressing tab key and ping) with these in place , 
+  this wont be saved in history
+
+  but MAINLY YOU CAN USE VARIABLE CALLED 
+
+  PLEASE NOT THIS IS FOR CENT OS 
+  HISTCONTROL  = ignoredups;
+  HISTCONTROL  = ignorespace;
+
+
+
+  TO DETERMINE WHO IS LOGGED INTO THE SYSTEM  OR THE  USER LOGGED IN 
+
+  use the (who) command 
+
+
+
+  
