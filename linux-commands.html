@@ -140,13 +140,13 @@ BASH COMMAND HISTORY
 
 to check all the commands a user has run check the (bash_history) file  and the number of commands size is called echo HISTFILESIZE and can save up to 2000
 
-or run the history command 
+or run the  (HISTORY)command 
 
 HISTSIZE  controls the number of commands that can be saved in a file 
 
 bash saves maximum 2000 commands in the HISTFILESIZE and maximum 1000 commands in memory when the HISTORY command is executed
 
-After you open the bash_history file and yiu want to run a command from the file using numnber 20 as the example
+After you open the bash_history file and yiu want to run a command from the history file using numnber 20 as the example
 you do the command 
 
                               !(the number of the command on the file)
@@ -158,8 +158,10 @@ and to rerun the last command run use this command   using two exclamation marks
 (!!)
 
 
-to check for command and ensure it is right before executing it the following should be done 
+To check for a command in history and run it from the history for example its ping run the command ( !ping) BUT THIS WILL EXECUTE THE COMMAND 
+but if you do not want to execute the command but do the same thing , do the following below
 
+and as well as this applies to also running the code from history without running it 
 for example its a ping command you do  it just print the command without executing it 
 
                         ( !ping:p)
@@ -187,16 +189,42 @@ to clear the whole history file , the followuing command can be pressed
 
   but MAINLY YOU CAN USE VARIABLE CALLED 
 
-  PLEASE NOT THIS IS FOR CENT OS 
-  HISTCONTROL  = ignoredups;
+ ####### PLEASE NOT THIS IS FOR CENT OS and ubuntu
+  HISTCONTROL  = ignoreboth;
   HISTCONTROL  = ignorespace;
 
 
 
-  TO DETERMINE WHO IS LOGGED INTO THE SYSTEM  OR THE  USER LOGGED IN 
+  ####TO DETERMINE WHO IS LOGGED INTO THE SYSTEM  OR THE  USER LOGGED IN 
 
   use the (who) command 
 
 
 
-  
+RECORDING TIME AND DATE FOR TIME FOR COMMANDS RUN IN THE HISTORY FILE 
+
+
+HISTTIMEFORMAT = '%d/%m/%y %T'
+
+
+BASH RC = ANY CONFIGURATION YOU MAKE ON LINUX AND YOU WANT TO SAVE IT IN LINUX PERManantly it is done 
+                                   in the bash rc file . 
+
+for example to save the HISTTIMEFORMAT
+do the following 
+
+ echo  HISTTIMEFORMAT = '%d/%m/%y %T'  >> .bash rc
+
+
+
+
+
+
+ROOT AND NON-ROOT USERS 
+
+NON-ROOT USERS ARE SAVED IN THE HOME DIRECTORY AND ROOT USERS SHOULD NOT BE USED IN NON-ADMINISTRATIIVE TASK 
+
+
+TO BE SUPER USER RUN THE COMMAND 
+
+                      SUDO su
