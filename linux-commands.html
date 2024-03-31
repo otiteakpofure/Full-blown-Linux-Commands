@@ -48,8 +48,7 @@ sudo (filename) apply
 
 ############if you cant use the netplan file you can therefore use these command below to make changes to the configuration 
 
-nmcli 
-
+nmcli  or you can use ifconfig
 
 
 ##########to list the number of connections 
@@ -101,7 +100,7 @@ it is either called localhost or loop back which is 127.0.0.1
 ###TO DISPLAY INFORMATION ABOUT THE FILE SYSTEM AND THE DISKSAPCE USAGE 
 
 df 
-
+df -h 
 
 ##TO CHECK IF A COMMAND IS AN EXECTABLE FILE RUN THE COMMAND
 
@@ -282,10 +281,31 @@ and if you want to go to the root of users run /home/
 
 
                                     THE LINUX FILE SYSTEM 
+everythin in linux is considered a file and if its not a file , then it is considered as a process even commands are files as well .everything in fact is a file 
+
+
+/bin = contains user executable files  = commands and moving directory commands 
+/sbin = contains applications that only the superuser can access  = 
+/boot = contains files require for starting the system 
+/home= contains where each users home directory on the linux
+/dev = contains device files 
+/etc= contains most of the system-wide configuration and not all 
+/lib = contains shared library files 
+/media = used for external storage which is automatically mounted 
+/mnt = like media but not too used often these days 
+
+
+in linux all file system are stored 
+
+
+                          IDENTIFYING THE LOCATION OF EXECUTABLE FILES OR COMMANDS 
+for example you want to find ifconfig in the ifconfig file 
+
+you can run the command =  which ifconfig 
 
 
 
-
+                               COMMON DIRECTORIES OF LINUX FILE SYSTEM 
 
 
 
