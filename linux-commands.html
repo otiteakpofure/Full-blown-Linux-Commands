@@ -285,14 +285,23 @@ everythin in linux is considered a file and if its not a file , then it is consi
 
 
 /bin = contains user executable files  = commands and moving directory commands 
-/sbin = contains applications that only the superuser can access  = 
+/sbin / usrbin = contains applications that only the superuser can access  = 
 /boot = contains files require for starting the system 
-/home= contains where each users home directory on the linux
-/dev = contains device files 
-/etc= contains most of the system-wide configuration and not all 
-/lib = contains shared library files 
+/home= contains where each users home directory on the linux or it can be ~
+/dev = contains device files  such as hardwares e.g hardisk devices .they represents these hardrives but in files 
+/etc= contains most of the system-wide configuration and not all  contains password , network configuration, passwords , users and their groups 
+/lib = contains shared library files  such as framworks library of other software 
 /media = used for external storage which is automatically mounted 
 /mnt = like media but not too used often these days 
+/tmp = contains temporary files  files stored here may be deleted 
+/proc= contains information about  the compuiter hardwar, kernel and oither associated activites 
+/sys = contains information about drivers 
+/srv = contains data about servers 
+/run = temporary file system in ram and contents deleted when boot 
+/usr = formerly used as home it contains binary files and other executables like cent os many commands are saved here 
+/var = contains information about events in the system similar to syslog 
+
+
 
 
 in linux all file system are stored 
@@ -308,6 +317,12 @@ you can run the command =  which ifconfig
                                COMMON DIRECTORIES OF LINUX FILE SYSTEM 
 
 the common directories of linux file system are often stored in the / these directories found there are common in all limux OS 
+NOTE : ROOT ha its directory SEPERATE from all users in the linux
+
+
+                                    ABSOLUTE AND RELATIVE PATH 
+                            
+
 
 
 
