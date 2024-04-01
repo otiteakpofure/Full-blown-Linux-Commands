@@ -52,3 +52,21 @@ DEVICE FILES = YELLOW IN BLACK BACKGROUND
 
 PLEASE NOTE= By default all these colors come with ls  so if you run the command type ls it will be equals to --alias = auto 
 if you do not want to see any changed colors run the \ls
+
+
+                                               FILE TIMESTAMPS 
+EVEry file on linux have 3 different filestamps 
+whicb are in seconds since 1970  
+
+the accesstime stamp  or atime = ls -lu  = last time file was read 
+modified timestamp or mtime = ls -l , ls -lt  = last time file contents of the file was changed
+changed timestamp or ctime = ls -lc = last time file metadeta about the file was changed like file persmission
+
+                                                   STAT 
+run the stat command to show statistics about the file which are its variouis dates 
+
+                                               REAL TIMESTAMPS 
+To see the full time stamps and instead of writing ls - lu , ls -lt  ,just run 
+
+                                      ls -l --full-time
+
