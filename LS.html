@@ -1,0 +1,54 @@
+LS 
+                                          
+TO LIST FILES IN A SIGNLE LINE LIKE NUMBERING A PAGE TYPE 
+LS -1 = 1 file per line 
+
+ls -l = prints files as well a their permissions and thier groups  and its called a long list 
+ls -d = for example , you want to check the /etc/ directory and it has files like maybe man, woman , son and if  you dont want to display its file , the following is done 
+                    ls -d = 
+this would only list its directories and not its files 
+
+
+ls -lh = prints the size of the files in human readable format for example if the file size is 4092 ,
+it will change it to 4.0K 
+
+  SORTING FILES BY FILE SIZE 
+ls -lS  = it sorts the file into size and the largest file comes first 
+
+
+                
+NOTE = S is in capital letters 
+
+
+SORTING FILES BY EXTENSION ( .LOG ,  .exe )
+
+ls - X
+
+
+                      IGNORE CERTAIN FILES WHILE LISTING FILES
+    ls --hide= *.conf 
+
+
+                             REAL FILE SIZE
+Please note that when you run the  ls command the file size shown with it does not actually display the real and authentic file size
+ for example if you want to check the file size of a file for example /etc/
+
+ you run the command =  du -sh (and the name of the directory )   =  du -sh /etc/
+
+
+                               RECURSIVE LIST 
+This command means that even if i list files in the directory , it will also list the subfiles in the directory 
+for example a directory called /etc/ which has files called man woman child
+
+if you run the command  >>  ls -lR =  it will list the directory and also list is subfiles 
+
+
+                                COLOR 
+DIRECROTY = BLUE 
+FILES= BLACK 
+SYMLINK (SYMBOLIC LINK ) = LIGHTBLUE 
+
+DEVICE FILES = YELLOW IN BLACK BACKGROUND 
+
+PLEASE NOTE= By default all these colors come with ls  so if you run the command type ls it will be equals to --alias = auto 
+if you do not want to see any changed colors run the \ls
