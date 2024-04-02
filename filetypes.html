@@ -51,7 +51,7 @@ tail  = shows 10 last lines of the file
 head = shows 10 first lines of the file
 
 FOR EXAMPLe you want to see the last two lines of a file for example the file is called man.txt 
-                                 tail -n 2 man.txt 
+                                 tail -n 2 man.txt   
 
                                                    READING FROM A SPECIFIC LINE NUMNER 
 tail -n +20 and the path to the file 
@@ -75,7 +75,19 @@ For example the string is man = to search for the string  type =  \man  mathces 
 NOTE : The \ is used at the beginning of the file 
 ? is used at the bottom of the file 
 
-                                                               
+                                                               RUNNING THE HEAD 
+
                                                  
+  FOR EXAMPLe you want to see the first two lines of a file for example the file is called man.txt 
+                                                               head -n 2 man.txt 
 
+                                                                  WATCH COMMAND 
+To run a command to while displayin a command error and output , the watch command should be used
+NOTE: This is not for files , it is for command 
+                                          watch ls 
+TO watch the change to the file every 3 seconds or depending on the seconds you choose 
+                                       watch -n 3  -d ls 
 
+                                        CREATING FILES AND DIRECTORIES 
+when creating directory and to see the output how that directory was created run 
+                                            mkdir -v
