@@ -134,6 +134,14 @@ find (the name of the directory) -type f -atime (0) = 0 means files modified wit
                                                  TO SEACRH BY OWNER AND GROUP 
 FOR EXAMPLE LETS say a groupd is called gdm 
 
-to seacrh for files within that group use = find (the name of the directory) -type f -group  (place the group here (gdm is the group))
-to searh for fles for a user  = find (the name of the directory) -type f -user (place name of user here)
+to seacrh for files within that group use = find (the name of the directory) -type f -group  (place the group here (gdm is the group)) -ls
+to searh for fles for a user  = find (the name of the directory) -type f -user (place name of user here) -ls
 
+                                      to seacrh for a file which does not belong to a user or group do this
+
+                                      find (the name of the directory) -type f -not -user (place name of user here) -ls
+
+
+
+                                      FIND AND EXECUTE A COMMAND ON A FILE 
+To search a file and execute a command on the file 
