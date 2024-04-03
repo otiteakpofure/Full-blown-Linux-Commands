@@ -2,7 +2,15 @@ the find files and directories you use  the FIND and LOCATE <command>
 NOTE : locate is not installed in ubuntu by default so installe it sudo apt install mlocate 
 
                              LOCATE USE A DATABSE BUT IT SHOULD UPDATE EVERYDAY AND MANUAL 
-                             by running this command sudo updatedb  which will searched by the locate command 
+                             by running this command sudo updatedb  which will searched by the locate command
+                             
+                             NOTE:IF YOU ARE SEARCHING FOR A FILE USING LOCATE EVEN IF IT HAS BEEN DELETED , LOCATE WILL STILL FIND IT SO  
+                             TO AVOID SUCH PROBLEMS . DO the following 
+
+                             for exmample woman.txt have been deleted to ensure locate doesnt find it again even if thre database has not
+                             been updated the following should be done 
+
+                             locate - e woman.txt
 
 USING LOCATE 
 
@@ -23,4 +31,7 @@ use locate -b
 locate -b "\man"
 
 NOTE : This will check for both file and directory from the ABSOLUTE PATH 
+
+                                  using the locate -i command 
+to locate files using the -i command it ignore casesensensitive infomation , so if you type it it will still bring out the file 
 
