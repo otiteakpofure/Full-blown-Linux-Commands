@@ -20,3 +20,12 @@ This will copy the directory and check if the directory has child directorues an
 new directory . if the new directory does not have files and folder in its directory it will both create and copy 
 the directory and files. 
 
+
+NOTE : to copy directory you must add the -r command 
+
+                                               COPYING FILES AND ENSURING PRESERVATION OF THE GROUP A USER IS 
+If you copy files between users of the same group the particular user copying the file becomes the root and therefore has administrative access to the files and as such
+to avoid being administrative user and to allow preservation of rights , use this command 
+
+cp -p (the name of the files you want to copy)  by using p noboyd becomes root and the files remain the same 
+
