@@ -2,7 +2,7 @@ grep searches for patters in a text file
 
 NOTE : GREP WORKS IN FILE 
 
- to search for a patter in a string 
+ to search for a patter in a string  and numbers
 
  grep (the name of the string) and file path = whic displayed all the string with opatter 
 
@@ -91,3 +91,46 @@ To show programs running in a specific port you can use netstat command
 
                                        sorting by alphabetcia
 sort - r  NOTE: without r it will still sort the file but by name in alphabetical order 
+
+                                                   SEARCHING FOR STRINGS IN BINARY FILES 
+
+What are binary files 
+
+binary files are exectuable files to print characters from the binary file   use the string command
+
+                                                    The strings command will print prinatable characrters from binary files 
+
+strings are used to print ascii characters from hinary files or rather print printable chareacters someone can read 
+
+
+                                                     COMPARING FILES CONTENTS  binary or not
+
+                                                     using cmp
+You can produce the output of a command into another file 
+
+this is different from pipe 
+                  ifconfig > a = it will print the statisitcs of ifconfig and create a file called a 
+if you want to compare files use the cmp command 
+for example there are 2 files called a and b = to compare both of them use cmp a b it will print the output 
+
+                                           using sha256 
+sha256sum and path to the 1st file path to the second file 
+
+                                                USING THE DIFF 
+    NOTE: THE dIFF COMMAND IS USED ONLY FOR TEXT FILES 
+
+DIFF pathtothe1st file pathtothesecondfile
+
+diff - B = ignores blannk lines 
+diff -W = ignores white spaces
+diff -i = ignores casinsenstivie
+diff -c = fpr more detailed comparison 
+diff -y = shows differences between two lines sides by side in columns 
+
+
+
+                              using the PATCH COMMAND 
+The patch command helps to show differences between files , the patch will help work similar to the diff but it helps to show changes made in the 
+original file and new files
+                                    
+
