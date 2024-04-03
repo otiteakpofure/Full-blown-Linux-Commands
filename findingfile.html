@@ -27,7 +27,7 @@ BASE NAME : FROM THE ABOISLUTE PATH DOES THE EXACT NAME EXIST FOR EXAMPLE LOOKIN
 use locate -b 
    
 
-                                    to seach for an exact file using the locate command use the command below  let say the file is man
+                                    to seach for an EXACT file using the locate command use the command below  let say the file is man
 locate -b "\man"
 
 NOTE : This will check for both file and directory from the ABSOLUTE PATH 
@@ -35,3 +35,14 @@ NOTE : This will check for both file and directory from the ABSOLUTE PATH
                                   using the locate -i command 
 to locate files using the -i command it ignore casesensensitive infomation , so if you type it it will still bring out the file 
 
+                                using locate -r command 
+                        locate -r = regex expression so its searches for that exact stirng 
+
+
+
+
+                          WHICH COMMAND 
+This is used for finding the files of a linux command . for example you want to find the file path for rm 
+  run which rm 
+
+  it will print out the path to the command file 
