@@ -1,2 +1,26 @@
 the find files and directories you use  the FIND and LOCATE <command>
-NOTE : locate is not installed in ubuntu by default 
+NOTE : locate is not installed in ubuntu by default so installe it sudo apt install mlocate 
+
+                             LOCATE USE A DATABSE BUT IT SHOULD UPDATE EVERYDAY AND MANUAL 
+                             by running this command sudo updatedb  which will searched by the locate command 
+
+USING LOCATE 
+
+For example you want to locate a directory with the password run the 
+
+                  locate password 
+it will produce a list of all directories with password 
+
+BASE NAME : FROM THE ABOISLUTE PATH DOES THE EXACT NAME EXIST FOR EXAMPLE LOOKING FOR A FILE CALLED WOMAN 
+
+          when you use locate -b  == if i has /usr/local/share/woman  = it will prevent files and folders having woman in it 
+
+                                           to search the base name 
+use locate -b 
+   
+
+                                    to seach for an exact file using the locate command use the command below  let say the file is man
+locate -b "\man"
+
+NOTE : This will check for both file and directory from the ABSOLUTE PATH 
+
