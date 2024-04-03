@@ -23,4 +23,6 @@ Go to the last line of the file and do the following
     to go to the end of the file use : capital g which is 
 
 
-
+ to find other occurrences of search word use *  for examople if there 15 occurences of the word man use * to move through 
+ the matches 
+ 
