@@ -43,3 +43,10 @@ To search a directory and its subdirectories use the -R command
  when searching for a pattern and then to remove errors such permission denied or no such file or directory use -s command 
 
                       grep -R (the name of the string) path to directory -s
+
+
+              CHECKING FOR THE NUMBER OF MATCHES
+To check for the  number of matches in a file use the - c command 
+
+ grep -c (the name of the string) path to the file   = it will display the number of matches
+ 
