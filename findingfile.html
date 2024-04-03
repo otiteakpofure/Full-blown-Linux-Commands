@@ -86,5 +86,28 @@ For example you want to search for directories inside directories
  you can run  
 
   find (the name of the directory) -type d -maxdepth 2 ( you can put any number if you want this will showcase how much deep you want to search)
-  
 
+
+SEARCHING FOR DIRECTORIES INSIDE DIRECTORIES  AND ADDING THEIR PERMISSIONS 
+find (the name of the directory) -type d -maxdepth 2 -PERM 755 ( YOU can use any permissions here )
+
+This will check for permissions on directories while searching two levles deep 
+
+
+                                                      TO SEARCH BY SIZE 
+        Find (the name of the directory) -type f -size (put the number of size) -ls 
+
+          FURTHERMORE , to search for file based off its criteria in size can be done like 
+          for example you want to seach for file which has let me say +10mb
+
+          sudo find (place name of the directory) -type f -size (put the number of size you want inthis case its +10M) -ls 
+
+          and as well it can be done for minus 
+
+
+
+ SEARCHING FOR FILES IN DIRECTORIES BASED OF GIVEN SIZE RANGE 
+
+ Lets say you want to search for files between +5M and less than +10M 
+
+ sudo (name of the directory) -type f -size +5m -size -10m ( this will search for size between the range of the files )
