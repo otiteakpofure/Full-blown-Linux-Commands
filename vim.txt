@@ -1,0 +1,23 @@
+ to use vim which isn an editor 
+
+ do the following 
+
+ to quit without saving:  q!\
+ to SAVE THE FILE WITHOIUT CLOSING :w!
+ to save and close the file : wq!
+ save and quit the file: shift and zz 
+  to know more of vim run : vimtutor
+
+             RUNNING COMMAND IN VIM
+Go to the last line of the file and do the following
+
+                                  running shell command in vm 
+
+ To run a shell in vim , run the :! which take you to the last line of the file 
+    by the side of :! (run the command ) which is :!ls     
+
+    to search for string or command in vim 
+    run /(the name of the command) for example /ssh 
+
+    
+

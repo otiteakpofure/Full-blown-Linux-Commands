@@ -132,5 +132,15 @@ diff -y = shows differences between two lines sides by side in columns
                               using the PATCH COMMAND 
 The patch command helps to show differences between files , the patch will help work similar to the diff but it helps to show changes made in the 
 original file and new files
-                                    
+                                    and shows how the file will be similar to the other ones 
 
+
+
+APT = DNF IN CENTOS 
+
+                                                     vim 
+vim is a text editor . if the file does not open or its not exisiting vim will create the file 
+
+vim works in 3 mode 
+ 
+ 
