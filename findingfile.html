@@ -49,4 +49,30 @@ This is used for finding the files of a linux command . for example you want to 
 
   to seacrh for whether a command exist in more than one directory use the following command 
 
-   which -a and the name of the command 
+   which -a and the name of the command  
+
+
+                                                       FIND 
+
+Difference between find and locate is find does not use a database 
+
+ to find a file using ( -iname)
+  
+                              find -iname and the name of the file 
+
+
+find a file wihout its extension to find a file 
+for example you want to find a file without its extension, 
+find -iname todo* = it will find all todo files regardless of its extension  or using find -iname "todo*" or if you want to check for a particular
+string in the file whether at the beginning or not do th following  find  . -name "*todo*"
+
+
+                                        FIND AND DELETING THE FILE 
+    FIND -name (place the name of the file) delete 
+
+    it will find and delete the file 
+
+                                running ls command on find
+                            find -ls 
+                            
+                                                             
