@@ -145,3 +145,8 @@ to searh for fles for a user  = find (the name of the directory) -type f -user (
 
                                       FIND AND EXECUTE A COMMAND ON A FILE 
 To search a file and execute a command on the file 
+                                you can use -exec or -ok 
+
+                                for example you want to display contents of a file 
+sudo find /etc -type f -mtime 0 -exec cat {} \;
+ this command will find files modified in the last 24 hours and execute their contents using cat 

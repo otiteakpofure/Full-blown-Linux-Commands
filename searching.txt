@@ -1,0 +1,45 @@
+grep searches for patters in a text file
+
+NOTE : GREP WORKS IN FILE 
+
+ to search for a patter in a string 
+
+ grep (the name of the string) and file path = whic displayed all the string with opatter 
+
+PLEASE NOTE : if the string has spaces between use " " 
+
+so grep "the string with spaces between" and the name of the file 
+
+                          for casinsenstivie 
+
+                          grep -i the string and file 
+
+PRINT THE LINE NUMNERS 
+
+GREP -N THE STRING AND NME OF FILE 
+
+                                                 TO SEARCH FOR WHOLEWORDS 
+Like for example man 
+
+grep -w man (path to the file)
+
+                                                TO SEARCH FOR LINES WHICH DO NOT CONTAIN A PARTICULAR STRING 
+If you want to search for lines which do not contain a particular string do this for example searching for man 
+
+  grep -v man (path to the file) = it will print files which does not contain a particular string which is man in this casinsenstivie
+
+
+
+                              SEARCHING FOR  A STRING IN A BINARY FILE 
+            grep -a the name of the string then the path to the file 
+
+
+                                                SEARCH FOR A PATTERN IN A DIRECTORY  AND SUB DIRECTORY
+To search a directory and its subdirectories use the -R command 
+
+   grep -R (the name of the string) path to directory
+
+
+ when searching for a pattern and then to remove errors such permission denied or no such file or directory use -s command 
+
+                      grep -R (the name of the string) path to directory -s
