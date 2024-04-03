@@ -111,3 +111,19 @@ This will check for permissions on directories while searching two levles deep
  Lets say you want to search for files between +5M and less than +10M 
 
  sudo (name of the directory) -type f -size +5m -size -10m ( this will search for size between the range of the files )
+
+                                    fINDING FILES BY TIMESTAMPS such as modification time, access time and change time 
+for example you want to check by modification time 
+
+ find (the name of the directory) -type f -mtime (0) = 0 means files modified within the last 24 hours 
+
+                                                  1 = files modified between 1 and 2 days ago 
+                                                  
+find (the name of the directory) -type f -atime (0) = 0 means files modified within the last 24 hours 
+                                                 +1 = means it will check files which are atleast accessed two days ago 
+
+                                                 TO SEARCH BY MINUTE
+                                                 find (the name of the directory) -type f -AMIN (0)    = amin means access minute  
+                                                 find (the name of the directory) -type f -MMIN (0)    = modification minute
+                                                 find (the name of the directory) -type f -CMIN (0)    = change minute     
+
