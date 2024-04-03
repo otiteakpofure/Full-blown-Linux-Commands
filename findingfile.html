@@ -123,7 +123,17 @@ find (the name of the directory) -type f -atime (0) = 0 means files modified wit
                                                  +1 = means it will check files which are atleast accessed two days ago 
 
                                                  TO SEARCH BY MINUTE
-                                                 find (the name of the directory) -type f -AMIN (0)    = amin means access minute  
+                                                 find (the name of the directory) -type f -AMIN (-60)    = amin means access minute  
                                                  find (the name of the directory) -type f -MMIN (0)    = modification minute
                                                  find (the name of the directory) -type f -CMIN (0)    = change minute     
+
+                                                 to seaceh for files changes within 60 minutes you use -60
+                                    
+
+
+                                                 TO SEACRH BY OWNER AND GROUP 
+FOR EXAMPLE LETS say a groupd is called gdm 
+
+to seacrh for files within that group use = find (the name of the directory) -type f -group  (place the group here (gdm is the group))
+to searh for fles for a user  = find (the name of the directory) -type f -user (place name of user here)
 
