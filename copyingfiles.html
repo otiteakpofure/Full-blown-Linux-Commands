@@ -74,7 +74,18 @@ a will change to abc.txt while moving
                                                     USING THE RM COMMAND 
 rm both files and directories 
 
-NOTE: please not files rm using command line may never be discorved
+NOTE: please not files rm using command line may never be RECOVERY
 
                To remove a direcory you must use -r command 
                 rm -r (and name of directory )
+
+                                     FORCEFULLY REMOVING  MULTIPLE FILES 
+if you want remove files without recieving prompts use
+                                 rm -rf (a.txt)
+
+RM does not actually deletes a file but it just unlinks it and it can be recovered  using 
+
+                                   SHRED 
+To recover details of a removed file or overwrite its content before removing use the shred command 
+                              use shred -vu -n 100 (name of the file)
+ u = updates a file before 100 times before deleting it 
