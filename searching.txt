@@ -49,4 +49,45 @@ To search a directory and its subdirectories use the -R command
 To check for the  number of matches in a file use the - c command 
 
  grep -c (the name of the string) path to the file   = it will display the number of matches
- 
+please note: this is small letter c
+
+  KERNEL RING BUFFER
+
+  dmesg = log file for the kernel
+
+                                                TO PRINT LINES BEFORE AND AFTER MATCHES
+
+TO PREVENT LINES BEFORE MATCHES USE -B 
+TO print lines after matches use -A 
+
+ grep man -A 3 B-4 path to the file = it will display the  3 lines after the match and 4 lines before the match . you can use any number yo want
+
+             or 
+
+alternatively you can use the capital C to do it for example you want to print 3 lines before the match and 3 lines after the match 
+
+  grep -C 3 error path to the file 
+
+                          you can use any number you want 
+
+
+
+                                  NETSTAT
+To show programs running in a specific port you can use netstat command 
+
+ for example in using netstat to check for a particular port 
+
+  netstat -tupan | grep 53 
+
+
+
+
+       using regex expressio in grep 
+
+       ^ = beginning of lines
+       $ = end of line
+
+       to remove empty spaces use grep -v "^$"
+
+                                       sorting by alphabetcia
+sort - r  NOTE: without r it will still sort the file but by name in alphabetical order 
