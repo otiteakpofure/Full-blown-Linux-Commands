@@ -17,7 +17,7 @@ Go to the last line of the file and do the following
     by the side of :! (run the command ) which is :!ls     
 
     to search for string or command in vim 
-    run /(the name of the command) for example /ssh 
-
-    
+    run /(the name of the command) for example /ssh   and to navigate between matches when the strings are found use n or shift N 
+     
+     n= next match   shift +N = goes to the prior match 
 
