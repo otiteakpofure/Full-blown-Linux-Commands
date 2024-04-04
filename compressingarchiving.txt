@@ -1,3 +1,6 @@
+
+ tar can compress both files and directories 
+
 to compress use the tar command to create compress archived files
 
 CREATING ARCHIVE = TAR -C 
@@ -16,5 +19,20 @@ NOTE: PLease ensure you -f before the file you wanrt to create which ends in tar
 
                                               using bzip 
                     instead of using z option uise the j option 
-tar -cjzf (the archive direcory you want to create which MUST be .tar.gz to end it lets the name of the file is man = man.tar.gz) and the 
+tar -cjzf (the archive direcory you want to create which MUST be .tar.bz2 to end it lets the name of the file is man = man.tar.gz) and the 
 path to the directiry which you want to archive 
+
+NOTE : YOU CAN COMPRESS MORE THAN ONE FILES INTO IT 
+
+                            EXCLUDE SOMEFILES FROM ARCHIVING 
+FOR EXAMPLE YOU WANT EXCLUDE THE LIST OF MP4 IN A DIRECORY  USE 
+                    tar --exclude = "*.mkv" 
+                    PLEASE NOTE IF YOU WANT EXCLUDE VARIOUS FILES YOU MUST STATE THE EXCLUDE COMMAND FOR EACH OF THEM 
+                    FOR EXAMPLE 
+
+                    tar --exclude = "*.mkv"  --exclude = "*.config"
+
+                                       extract the contents from an archive 
+
+                                       tar -cvzf  (the name of the archive)
+                                       
