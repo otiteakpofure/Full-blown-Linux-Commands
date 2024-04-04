@@ -118,4 +118,18 @@ to move to a specific line in last line press the line   for examle 50
 to move to the firstline gg or :1
 to move to the shift G 
 
- to open more 
+ to open more  appen the files name to the vim command 
+
+ like files a and b 
+
+ vim a b  and to move between these files from a to b press n and to move  back press shift + n  or prev 
+
+                                                  TO SPLIT THE VIM FILES SO YOU CAN SEE ALL FILKES TOGETHER 
+                            USE vim -o first file and second file 
+                            it will  seperate all files in to the screen 
+
+when these files are spread accross windows use the ctrl + w to move between all files 
+
+
+
+
