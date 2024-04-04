@@ -27,7 +27,7 @@
 
   if you want to open a file and does not exist vim will creat the file 
 
-
+  to pracitce vim run vimtutor
 
              RUNNING COMMAND IN VIM
 Go to the last line of the file and do the following
@@ -112,3 +112,10 @@ NOTE : THIS IS TEMPORARY
 
 
 
+to move to a specific line in last line press the line   for examle 50 
+:50
+
+to move to the firstline gg or :1
+to move to the shift G 
+
+ to open more 
