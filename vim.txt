@@ -22,6 +22,7 @@
   A= append the text to end of current line 
   o = writr text on a new line after the cursor 
   o = write text on a new line before the cursor
+  to end last line mode press : wnd the cursoe will move to the bottom on tje file , in this place all codes can be run 
 
 
   if you want to open a file and does not exist vim will creat the file 
