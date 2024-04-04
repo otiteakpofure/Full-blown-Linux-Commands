@@ -18,4 +18,16 @@ an hardlink is a file that linkes to another file
                                       deleting hardlink
     if you delete hardlinks it will keep decrementing 
 
-    
+    NOTE : You cannot creata a hardlink to a directory or a different partition 
+
+                                                    USING HARDLINK 
+The use of hardlink also allows easy referene to files and this allows all files to be easily accessed 
+
+                                   FINDIN FILES IN A DIRECTORY WITH HARDLINKS GREATED THAN 1 
+For example you want to check a directory name man with all the files which have a hardlink greater than 1 hardlink 
+            find /man/ -type f -links +1 
+
+                                                      
+
+                                                      WORKING WITH SYMBOLIC LINKS 
+symbolic links = 
