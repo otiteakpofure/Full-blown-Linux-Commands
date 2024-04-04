@@ -29,5 +29,4 @@ For example you want to check a directory name man with all the files which have
 
                                                       
 
-                                                      WORKING WITH SYMBOLIC LINKS 
-symbolic links = 
+                                                      

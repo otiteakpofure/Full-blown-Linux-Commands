@@ -1,0 +1,22 @@
+softlink or symbolic link or softlink
+
+to crate a symlink or symbolic link use the command 
+
+
+ln -s (the name of the file you want to create an symboliuc for) ( the new name of the file you want to create)
+
+lets say we want to create a symbolic link for the etc/passwd files after creaton it will look like this:
+                                                  pswd -> /etc/passwd
+
+                                TO DISPLAY RUNNING PROCESSES 
+
+                                ps -aux 
+NOTE : The difference between hardlink and symbolic link is that if you change directory of a file that an hardlink was created for 
+it wont be broken but if you use a symbolic link it will be broke 
+
+ffor example you create an hardlink for the file name man.txt if you move it to another directory it wont be broke 
+but if you use a symbolic link it will be broken 
+
+ when a symlink is broke it will have red and black color 
+
+ 
