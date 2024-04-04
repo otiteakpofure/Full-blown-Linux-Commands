@@ -17,7 +17,11 @@
   esc = command mode 
   i = insert mode 
 
-  
+  I = allows one to insert text at the beginning of the line 
+  a = append the text after the cursor 
+  A= append the text to end of current line 
+  o = writr text on a new line after the cursor 
+  o = write text on a new line before the cursor
 
 
   if you want to open a file and does not exist vim will creat the file 
