@@ -55,4 +55,10 @@ TO DO THIS USE
    etc = contains all configuration of the linux
 
 
-                                              
+                                               ARCHIVING AND COMPRESSING A FILE ON A SPEIFIC DATE 
+    TO COMPRESS A FILE AND HAVE VERSIONS OF THE FILE BASED ON DIFFERENT DATES. Run the following command
+    tar -cjvf the name of the archive the name of the directory you want to compress
+
+    tar -cjvf etc-$(date + F).tar.bz2 the name of the directory 
+
+    
