@@ -66,5 +66,28 @@ GO TO THE LINE YOU WANT TO COPY AND RUN THESE COMMANDS
 
   AFTER CHOOSING THE TEXT YOU WANT TO COPY PRESS Y 
   AND THEN CAPITAL P TO PASTE 
-  
-                            
+
+                             COMMAND TO SHOW THE NUMBER OF LINES USING VIM 
+GO TO THE BOTTOM OF THE FILE ANS PRESS
+      set nu
+                            TO REMOVE THE LINE NUMBER 
+                            set nonu 
+                                      SYNTAX HIGHLIGHTING
+TO disable the blue highlight of all characters in the vim editor 
+       use syntax off 
+
+        to enaable it it uises 
+
+        syntax on 
+
+NOTE : THIS IS TEMPORARY 
+
+               SAVING CHANGES DONE IN VIM 
+    TO SAVE CHANGES MADE TO VIM CREATE A FILE CALLED .vimrc 
+
+    and then in this rc file save the commands you want to use 
+
+    when you open the file using vim it will also run the command stored in the .vimrc altoghether 
+
+
+
