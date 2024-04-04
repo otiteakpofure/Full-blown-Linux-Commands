@@ -25,4 +25,22 @@ Go to the last line of the file and do the following
 
  to find other occurrences of search word use *  for examople if there 15 occurences of the word man use * to move through 
  the matches 
- 
+                                    
+ * = is for after occurenace 
+ # = previous occurence 
+
+   TO  SEARCH FOR A PATTER AND REPLACE ALL ITS occurences
+   go to the last line and  do = %s/(place search term here)/(the term to replace thes the search term). for example
+   you want to replace the search term = man 
+   with the new term = woman 
+      %s/man/woman
+
+
+               to undo what has been done  in the file
+               
+               go to the last line mode 
+    go to the last line and write  = e! 
+
+    it will  undo everything done till the last file 
+
+                         
