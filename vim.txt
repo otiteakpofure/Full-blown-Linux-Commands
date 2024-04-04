@@ -133,3 +133,9 @@ when these files are spread accross windows use the ctrl + w to move between all
 
 
 
+                               comparing files using vim 
+
+                               vim-d first file second file  or vimdiff first file second file
+
+
+
