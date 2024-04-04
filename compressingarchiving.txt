@@ -1,0 +1,20 @@
+to compress use the tar command to create compress archived files
+
+CREATING ARCHIVE = TAR -C 
+EXTRACT ARCHI=TAR -X 
+DISPLAY THE CONTENT OF THE ARCHIVE = TAR -T 
+compresse thea rchive using gzip or tgze = tar -z 
+to specify the name of the archive = tar -f 
+
+for example you want to compresse a file in the directory 
+
+tar -cvzf (the archive direcory you want to create which MUST be .tar.gz to end it lets the name of the file is man = man.tar.gz) and the 
+path to the directiry which you want to archive 
+
+NOTE: PLease ensure you -f before the file you wanrt to create which ends in tar.gz
+  
+
+                                              using bzip 
+                    instead of using z option uise the j option 
+tar -cjzf (the archive direcory you want to create which MUST be .tar.gz to end it lets the name of the file is man = man.tar.gz) and the 
+path to the directiry which you want to archive 
