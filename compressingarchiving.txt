@@ -61,4 +61,10 @@ TO DO THIS USE
 
     tar -cjvf etc-$(date + F).tar.bz2 the name of the directory 
 
-    
+                                        TO SEE THE DATE 
+                                DATE +%F      
+                               
+
+GZIP = USED TO COMPRESS 
+GUNZIP = USED TO UNZIP AN ARCHIVE 
+
