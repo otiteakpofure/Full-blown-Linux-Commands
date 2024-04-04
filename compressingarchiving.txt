@@ -34,5 +34,25 @@ FOR EXAMPLE YOU WANT EXCLUDE THE LIST OF MP4 IN A DIRECORY  USE
 
                                        extract the contents from an archive 
 
-                                       tar -cvzf  (the name of the archive)
-                                       
+                                       tar -xvzf  (the name of the archive)
+
+
+EXTRACTING AN ARCHIVE INTO A DIRECTORY 
+TO DO THIS USE
+
+ tar -xjvf (the name of the archive) - C (the name of the directory)
+
+
+
+ NOTE : IF YOU DONT SPECIFY J OR Z THE MARCHINE WILL AUTOMATICALL DETEC FOR YOU 
+
+
+   TO SEE THE CONTENTS OF AN ARCHIVE 
+
+   TAR - tf (this name of an archive) = this will display all the contents of an archive 
+
+
+   etc = contains all configuration of the linux
+
+
+                                              
