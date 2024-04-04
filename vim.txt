@@ -7,6 +7,22 @@
  to save and close the file : wq!
  save and quit the file: shift and zz 
   to know more of vim run : vimtutor
+  x= delete character under the cursor 
+  r= will replace charcter under rhe cursor 
+  to leave the current mode which is after a command has been executed run the esc key on your keyboard 
+
+  to write text  where the current curso is write  = i 
+  and when done press esc 
+
+  esc = command mode 
+  i = insert mode 
+
+  
+
+
+  if you want to open a file and does not exist vim will creat the file 
+
+
 
              RUNNING COMMAND IN VIM
 Go to the last line of the file and do the following
