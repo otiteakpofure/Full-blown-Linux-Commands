@@ -37,10 +37,30 @@ Go to the last line of the file and do the following
 
 
                to undo what has been done  in the file
-               
+
                go to the last line mode 
     go to the last line and write  = e! 
 
     it will  undo everything done till the last file 
 
-                         
+                          TO UNDO JUST ONE LAST ACTION 
+THIS IS SAME AS CONTROL Z BUT SINCE IT IS VIM USE ctrl + r 
+
+                  TO CUT A LINE IN THE VIM EDITOR 
+use dd 
+to do this go to the line you want to copy and run dd this will copy the line to the clipboard and run move to the line you want to move  and 
+and press p to paste the copied line
+
+                 TO CUT MORE THAN ONE LINE 
+(NUMBER OF LINES YOU WANT TO CUT) DD 
+For example if the lines is 6  run 6 dd 
+
+                                       TO COPY AND PASTE
+TO COPY AND PASTE DO THE FOLLOWING 
+
+GO TO THE LINE YOU WANT TO COPY AND RUN THESE COMMANDS
+
+ V = V = FOR SELCTING characters
+ CAPITAL V  =  FOR WHOLE LINES 
+ CTRL + V = FOR SELECTING WHOLE BLOCKS 
+                            
