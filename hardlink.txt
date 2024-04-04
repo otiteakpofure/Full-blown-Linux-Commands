@@ -1,0 +1,21 @@
+INODE STRUCTURE
+Inode helps to store metadata about the file 
+
+inode involves ownership of the file data type of file and other associations , it does not contain the contens of the file 
+
+ls -i = shows the inode number 
+
+hARDLINK 
+
+An associations are between a file and file structure is an hardlink 
+an hardlink is a file that linkes to another file 
+
+
+  to create a hardlink run the ln command  =  ln (the name of the file you want to create an hardlink for) ( the new name of the file you want to create)
+
+  in hardlink if a change is made to one file it also appears on the other file as well 
+
+                                      deleting hardlink
+    if you delete hardlinks it will keep decrementing 
+
+    
