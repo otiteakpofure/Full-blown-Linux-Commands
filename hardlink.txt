@@ -27,6 +27,8 @@ The use of hardlink also allows easy referene to files and this allows all files
 For example you want to check a directory name man with all the files which have a hardlink greater than 1 hardlink 
             find /man/ -type f -links +1 
 
+
+Note: you cannot create a hardlink to a directory or a different partition
                                                       
 
                                                       
