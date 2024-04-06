@@ -20,4 +20,8 @@ To add a user to a SECONDARY  group
                      usermod -G (add as much secondary group you want to add here (NOTE: IF YOU ADDING USERS TO MORE THAN ONE SECONDARY GROUP ENSURE ALL ARE COMMA SEPERATED AND NO WHITE SPACE ) ) name of the user
 
 
-                         
+                                            APPENDING A USER TO AN EXISITNG SECONDARY GROUP WHILE CREATING NEW ONES                     
+In creating secondary groups , the user should appended to exisitng instead of using the -G command use _A command as this ensure this does 
+NOT remove the user from an exising secondary group instead of adding them 
+for example , if there are two groups name 1 and 2 and you create a group called 3 and 4 and you want a user to be 1,2,3 and 4 .
+do the following 
