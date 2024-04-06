@@ -1,0 +1,18 @@
+  chaning prperties of an existing user 
+
+                            USERMOD COMMAND 
+To change the propeties of an exisiting user use the usermod command 
+                            USERMOD -C   
+                            C = represent the comment in the section part of the user in password file
+ usrmod -c "write the text you want here" the name of the user 
+ for example lets say you want to say james is a golang developer user 
+
+                      usermod -c "golang developer" james
+
+                            CHANGING A USER primary GROUP 
+To change and exisitng user group run , 
+ usermod -g (new group ) name of the user 
+
+ TO CHANGE THE GROUP : THE GROUP NAME MUST ALREADY EXIST 
+
+                               changing a user or adding a user to secondary group 
