@@ -10,9 +10,14 @@ To change the propeties of an exisiting user use the usermod command
                       usermod -c "golang developer" james
 
                             CHANGING A USER primary GROUP 
-To change and exisitng user group run , 
+To change and exisitng user PRIMARY  group run , 
  usermod -g (new group ) name of the user 
 
  TO CHANGE THE GROUP : THE GROUP NAME MUST ALREADY EXIST 
 
                                changing a user or adding a user to secondary group 
+To add a user to a SECONDARY  group 
+
+
+
+                         
