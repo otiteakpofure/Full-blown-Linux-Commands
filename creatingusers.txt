@@ -17,7 +17,7 @@ To change and exisitng user PRIMARY  group run ,
 
                                changing a user or adding a user to secondary group 
 To add a user to a SECONDARY  group 
-
+                     usermod -G (add as much secondary group you want to add here (NOTE: IF YOU ADDING USERS TO MORE THAN ONE SECONDARY GROUP ENSURE ALL ARE COMMA SEPERATED AND NO WHITE SPACE ) ) name of the user
 
 
                          
