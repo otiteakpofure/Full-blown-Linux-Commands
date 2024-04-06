@@ -24,4 +24,17 @@ To add a user to a SECONDARY  group
 In creating secondary groups , the user should appended to exisitng instead of using the -G command use _A command as this ensure this does 
 NOT remove the user from an exising secondary group instead of adding them 
 for example , if there are two groups name 1 and 2 and you create a group called 3 and 4 and you want a user to be 1,2,3 and 4 .
-do the following 
+do the following   
+
+                        usermode -aG 3,4 and the name of the user = it will create 3 and 4 while appending them to 1 and 2 
+
+
+                                                          DELEING USER ACCOUNT AND ASSOCUATED filesysTEM 
+
+Deleting users can be done using the del command , please NOTE it will remove the user from a particular group only if the user is THE ONLY MEMBER 
+
+                                                  userdel name of the user  but this does not remove the user home directory 
+
+                                            TO COMPLETE REMOVE THE HOME AS WELL 
+
+                                            USERDEL -R NAME OF THE USER
