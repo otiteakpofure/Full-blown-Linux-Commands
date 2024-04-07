@@ -58,3 +58,8 @@ PLEASE note :  by administration , only users who are created during login can r
                                           for example the old group is man and new group is themen 
 
                                                         groupmod -n (themen) (man)
+                                       DELETING A GROUP 
+tO delete a group run the 
+                       groupdel command 
+
+                       groupdel (name of the group)
