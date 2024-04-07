@@ -23,7 +23,8 @@ The operation flag determine whether the permissions are to be removed , added o
 + : add persmioms
 =: equal means change the current permissions to the specified permission 
 
+for example , you create a file called games.txt and you want to remove the write permission of the User owner 
 
+                                    chmod u-w name of the file 
 
-
-
+ 
