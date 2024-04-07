@@ -1,0 +1,41 @@
+                                       MONITORING USERS IN ACCOUNT 
+            User account monitoring and finding who is doing what and what 
+RUID (real user ID) = User who is logged in and  never changes
+EUID (effective user ID)  = is the current user in the shell 
+
+
+                                 whoami  or id -un
+                    prints out the username of which user is currently root 
+
+                            WHO 
+                            To display the name of the user  or who is logged in  = the  file which shows this is under /var/run/utmp
+    
+                /var/run/wtmp = it maintains the logs or history of who has logged into the system  whether now or in the past 
+
+                                who _H = displays the amount of users logged in 
+                                who - a = displays more infrmation 
+                                
+
+                                                   the W command 
+this displays who is logged in and what they are doing at each point in time 
+
+it  shows the following : 
+how long the system has been running 
+the current users 
+
+
+PLEASE NOTE: WHEN YOU RUN THE W COMMAND AND SEE THE LOAD AVERAGE ABOVE 0 WHICH CAN 0.5 OR 1 . This signifies danger 
+
+
+                                                   UPTIME 
+
+The uptime command shows information at exact point 
+                                               SYSTEM CTL 
+
+                                        TO  check if services are running 
+                                        use the systemctl command 
+
+
+
+
+                             BRIDGE MODE IN VM  = Allows VMS to connect to eachother 
