@@ -63,3 +63,25 @@ tO delete a group run the
                        groupdel command 
 
                        groupdel (name of the group)
+
+NOTE: It does not print an output to show uou if you have been deleted , if the group does not 
+exist it will show an putput 
+
+it is not possible to remove the primary group of the user without first removing the user 
+
+                              MONITORING USERS IN ACCOUNT 
+            User account monitoring and finding who is doing what and what 
+RUID (real user ID) = User who is logged in and  never changes
+EUID (effective user ID)  = is the current user in the shell 
+
+
+                                 whoami  or id -un
+                    prints out the username of which user is currently root 
+
+                            WHO 
+                            To display the name of the user  or who is logged in  = the  file which shows this is under /var/run/utmp
+    
+                /var/run/wtmp = it maintains the logs or history of who has logged into the system 
+
+
+                
