@@ -49,5 +49,12 @@ PLEASE note :  by administration , only users who are created during login can r
 
                  SUDO USERADD -G (GROUP NAME ) (USERNAME )
 
-                 NOTE: Please dont forget to use -a command so as not to erase users from other groups they belong to 
+                 NOTE: Please dont forget to use -a command so as not to erase users from other groups they belong to  or older groups they belong to 
 
+                                         changing group name 
+                                         to change the  name of an existing group do the following cimmand 
+
+                                          groupmod -n (newgroup name) (old group name)
+                                          for example the old group is man and new group is themen 
+
+                                                        groupmod -n (themen) (man)
