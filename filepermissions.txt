@@ -27,4 +27,6 @@ for example , you create a file called games.txt and you want to remove the writ
 
                                     chmod u-w name of the file 
 
- 
+ to add multiple permissions together you can apend commands like this 
+
+ chmod u-x,g+w,o-rwx (the name of the file )
