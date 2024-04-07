@@ -83,10 +83,20 @@ EUID (effective user ID)  = is the current user in the shell
     
                 /var/run/wtmp = it maintains the logs or history of who has logged into the system  whether now or in the past 
 
-    
+                                who _H = displays the amount of users logged in 
+                                who - a = displays more infrmation 
+                                
+
+                                                   the W command 
+this displays who is logged in and what they are doing at each point in time 
                                                SYSTEM CTL 
 
                                         TO  check if services are running 
                                         use the systemctl command 
+
+
+
+
+                             BRIDGE MODE IN VM  = Allows VMS to connect to eachother 
 
 
