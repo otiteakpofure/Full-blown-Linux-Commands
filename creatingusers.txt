@@ -42,3 +42,12 @@ Deleting users can be done using the del command , please NOTE it will remove th
                                                   
                                                   
                                                   CREATING ADMINISTRAIVE ACCOUNT
+PLEASE note :  by administration , only users who are created during login can run administrative task by prefixing them with sudo 
+
+                                                GROUP MANAGMENT 
+                TO ADD USER TO A GROUPD WHILC CREATING A USER 
+
+                 SUDO USERADD -G (GROUP NAME ) (USERNAME )
+
+                 NOTE: Please dont forget to use -a command so as not to erase users from other groups they belong to 
+
