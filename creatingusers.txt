@@ -81,7 +81,12 @@ EUID (effective user ID)  = is the current user in the shell
                             WHO 
                             To display the name of the user  or who is logged in  = the  file which shows this is under /var/run/utmp
     
-                /var/run/wtmp = it maintains the logs or history of who has logged into the system 
+                /var/run/wtmp = it maintains the logs or history of who has logged into the system  whether now or in the past 
+
+    
+                                               SYSTEM CTL 
+
+                                        TO  check if services are running 
+                                        use the systemctl command 
 
 
-                
