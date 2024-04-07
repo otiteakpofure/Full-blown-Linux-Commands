@@ -38,3 +38,7 @@ Deleting users can be done using the del command , please NOTE it will remove th
                                             TO COMPLETE REMOVE THE HOME AS WELL 
 
                                             USERDEL -R NAME OF THE USER
+
+                                                  
+                                                  
+                                                  CREATING ADMINISTRAIVE ACCOUNT
