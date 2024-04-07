@@ -3,4 +3,27 @@
  NOTE : IT IS NOT MANDATORY FOR A FILE OWNER TO BE IN THE SAME GROUP OWNER AS THE FILE 
 
                           OWNERSHIP OF A FILE/DIRECTORY 
-The ownership pf a 
+The ownership of a file is determine by who created the file  can be changed using thre chown or chgrp or chmod 
+
+NOTE: EVEN ALL PERMISSION ARE REMOVED FROM A FILE , THE ROOT CAN STILL MAKE MODIFICATIONS 
+
+
+file permission is used either symbolic or octal permissions
+
+
+NOTE: In file permissions any permissions can apply  only root or file owner can change permissions 
+
+
+
+OPERATIONS FLAGS USED IN FILE PERSMISSIONS
+
+The operation flag determine whether the permissions are to be removed , added or set 
+
+- : a hypehn means remove 
++ : add persmioms
+=: equal means change the current permissions to the specified permission 
+
+
+
+
+
