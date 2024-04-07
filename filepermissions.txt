@@ -1,0 +1,6 @@
+ each file or directory has an owner and a group . by default, the owner is the user who creates a file and the group is the primary group 
+
+ NOTE : IT IS NOT MANDATORY FOR A FILE OWNER TO BE IN THE SAME GROUP OWNER AS THE FILE 
+
+                          OWNERSHIP OF A FILE/DIRECTORY 
+The ownership pf a 
