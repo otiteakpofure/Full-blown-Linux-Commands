@@ -38,3 +38,15 @@ NOTE: The chown command can change both the owner and group of the file you want
                                     chown the new ownername : the new group name  (the file you want to change)
                                     chown new owner:new group word.txt 
 
+NOTE : ON SOME linux distributions the . command is used instead of the : command 
+
+                                               CHGRP 
+                        TO CHANGE ONLY THE GROUP OF THE FILE AND NOT THE OWNER 
+                 
+     CHGRP (THE NAME OF THE GROUP ) FILE NAME 
+
+to change all the ownership and files in a given directory run the command 
+
+    sudo chown -R name of the new onwer : name of the new group ~
+
+    
