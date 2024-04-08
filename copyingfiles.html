@@ -36,16 +36,21 @@ The mv command move files and directories and as well rename files and directori
 PLEASE NOTE: if you want to move a file to   a  different location and it that location there is a file that 
 has the same name , this file will overwrite the existing file
 
- note : dont forget to use -i for prompting 
+ note : dont forget to use -i for prompting , this allows to know if you want to overwrite a file or not 
 
  NOTE : to prevent overwriting of existing files when moving files 
 
-  add the -n command 
+                                         add the -n command
+            To prevent an existing file from being overwritten use the -n command  
+
   for example there are two files in various location with the same name lets say one.txt and one.txt 
   if you want to moves these files without overwriting the existing ones use the -n command 
      mv -n one.txt ones.txt
 
                                       MOVING AND UPDATING A FILE 
+
+  when you want a move a file which is the source file to the destination file , use the -u command 
+  this will only work  when the either source or desitination is updated, that ,means either one of them must be updated than the other before it can move                                     
  If you want to move a file with the same name to two different locations but the files only after a particular file has been  modified
  
                                             use the - u command 

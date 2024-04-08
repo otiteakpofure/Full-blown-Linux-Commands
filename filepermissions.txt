@@ -82,3 +82,4 @@ if we wanted to 2.txt to reference 1.txt , do the following
 
 
                                                   using find and chmod commands 
+if you have various directories and you want to set the permissions of these files without affecting the directory 
