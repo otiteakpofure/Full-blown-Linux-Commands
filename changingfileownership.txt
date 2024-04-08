@@ -6,7 +6,7 @@ the chown and chgrp commands are used to change the files owner and group
 
 
 
-NOTE: The root can change ownership 
+NOTE: it is only The root can change ownership 
 
                              CHOWN COMMAND
 To change ownership of a file or directory  run the chown command 
