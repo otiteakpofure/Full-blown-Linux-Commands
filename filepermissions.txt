@@ -90,5 +90,20 @@ on the directories and not the files .
 ~ = users home directory
 
 to change the permissions on the files in the direcroty involves you combining find and chmod 
+for example you have a directory whihc has 1000 files and youw ant to execute a command on all of them 
+
+  run find (the directoryname ) -type f -exec (the command you want to execute) {} \;
+
+  for example you are in your home directory and you want to execute the chmod on al files . do the following 
+
+       find ~ -type f -exec chmod 444 {}\;
+
+       for directories use type d 
+
+       
+
+
+
+
 
 
