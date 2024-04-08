@@ -1,0 +1,31 @@
+A running instance is PROCESS
+
+ by running the type command it shows wherher a file is an executable file or shell built in file
+
+ for example, you want to run the cat command to check if the cat command is an executable file or shell built in file. 
+ if after running the type cat and you see a file path you will know its a executable file but if after running the cat you see a shell path you will know its a shell built in file
+
+ NOTE:  Only when running a command which is an executable file a process will be executed
+
+ NOTE:  for example if you run a file and the suid is set then the processes takes the precednecee of the suid command 
+
+linux common protocol states that root account should not be used for simple task 
+
+init or systemd are when the process start intially which has the process ID 1 and its the first process which starts when the system statrs 
+
+init : this is the first proess that starts when the system boots 
+
+PARENT PROCESS: this is the process that uses a system call
+child: the process created by a parent process 
+
+for example when you run a command a process is created , the parent becomes bash and the command becomes child 
+
+zombie (defunct): this is the process in which the data has not been collected 
+
+orphan: opposite to the zombie process 
+
+
+
+thread : multiple threads can exist in a process . for example a editor is running , things runnin the editor are thread
+
+task:  

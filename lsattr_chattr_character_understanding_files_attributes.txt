@@ -1,0 +1,62 @@
+when running the ls -l command the attributes of the files are not displayed,  and to showcase the attributes of the files use the command below
+
+                                              lsattr 
+This command list the attributes of the files 
+
+NOTE : When the command is run and there is a permission denied error , then the file belongs to root 
+
+when the command is run , there are two identities such as - and e 
+
+- means that the attribute is CLEARED
+e - means that the attribute is SET
+
+NOTE: The lsattr is under the chattr command and when the man chattr command is run various attributes are displayed . |
+      The attribute can be set or cleared only by root 
+
+- :means that the attribute is CLEARED
+e :means that the attribute is SET
+
+                                  SETTING AN    attribute
+
+To set an attribute use the + and remove the attribute use the - 
+
+files with these attributes:
+
+a : can only be open in APPEND mode  for writing . adding to  end of the file 
+                                      running the a command 
+
+                                      sudo chattr +a (the name of the file )
+
+NOTE: This means that you cannot change the content of the file , you can only APPEND To the end of the file and not even ROOT can 
+change the contents in this file.  
+
+
+                                      RUNNING THE A COMMAND 
+which means no access time update . its access time is not read 
+
+for example , you run the command stat on a file and see the access time. make a note of the access time . After checking the access time 
+ then run the 
+ 
+                              chattr +A (and the name of the file)
+After runninng this command the run 
+
+                                   lsattr (and the name of the file)
+
+
+                             RUNNING THE I COMMAND 
+I MEANS IMMUTABLE
+
+ in this immuntable file , the file cannot be deleted , renamed or hardlinked to the file , the file is frozen only the superuser can set or clear this attribute 
+
+
+                                          USING THE R COMMAND 
+Using the Recursive command , 
+                  chattr - R -i name of the directory to add the attributes to all files 
+
+
+
+
+>> appends to a file 
+
+
+
