@@ -76,5 +76,9 @@ if we wanted to 2.txt to reference 1.txt , do the following
 
 
                                         THE EFFECT OF PERSMISSIONS ON DIRECTORIES
- The write permission has solely effect on the execute permission 
- 
+ The write permission has solely effect on the execute permission . Permissions have different ecffe on both 
+ note: The permission of the parent direcory is far more important than the permission of its sub directories 
+
+
+
+                                                  using find and chmod commands 
