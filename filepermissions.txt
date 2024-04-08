@@ -48,3 +48,15 @@ To change the persmission of all users in the group use the a command
 
         chmod ug = rw , o =  user.txt ( using o and appending = without doing anything means that no permisson is attached to the file
         as related to the owner . it is similar to ---)
+
+        NOTE: In linux , a file does not have the same permissions as a directory 
+
+
+         GIVING PERMISSIONS TO DIRECTORIES AND FILES AT ONE 
+
+         FOR EXAMPLE YOU HAVE  directory name k1 which has various files such k2,k3,k4 
+
+         to give permissions to all files withim this directory 
+         navigate to the directory name and run the command 
+
+            chmod -R (write permissions here) (write only directory here )
