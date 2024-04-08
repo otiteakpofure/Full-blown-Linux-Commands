@@ -81,5 +81,14 @@ if we wanted to 2.txt to reference 1.txt , do the following
 
 
 
-                                                  USING FIND AND CHMODE COMMANDS
-if you have various directories and you want to set the permissions of these files without affecting the directory 
+                                                  USING FIND AND CHMOD COMMANDS
+if you have various directories and you want to set the permissions of these files without affecting the directory
+
+for example , you have a direcory that is called k1 and has files 1.txt and 2.txt , and you want to set these permissions
+on the directories and not the files . 
+
+~ = users home directory
+
+to change the permissions on the files in the direcroty involves you combining find and chmod 
+
+
