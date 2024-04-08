@@ -17,3 +17,22 @@ not the permmison of the user who executed the command
 you do this on command executable files like cat exectuble file , to do this the following should be implemented
                                      in file persmission there are usually 4 digits which is 0000
                                      the first 0 represents the SUID but its very optional thats why it seems its 3 numbers but its four
+ 
+
+ TO SET SUID BIT ON THE FILE 
+
+  FOR EXAMPLE YOU WANT TO DO THIS ON THE CAT FILE 
+              4 reresents the suid 
+   sudo chmod 4755 /usr/bin/cat
+
+
+   and when the ls -l command is run . please note these things 
+   1. there is an addition of s which looks like this rws = s here represents the suid   if the s is CAPITAL S then it means there is no executable permissions applied to the file 
+
+   2. the file becomes red in color 
+
+
+                                    you can alsoset the suid using symbolic mode
+
+
+                                     sudo chmod ( this can represent either u , g , o) + s (and the name of the file)
