@@ -1,0 +1,40 @@
+
+                        CHOWN AND CHGRP
+In linux all files are associated with owner and group 
+the chown and chgrp commands are used to change the files owner and group
+
+
+
+
+NOTE: The root can change ownership 
+
+                             CHOWN COMMAND
+To change ownership of a file or directory  run the chown command 
+
+
+to run this write the chown (the new owner ) (the file name)
+
+
+
+if you want to do it for more tha one file , run thesame command then apepen the files to them 
+for example, yoi have file 1.txt, 2.txt and 3.txt . to change ownership of these file do
+
+                 chown (the new owner)  1.txt 2.txt 3.txt
+
+
+NOTE: you can use the user ID found in the passwd file to change the ownership
+
+FOR Example if there is a username called 1005 and the ID is 1005  , and you run the chown command the ownership wlli
+be transfered to the username , to avoid this error, the following should be done 
+
+
+                                         sudo chown +1005 (the name of the file you want to change)
+
+
+NOTE: The chown command can change both the owner and group of the file you want to change
+
+
+                 to change both ownership and group at the sametime do the following 
+                                    chown the new ownername : the new group name  (the file you want to change)
+                                    chown new owner:new group word.txt 
+
