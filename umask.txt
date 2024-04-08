@@ -1,0 +1,44 @@
+by default when files are created in linux they have default persmissions , the umask command helps to modify these default permissions 
+
+
+ by default it is 0666 for file and 0777 for directories  , 
+
+
+ The umask values are subtracted from the default values stated above and the resulting values will be what is shown when the ls command is executed
+
+                              RUNNING THE UMASK COMMAND 
+To see the umask values JUST RUN umask without any arguments 
+
+so to get the umask values of files and directories which are created do the following command
+
+                               for files = 0666 - the displayed umask value after it was executed 
+                               for directories = 0777 - the displayed umask value after it was executed
+
+                             SETTING UMASK FOR FILE 
+
+To set the umask values for new created file determine which umask you desire which includes subtracting the default values for file and directories which are created to the one you desire 
+                                           0666 - umask you wannt (for example using umask 0002)
+
+                                           0666 -0002 = value 
+                        after obtaining these values , then run the command 
+
+                        umask  value obtained from the above subtraction 
+after running these command all files and directorie will have the umasks values created 
+
+NOTE: The umask values will only take effect from the time in which the command was executed all existing files and directories will not have the umasks values
+
+
+
+                                            PERMANENTLY MAKING UMASK VALUES 
+To place a umask value permanent , open the .bashrc  = the bashrc is a file which contains all the configiuration regarding the bash shell 
+
+and write the umask values in the bashrc 
+
+
+
+
+
+  
+
+
+
