@@ -60,3 +60,21 @@ To change the persmission of all users in the group use the a command
          navigate to the directory name and run the command 
 
             chmod -R (write permissions here) (write only directory here )
+
+
+                                     REFERENCING OR CREATING PERMISSION OF ONE FILE TO LINK TO ANOTHER FILE 
+for example , if you want to create permissions of one file to link to another file , do the following 
+
+if we had to files 1.txt and 2.txt to allow the permissions of 1.txt to be matched with 2.txt , do the following 
+
+if we wanted to 2.txt to reference 1.txt , do the following
+
+  chmod --reference = (the reference file )  (the normal file)
+
+   chmod --reference = 1.txt 2.txt 
+
+
+
+                                        THE EFFECT OF PERSMISSIONS ON DIRECTORIES
+ The write permission has solely effect on the execute permission 
+ 
