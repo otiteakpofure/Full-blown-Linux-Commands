@@ -35,4 +35,57 @@ you do this on command executable files like cat exectuble file , to do this the
                                     you can alsoset the suid using symbolic mode
 
 
-                                     sudo chmod ( this can represent either u , g , o) + s (and the name of the file)
+                                     sudo chmod ( this can represent either u , g , o) + s (and the path of the file)
+
+
+NOTE: it is very important to remove the suid from each file because of security bridges , PASSWD has suid set 
+
+                   to find all commands that havr suid 
+
+            find usr/bin/ -perm 4000
+            note: this search all files which have suiid permissions
+
+
+            nOTE: IT IS IMPORTANT THAT THE SUID SHOULD not be sent by the system or download applicatiosn that have suid se
+
+                                                       SGID 
+in SGID , the file or permissiosn having this id will run with the same privileges as the root 
+
+NOTE: SGID is usally set on directories
+
+                              for example you want to set sgid for a direcotyr called saturday
+
+        you run the command  = chmod 2770 /saturday/ or chmod g+s (andthename of the folder)
+
+        THE SGID also represents s like the suid 
+
+
+                                                    STICKY BIT 
+
+The sticky bit is applied to a directory , it simply states that the user can only delete files for which he owns 
+or for which he has explicit  write permissions granted, even if the user has write access 
+
+it can be used for directories like /tmp 
+The sticky bit is the last special permission. 
+
+                                              RUNNING THE STICKY BIT  COMMAND 
+To run the sticky bit on a directory,  
+
+  to set sticky bit, prepend 1 to the exisiting permissions which is chmod 1 (and the rest commands) = chmod 1111 (folderpath)
+
+  or you can use they symbolic chmod o+t (and the directory)
+
+
+if you run ls -l you will see the last permissions for others have a t which replaces the x permission 
+
+if it it small t  it means there is an exectuble permission while if it is capital T there is no executable permission 
+
+NOTE: IF A USER CREATES A DIRECTORY , AND THERE ARE FILES IN THE DIRECTORY which has a different permissions
+the user can still delete files because of the rights given to the directory 
+
+generally the sticky bit is used to prevent non group or privilege users permissions to deleting files in a system 
+
+
+                                                   
+
+
