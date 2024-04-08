@@ -30,3 +30,21 @@ for example , you create a file called games.txt and you want to remove the writ
  to add multiple permissions together you can apend commands like this 
 
  chmod u-x,g+w,o-rwx (the name of the file )
+
+ u = owner or user 
+ g = group 
+ o = others
+
+
+                          TO CHANGE THE PERMISSION OF ALL PERSONS IN THE GROUP 
+
+To change the persmission of all users in the group use the a command 
+                                chmod  a+r , a-wx nameofthefile
+
+
+        USING THE EQUALS = 
+
+        To change the permission of files you can use the equals sign 
+
+        chmod ug = rw , o =  user.txt ( using o and appending = without doing anything means that no permisson is attached to the file
+        as related to the owner . it is similar to ---)
