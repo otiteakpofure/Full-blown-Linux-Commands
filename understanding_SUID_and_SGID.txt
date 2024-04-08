@@ -1,0 +1,19 @@
+SUID= set user ID 
+SGID = Set Group ID 
+stick bit = 
+
+
+                                  THE SUID 
+
+The suid works by interacting with commands . for example when you run cat command on a file that requires sudo command 
+you will recieve permission denied but when the SUID is changed , this will allow any user whether privieged or not to 
+have access to files and can view and alternate anythuing on the linux system 
+
+NOTE: When an executable fiel with suid is executed the resulting permissions will have the owner of the command and 
+not the permmison of the user who executed the command 
+
+
+                                   to run suid do this 
+you do this on command executable files like cat exectuble file , to do this the following should be implemented
+                                     in file persmission there are usually 4 digits which is 0000
+                                     the first 0 represents the SUID but its very optional thats why it seems its 3 numbers but its four
