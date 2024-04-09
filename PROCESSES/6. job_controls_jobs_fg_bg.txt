@@ -7,3 +7,37 @@
 
                                            JOBS COMMAND 
 The jobs command helps to list jobs and processes running in the background.  
+                                          
+                                          JOBS
+
+                                          JOBS-L 
+This also displayes the processes ID as well 
+
+
+                                    BRINGING BACKGROUND RUNNING PROCESS TO FOREGROUND PROCESS
+To bring a background process to the foreground the following command should be use 
+
+for example, suppose you run the sleep command to slow process for a certain time = sleep 10 & . This now allows the command to be  run in background and
+after this command is run in the background, there will be a job ID which is generated and for this process the job id is [1]
+
+so to allow this command run in the foreground even if its a background process. the following command should be done
+
+                                      fg %  [job ID] 
+                                      fg % 1
+
+suspend process running in the foreground using = ctrl +Z 
+                                                  RESUMING A PROCESS WHICH HAS BEEN STOPPED 
+you can either resume a stopped process in the background or foregrround using below command screen
+
+to resume the process running in the foreground = fg % [job ID]
+to resume the process running in the background = bg %job ID
+
+when you close a terminal all processes stop as well and when reloading these systems some may take a long time to start leading to slow time 
+
+                                                NOHUP COMMAND 
+To ensure that all processes which may take abit of time are run in the background, or rather running processes 
+which even the termianl is closed and there is still infomrmation on it 
+
+                                      for example , running the sleep command 
+                                      nohup sleep 
+
