@@ -6,9 +6,20 @@ To get the dynamic view of running the processes, the top command . its updates 
  the top command displays 2 areas 
                  summary area =  the summary area contains the following information
  1. time = this describes how long the system has been running, number of users and what load average has been for 1, 5, 15 minutes 
-2. TASKS = this showcases the number of processes running 
+2. TASKS = this showcases the number of processes running  which usually includes running, sleeping, stopped and zombie 
+3. %CPU = CPU  percentages based on the interval at last refresh
+4. MiB Mem =  physical memory , how much is used and cached 
+5. Mib Swap = total amount of the swap memory 
 
  NOTE : THE LOAD AVERAGE MUST BE LESS THAN 1 
+
+
+                                                             INTERACTIVE COMMANDS WITH  TOP 
+NOTE: EVERYTHING SHOULD BE LOWERCAASE  and you can press this button more than once 
+1 = TO VIEW THE CORE PROCESS OF EACH CPU  note: a VM on linux has maybe 1 core '
+t= change cpu displays
+m = change memory multiple times as well , 
+
 
 
 
