@@ -28,4 +28,4 @@ orphan: opposite to the zombie process
 
 thread : multiple threads can exist in a process . for example a editor is running , things runnin the editor are thread
 
-task:  
+task:  are just shown when you run the systemd or init 

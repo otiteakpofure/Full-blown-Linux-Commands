@@ -1,0 +1,63 @@
+        LIST OF PROCESS
+information about a running process: ps 
+  showing the tree of process: pstree 
+  top: which shows alll the process information including PIDUSERS , PR, NI , VIRT , RES
+
+
+                      PS (PROCESS STATUS )
+PID  = PROCESS ID  
+TTY =   NAME OF THE CONTROLLING TERMINAL FOR THE PROCESS
+TIME = cummulative cpu time for the process
+cmd =    command
+
+                                     LISTING AL PROCESSES 
+                                     PS -C 
+
+                    full listing format and display detailed information about the process
+                                     ps-f 
+
+                                      ps -ef
+
+                     all procsses with detailed information
+
+UID = USERS WHO RUN THE PROCESS 
+Pid = process ID 
+ppid = parent process id 
+stime = starting time for the process
+
+NOTE: if there is a question mark (?) it means the process does not have a terminal to which it is attached . it either a system services or deamon
+
+
+                                                    AUX COMMAND 
+                             PS -AUX  OR PS AUX
+            the ps aux command can show processes running on a system as well as the , THE DIFFERENCE IS THAT IT INVOLVES memory usages , cpu and more 
+
+when the above command is run the following occurs
+1. USER
+2. PID
+3. %CPU  =  The cpu % for the process 
+4. %MEM = the memory % for the process (ration of process set size to physical memory of the machine)
+5. VSZ  = vritual memorize size in KB
+6. RSS = side of the physical memory that the proceess is using  , includes memory from shared libraries 
+7. TTY
+8. STAT = indicates the process state ( s = sleeping , r= running  z = zombie t= stopped i= idle kernel thread <= high priorty  N = low priortity  )
+9. start = 
+10.TIME
+11. COMMAND 
+                    
+                                                  RUNNINR PROCESS
+            when they tell you your cpu has 4 or 8 cores it memans that not more than 4 processes can run simultaneoulsy 
+                                                   
+
+                                                     processes scheduling
+it is described as running processes simultaneoulsy  (CRUD process)
+
+                                                  SORTING PROCESSES 
+
+for example you want to sort processes to see the memory used by  memorey , virtual size or rss . then the following command can be run 
+
+for example sorting by memory usage ps aux --sort = %mem   sort in ascending order  or to sort in descending order  ps aux --sort = -%mem   sort in ascending order
+ 
+
+                                                  PROCESS OF A SPECIFIC USER 
+TO view all the process involved with a specific users , do the following;
