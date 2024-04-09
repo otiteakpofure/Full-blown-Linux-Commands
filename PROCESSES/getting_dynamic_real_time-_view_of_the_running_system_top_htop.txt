@@ -19,6 +19,48 @@ NOTE: EVERYTHING SHOULD BE LOWERCAASE  and you can press this button more than o
 1 = TO VIEW THE CORE PROCESS OF EACH CPU  note: a VM on linux has maybe 1 core '
 t= change cpu displays
 m = change memory multiple times as well , 
+d= top referhes after every 3 seconds but you can chnage this by pressing the D command 
+space key = refshes manually 
+F= to enter the field management screen 
+y and x = use to sort the process list and x to highlight this process 
+b = for texthighlighting 
+<  and >= change the process list  this will sort the process by moving column
+R = reverse the processes in reverse order 
+e= reverses by size unit 
+P = SORT By process
+M = to sort by Memory 
+u = process of a single user 
+                                   CAPITAL F = FIELD MANNAGEMENT 
+This changes the column used for field managment , to change the columns , press the following keys 
+a.   FIELDS THAT ARE CURRENTLY displayed under the top command have * beside them and are in bold font 
+   press the up and down arrow  to move through the field list 
+
+TO Select or Deselect a field press the SPACE key , 
+
+to move the fields up to any position press  right arrow key and press esc when done 
+
+                                              SAVING THE NEW CONFIGURATION
+After making adjustment press capital W to save these configurations 
+
+
+you can also use command line for top , for example you want to change top iterations and send its output to a file . you can run this command 
+
+                         top -d 1 -n 3 -b > process.txt
+explaining this commands includes 
+
+-d 1 = how many times it refreshes 
+n = number of interactions 
+b = start in batch mode so its content can be sent to a file 
+
+                                            
+                                                             HTOP 
+HTOP is simiar to top , it is important like top but more user friendlier 
+
+so download it  anr run htop 
+
+
+
+ 
 
 
 
