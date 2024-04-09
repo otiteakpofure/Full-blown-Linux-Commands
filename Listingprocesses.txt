@@ -61,3 +61,29 @@ for example sorting by memory usage ps aux --sort = %mem   sort in ascending ord
 
                                                   PROCESS OF A SPECIFIC USER 
 TO view all the process involved with a specific users , do the following;
+                                                   ps -f -u (the name of the user)
+
+
+to check specific processes owned by a users , for example a users running ssh in the server to check the processes run by that user which involved ssh , the following can be done 
+                                           pgrep -u root sshd 
+                                                    root = the name of the user 
+                                                    sshd = the name of the process 
+
+
+                                                   TO CHECK IF A SPECIFIC PROCESs is running 
+ this commnd check if a specific process of a particular program is running for example lets check if a specific process of sshd is running 
+
+                      ps -ef | grep - sshd  or pgrep sshd
+
+                      this will list the PID 
+
+                      if you want to list both the pid and its names run the command pgrep -l sshd
+        
+                                                             THE PSTREE COMMAND 
+The ps3tree command runs the heirechail structure of all running process 
+                                                             pstree | less
+
+
+This form various identical branches but to disables these identical branches . run this command below
+
+                                                       pstree -c | less 
