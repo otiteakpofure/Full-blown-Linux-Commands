@@ -1,0 +1,21 @@
+PS COMMAND = Get a static view of  running the processes 
+
+                                                 TOP COMMAND 
+To get the dynamic view of running the processes, the top command . its updates it contents every 3 second displaying changes to its programs at each given time 
+
+ the top command displays 2 areas 
+                 summary area =  the summary area contains the following information
+ 1. time = this describes how long the system has been running, number of users and what load average has been for 1, 5, 15 minutes 
+2. TASKS = this showcases the number of processes running 
+
+ NOTE : THE LOAD AVERAGE MUST BE LESS THAN 1 
+
+
+
+
+
+
+
+q= quit 
+
+                                               
