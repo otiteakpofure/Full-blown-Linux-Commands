@@ -1,0 +1,26 @@
+They are basicalluy two types of services which are foreground and background processes
+
+
+                                       FOREGROUND PROCESS 
+Foreground processes are started by the user and while they are running the user cannot start any processes in theterminal.it gets 
+its input from the keboard and shows the output on the screen 
+
+                                          BACKRGOUND PROCESS 
+Background processes are started by the system process . while they are running you can running in the background process.
+to start a the background process you must add & at the end of the command.  
+
+
+
+
+foreground processes AND background processes 
+
+EXPLANATION: you open a terminal, and then run a command as far the command does not have & at the end of the command
+it is a foreground process but if it has & at the end of the command it is background process and it does not 
+need to wait before you run another command in the terminal . this means that foreground process allows command to 
+run only when it is finished.  
+
+                                            /dev/null = called the null device or black hole because it discards anything sent to it
+
+The /dev/null is a directory in which processes output that you dont want to show on the screen can be sent 
+
+

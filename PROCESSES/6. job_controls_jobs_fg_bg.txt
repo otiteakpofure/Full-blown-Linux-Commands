@@ -1,0 +1,9 @@
+ when starting a process in the background , you will see two numbers printed in the terminal , you will see two numbers printed in the background 
+
+ each background process is identified by its job iD beside its process id . 
+ JOB ID: The job ID is written in [1] and the process id is written in numbers 
+
+ NOTE: if the enter key is hit 
+
+                                           JOBS COMMAND 
+The jobs command helps to list jobs and processes running in the background.  
