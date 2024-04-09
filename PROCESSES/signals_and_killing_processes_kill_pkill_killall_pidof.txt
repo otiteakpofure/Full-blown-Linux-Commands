@@ -64,3 +64,7 @@ NOTE: A SERVER READS ITS CONFIGIGURATION ONLY AT START-UP SO YOU MUST RELOAD IT 
 
 
 
+NOTE: using systemctl helps to check the status of processes as well 
+      the process id of a server can be found in /var/run/  directory
+
+      
