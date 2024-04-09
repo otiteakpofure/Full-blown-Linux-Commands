@@ -79,7 +79,9 @@ to check specific processes owned by a users , for example a users running ssh i
 
                       this will list the PID 
 
-                      if you want to list both the pid and its names run the command pgrep -l sshd
+                      if you want to list both the pid and the name of the process run the command
+                      
+                                             pgrep -l sshd
         
                                                              THE PSTREE COMMAND 
 The ps3tree command runs the heirechail structure of all running process 

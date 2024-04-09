@@ -1,0 +1,66 @@
+ Sometimes there are applications which are unresponsive or consume too much space  and inorder to ensure that the OS remains well
+ the kill command is used 
+
+ NOTE : TO kill  A PROCESS OR PID THE PROGRAM MUST BE RUNNING 
+
+                                    KILL 
+ kill send a signal to a process or a group of processes to stop the process 
+
+ NOTE: when the signal is not specified it defaults to 15 or SIGTERM 
+
+  GET A LIST OF ALL LIST OF KILL COMMANDS (kill -l )
+               This shows the list of kill commands available 
+
+kill -l 
+
+it will list about 64 processes 
+
+
+NOTE:  each signal is identified by  a number or name . A signal is notification sent to  a processe to tell the process how to be behave 
+
+                                              HOW TO SEND A SIGNAL TO A PROCESS
+
+There are 3 ways to kill a process and they are explained below :
+
+                                                            1
+ The first step in sending a signal to a process . for example the gedit program is running on the foreground and you want to send
+ a signal to it. to do it a signal will need to be sent 
+
+                                    pgrep -l gedit 
+this will list the the PID number running and the number of the process 
+gedit has a process number of 14804 
+
+   so to send a signal to the process the following can be done : for example i want to send a SIGINT process to the gedit 
+   i will do the following 
+                                     kill -2  14804  = kill - signalnumber PID 
+
+
+                                                        2
+                                        PIDOF COMMAND 
+The pidof command helps to get the PID of the process . for example you want to get the pid of firefox, the following
+command will be run 
+                                       pidof firefox 
+This will print all processes and firefox has more than one process and please note any program can have more than one process
+as far all are running on the foreground and to kill all of them , the following command will be used 
+
+                                   for example killing all firefox process assuming it has 4 processes 
+                                   kill -2 (list the number of process id ) or kill - INT (number of process id)
+
+NOTE: The signal name must be in CAPITAL LETTERS
+
+                                                       3
+To kill a process you can also do the following command . Imagine you want to kill firefox 4 processes again, the following command will becan be run 
+
+                                 kill - SIGINT $(pidof firefox)
+NOTE: SIGINT (SIGNAL INTERUPTION) is a part of the process which is shown when the kill -l command is run 
+
+
+NOTE: Non -provilege user can send signal to their processes while root can send signal to all processes 
+
+                                              RELOADING SIGNAL ( )
+                                              
+NOTE: A SERVER READS ITS CONFIGIGURATION ONLY AT START-UP SO YOU MUST RELOAD IT EACH POINT A CONFIGURATION IS MADE 
+
+
+
+
