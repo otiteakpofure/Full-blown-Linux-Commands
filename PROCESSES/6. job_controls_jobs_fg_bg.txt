@@ -39,5 +39,13 @@ To ensure that all processes which may take abit of time are run in the backgrou
 which even the termianl is closed and there is still infomrmation on it 
 
                                       for example , running the sleep command 
-                                      nohup sleep 
+                                      nohup sleep  &
+
+NOTE: When the nohup command is executed , there is a file which is created called "nohup.out" , this file is created o  the current directory 
+or the user does not have the right permissions to run the command . when the termianl is closed or process is stopped in the bash shell ,
+the process will be adopted by system d or init 
+
+
+
+tmux or screen  is a terminal which allows programs to still run even if the terminal was closed 
 
