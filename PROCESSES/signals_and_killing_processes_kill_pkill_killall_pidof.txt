@@ -57,14 +57,30 @@ NOTE: SIGINT (SIGNAL INTERUPTION) is a part of the process which is shown when t
 
 NOTE: Non -provilege user can send signal to their processes while root can send signal to all processes 
 
-                                              RELOADING SIGNAL ( )
+                                              RELOADING SIGNAL (SIGHUP ) is used for reloading
                                               
 NOTE: A SERVER READS ITS CONFIGIGURATION ONLY AT START-UP SO YOU MUST RELOAD IT EACH POINT A CONFIGURATION IS MADE 
 
-
+ to reload a server you can run the command  = kill -1 701
 
 
 NOTE: using systemctl helps to check the status of processes as well 
       the process id of a server can be found in /var/run/  directory
 
-      
+A process can also catch a signal and ignore them, 
+
+SIGTERM(15) = also called soft processes , can be sent to a process and it can ignore it so its better the sigkill(9) is sent. THE 
+SIGKILL is also a hardkill process
+
+                                            USING KILLALL 
+for example an application is running several instances and you want to kill these instances of the application, the killall command will be used 
+can be used to kill all instances of the application. 
+                   killall -15 firefox or any other processes running 
+
+                                          KILLING PROCESSES USING A PARTIAL NAME 
+To kill a process using a partial name , the pkill command can be used . this means that for example firefox is running 
+and you want to kill all instances of firefox , instead of writing firefox the whole name you can use a partial name called fire 
+so to do this the command       
+                                            pkill fire   = will terminate firefox 
+
+
