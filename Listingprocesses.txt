@@ -5,6 +5,8 @@ information about a running process: ps
 
 
                       PS (PROCESS STATUS )
+This command is used to check if specific process is running as well as its properties 
+
 PID  = PROCESS ID  
 TTY =   NAME OF THE CONTROLLING TERMINAL FOR THE PROCESS
 TIME = cummulative cpu time for the process
@@ -87,3 +89,4 @@ The ps3tree command runs the heirechail structure of all running process
 This form various identical branches but to disables these identical branches . run this command below
 
                                                        pstree -c | less 
+
