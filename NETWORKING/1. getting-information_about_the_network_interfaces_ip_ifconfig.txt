@@ -1,3 +1,5 @@
+                                              CONFIGURING NETWORK INTERFACES
+NOTE: You must  be root to set netwrorks settings
 getting needed information about netwrork interfaces 
 
 
@@ -24,4 +26,76 @@ To display on;y ipv4 addresses , run the following command :
 
 ip -4 address and to display v6 chnage the 4 to 6 
 
-                                        
+                                        GETTING SPECIFIC INFORMATION ABOUT A NETWORK INTERFACE 
+To get specific information about a network interface; run the follwing command 
+                                                  ifconfig (the name of the interface)
+
+
+                                                  DISPLAYING DNS SERVERS 
+To display the DNS servers or default gateway run the following command 
+                                                   route
+
+                                                   or 
+
+                                                   route- n  ( display all network configiration in the numerical format)
+                                                   
+
+                                        HOW TO SET NETWORK INTERFACES
+
+
+setting interfaces up and down 
+
+to set and interfce down which means to ensure the interfaces is not valid use this command 
+                        ifconig (the name of the interface you want) down  or ip link set (the name of the interface you want) down
+and after it is down when thre ifconfig is run agaim it wont be displayed.
+
+
+
+ to set it up  ifconig (the name of the interface you want) up or ip link set (the name of the interface you want) up
+
+note: configurations set using the ifconfig command are not persistent after a system restart, it looses its configurations
+
+                                                         PARTS OF THE IP CONFIG
+
+ether = is the mac address 
+displays packets and byte recieved  = TX packets and byte recieved
+
+                                                  network inteface names
+enp0s3= is the ethernet interface 
+en = ethernet interface
+p = port numbers = port number 0
+s= slot number  which is slotnumber3
+
+wl = wireless lan 
+
+
+
+
+                                                       NON-STATIC CONFIGURATION OF IP ADDRESSES 
+IP addresses can be configured using the ifconfig command but these configuration are not persistent. to add a new ip address to an interface
+you can do : ifconfig (the name of the interface you want) ipaddress/subnetmask up
+for example you want to configure enp0s3 196.145.0.111/24 
+                    ifconfig enp0s3 196.145.0.111/24  up
+then run ifconfig after
+
+                                                    REMOVING AN IP ADDRESS FROM AN INTERFACE 
+To remove an ip address from an interface , you do the following : 
+                                                         ip address del (ipaddress/subnetmask) dev (interface name)
+
+                                                          ADDING AN IP ADDRESS FROM AN INTERFACE 
+To add an ip address to an interface you can use 
+                                                 ip address del (ipaddress/subnetmask) dev (interface name)
+
+                                                 ENSUING  PERSISTENCE/STATIC CONFIGURATION OF NETWORK INTERFACES 
+On ubuntu the netplan can be used to make static configuration to network interfaces, 
+
+
+                                                         
+
+
+
+
+
+
+
+
