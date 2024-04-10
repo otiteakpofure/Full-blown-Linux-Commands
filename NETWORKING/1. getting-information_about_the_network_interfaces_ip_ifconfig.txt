@@ -13,5 +13,15 @@ The command ifconfig and ip can be used to both display aand configure the netwo
 
                              DISPLAYING A LIST OF ALL IP ADDRESSES AND NETWORK INTERFACES 
 To display a list of all network interfces and ip addresses use the 
-                                      ifconfig -a 
+                                      ifconfig -a  or ip address show  or ip addr show  or ip a 
 
+the difference is that ifconfig  and ip address show displays both enable and disable interfaces 
+
+NOTE:  If you omit the -a option, ifconfig will show only the enabled interfaces 
+
+                                       TO DISPLAY ONLY IPV4 OR IPV6 ADDRESS 
+To display on;y ipv4 addresses , run the following command :  
+
+ip -4 address and to display v6 chnage the 4 to 6 
+
+                                        
