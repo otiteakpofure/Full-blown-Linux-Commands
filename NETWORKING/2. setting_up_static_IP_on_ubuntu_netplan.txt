@@ -38,6 +38,22 @@ IF YOU DONT USE THE NETWORK MANAGER ANYMORE , ITS BETTER YOU REMOVE THE EXISTIIN
 
                                                    THE CONTENT OF THE NETPLAN FILE 
 The netplan file starts with network 
+network:
+   version: which is the version of the network configuration format
+   renderer: networkd
+   ethernet: if it is wiredcaeble and wifi: if it is a wireeless cable  and its here you will specific one or more network interfaces
+             
+when you create this file dhcp is usually set to false but if you want dhcp to dynamically assign ips use dhcp set to true 
+
+
+after editing the yaml file , to apply the changes then run the 
+
+                                             netplan apply command 
+
+yaml uses two spaces for identation
+
+
+
 
 
 
