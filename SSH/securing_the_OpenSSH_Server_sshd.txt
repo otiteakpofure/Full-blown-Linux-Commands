@@ -7,5 +7,24 @@ the server configuration file of ssh is located in the /ect/ssh/ and it is calle
 
 To change anything you do this file and restart the file 
 
+when you open  a configuration file:
+ the following happens:
+ each line consist of configiration opetion, white space and value
+
+ if you want to change a default configuration, you uncomment the line 
+
+
+                           TOP RECOMMEDATION FOR SECURING THE SERVER 
+1. CHANGE THE DEFAULT PORT
+2. DISABLE ROOT DIRECT LOGIN = IF YOU NEED ROOT ACESS LOGIN INTO THE SERVER AND RUN SUDO TO PERFOMR ADMIN TASKS
+3. PERMITROOTLOGIN PROHIBIT -THIS MEANS THE ROOT PASSWEORD IS REMOVED BY DEFAULT BUT CHANGE IT TO PERMITROOLOGIN NO 
+4. DISABLE PASSWORD AUTHENTICATION AND ENABLE PUBLIC KEY AUTHENTICATION (IF IT IS NOT POSSINLE TO DISABLE PASSSWORD THEN USE A PASSSWORD POLICY)
+5. LIMIT USERS SSH ACCESS  BY USING THE ALLOW USERS  COMMAND 
+            WHICH IS ALLOW USERS (LIST THE USERS ALLOW)
+ 6. PLEASE NOTE : IF YOU ARE ALLOWING SSH CONNECTTIONS FROM A NETWORK OF USER YOU WILL NEED TO UPDATE IT ON THE FIREWALL  to allow specific users use ssh 
+                  but if its the full network you can use the network address 
+7.  use ssh protocol version2 . dont change it version 1 
+8. configure idle time out interval 
+9.  
 
 
