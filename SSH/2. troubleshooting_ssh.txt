@@ -1,0 +1,4 @@
+if you cannot connect to the ssh server 
+
+1. check if the sshd is runnin on the server
+2. 

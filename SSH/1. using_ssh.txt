@@ -1,0 +1,21 @@
+ ssh is used on  rsync , scp, sftp, wimscp
+
+ sshd is server 
+ putty or ssh is the client
+
+ to use ssh 
+
+                              CONNECTING BETWEEN CLIENTS AND SERVER 
+SSH USERSNAME( USERNAME USED SHOULD EXIST ON THE SERVER AND NOT ON THE CLIENT) (IPADDRESSof the server)
+for example, ssh usernama@ipadres
+
+The hostkey which is a cryptographic algorithm is set up when connecting to ssh and used for showing the server when connecting to them 
+
+NOTE:THIS KEY IS STORED IN NUM HOST IN THE CLIENT HOME DIRECTORY 
+
+
+                          COMMAND OF SSH-D 
+connecting to a port: to connect to a port other than the default port (22) use the -p option :  ssh -p usernama@ipaddress
+
+PUTTY IS used in windows 
+

@@ -1,0 +1,7 @@
+                                        systemctl is used to check services/processes running on ubuntu 
+sysmtemctl status the name of the service
+sysmtemctl start the name of the service
+sysmtemctl stop the name of the service
+sysmtemctl restart the name of the 
+
+

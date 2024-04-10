@@ -13,7 +13,7 @@ echo reply or response = is when the ping address respondes back to you
 
 bytes = size of the packet 
 icmp_seq = the sequence of the packets  NOTE : WHEN THE icmp_seq number is not correct know the packets follows different route 
-ttl =  this is number of hops between sources and destination
+ttl =  this is number of hops between sources and destination which are usually routers 
 time =  round trip needed for packets to go and return 
 
                                                time
@@ -37,4 +37,17 @@ By default ping waits one second before sending a packet , to stop the ping for 
                                                      PING -Q
 
 
+NOTE: YOU CAN DISOVER PATH A PACKET TAKE BY SEDNING PINGS . IF A ROUTER RECEIVES A TTL OF 1 IT WILL DISCARD THE PACKET AND TELL THE SOURCE (TIME EXCEEDED)
+using ttl as 1 is the first router towards the desination 
+                      to know the first ttl do the following command = ping -t 1 -c  3 -n (ip address)
 
+                         t = ttl and which are equals to the router by changing this number you can discover the routers from source to desintation 
+
+
+
+                                           EASY AND QUICK WAY TO TROUBLE SHOOT CONNECTIVITY ISSUES 
+                                           1. PING GATWAY 
+                                           2. PING A PUBLICM IP ADDRESS ( 8.8.8.8. OR 1.1.1.1.)
+                                           3. PING AN OPEN DNS SERVER SUCH AS GOOGLE.coM    
+
+                                           
