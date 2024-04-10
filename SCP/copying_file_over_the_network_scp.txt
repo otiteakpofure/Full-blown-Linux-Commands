@@ -2,7 +2,7 @@ scp  = secure copy
 
 allows you copy files and directories over ssh connection 
 
-COPYING A FILE FROM A CLIENT TO A SERVER 
+                                                      COPYING A FILE FROM A CLIENT TO A SERVER 
 1. To transfer from a client to a server you need to do the following: 
 
       scp -P ( state the port number for ssh) thenameofthefile username@ipaddress:THEDIRECTORYOF WHICH THE FILE SHOULD BE COPIED 
@@ -31,8 +31,16 @@ NOTE: To copy file please not the user who runs the command must have the read p
 
 NOTE: Be careful when copying files between users which have the same name, SCP can copy the files wihtout warning 
 
-                                                    COPYING A FILE FROM A REMOTE LOCATION TO A LOCAL LOCATION
+                                                    COPYING A FILE FROM A REMOTE LOCATION TO A LOCAL LOCATION (server to client)
 REMOTE LOCATION = SOURCE 
 LOCAL LOCATION = DESTINATION ----------------------------------------------------------------
 
 for examples lets say you want to copy a file from a  remote server to a desktop machine to the following 
+
+ scp usernameofapersonontheserver@ipaddressoftheserver:directoryorfilepthtothefileyouwanttosendtotheremotedesktop  remotedesktoppath
+
+                                            COPYING FILES BETWEEN TWO REMOTE SYSTEMS (TWO SERVERS)
+TO DO THIS YOU MUSRT HAVE ACCESS TO BOTH MACHINES
+
+SCP USERNAMEOFTHESOURCEUSER@IPADDRESOFTHESOURCEMACHINE:PATHTOTHESOURCEFILE   USERNAMEOFTHEDESTINATIONMACHINE@IPADDRESSOFHTHEDESINTATIONMACHINE:PATHTOTHEFILEWHERETHEFILEWILLBESTORED
+
