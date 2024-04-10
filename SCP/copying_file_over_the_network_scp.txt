@@ -1,0 +1,20 @@
+scp  = secure copy 
+
+allows you copy files and directories over ssh connection 
+
+COPYING A FILE FROM A CLIENT TO A SERVER 
+1. To transfer from a client to a server you need to do the following: 
+
+      scp -P ( state the port number for ssh) thenameofthefile username@ipaddress:THEDIRECTORYOF WHICH THE FILE SHOULD BE COPIED 
+
+      for example you want to copy a file called man.txt on port 22
+
+            scp -P 22 man.txt student@ipaddress:THDDIRECTORYPATH IN THIS CASE IS THE HOME DIRECTORY (~)
+
+NOTE: PLEASE PORT 22 IS NOT NECESSARY TO SPECIFY  
+
+
+
+
+
+    

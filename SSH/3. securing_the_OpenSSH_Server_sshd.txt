@@ -24,7 +24,9 @@ when you open  a configuration file:
  6. PLEASE NOTE : IF YOU ARE ALLOWING SSH CONNECTTIONS FROM A NETWORK OF USER YOU WILL NEED TO UPDATE IT ON THE FIREWALL  to allow specific users use ssh 
                   but if its the full network you can use the network address 
 7.  use ssh protocol version2 . dont change it version 1 
-8. configure idle time out interval 
-9.  
+8. configure idle time out interval  = clientaliveinterval  300  clientalivecountmax 0 
+9.  Maxauthtries  = authentation attempt per connection 
+10. MaxStartups = discusses the number of non authenication users
+11. Logingracetime = server logouts the user when
 
 
