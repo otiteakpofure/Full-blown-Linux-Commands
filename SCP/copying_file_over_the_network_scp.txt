@@ -31,4 +31,8 @@ NOTE: To copy file please not the user who runs the command must have the read p
 
 NOTE: Be careful when copying files between users which have the same name, SCP can copy the files wihtout warning 
 
-                                                                             
+                                                    COPYING A FILE FROM A REMOTE LOCATION TO A LOCAL LOCATION
+REMOTE LOCATION = SOURCE 
+LOCAL LOCATION = DESTINATION ----------------------------------------------------------------
+
+for examples lets say you want to copy a file from a  remote server to a desktop machine to the following 
