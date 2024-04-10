@@ -14,7 +14,21 @@ COPYING A FILE FROM A CLIENT TO A SERVER
 NOTE: PLEASE PORT 22 IS NOT NECESSARY TO SPECIFY  
 
 
+                               TO GIVE THE FILE A NEW FILENAME WHILE SENDING IT TO THE DESTINATION
+To give the file a new filename while sending it to the destination, use the command 
+                                              scp -P ( state the port number for ssh) thenameofthefile username@ipaddress:THEDIRECTORYOF WHICH THE FILE SHOULD BE COPIED/newnameofthefile
 
 
+                                                       COPYING A DIRECTORY
+  In copying directorues , the use of r option is mandatory 
 
-    
+   scp -r -P ( state the port number for ssh) thenameofthedirectory username@ipaddress:THEDIRECTORYOF WHICH THE FILE SHOULD BE COPIED/newnameofthefile
+
+                                       TO PRESERVE THE MODIFICATION AND ACCESS TIME 
+ scp -P  -p( state the port number for ssh) thenameofthefile username@ipaddress:THEDIRECTORYOF WHICH THE FILE SHOULD BE COPIED/newnameofthefile
+
+NOTE: To copy file please not the user who runs the command must have the read permission , and the destination users must have the write permissions
+
+NOTE: Be careful when copying files between users which have the same name, SCP can copy the files wihtout warning 
+
+                                                                             
