@@ -1,0 +1,17 @@
+getting needed information about netwrork interfaces 
+
+
+ifconfig 
+
+part of nettools packages
+
+there is a net alternatives called ip  
+
+NOTE : If ifconfig does not work , it is good to install the net-tools package. 
+
+The command ifconfig and ip can be used to both display aand configure the network interfaces 
+
+                             DISPLAYING A LIST OF ALL IP ADDRESSES AND NETWORK INTERFACES 
+To display a list of all network interfces and ip addresses use the 
+                                      ifconfig -a 
+
