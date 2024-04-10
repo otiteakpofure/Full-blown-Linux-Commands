@@ -1,0 +1,40 @@
+The most utility for testing network connectivity is ping 
+
+echo request = is when you send a ping request
+echo reply or response = is when the ping address respondes back to you 
+
+ PING 
+ PING by default does reverse dns look ups , an ipaddress can be set to multiple domaain names 
+
+ prevvnting ping from doing reverese dns look ups  =  ping -n  what this does it instead of the ping showing the domain name and the ip address
+ it only shows the ip address 
+
+  exaplain the ping command 
+
+bytes = size of the packet 
+icmp_seq = the sequence of the packets  NOTE : WHEN THE icmp_seq number is not correct know the packets follows different route 
+ttl =  this is number of hops between sources and destination
+time =  round trip needed for packets to go and return 
+
+                                               time
+a round trip time below 30 is excellent 
+30 -50  = average 
+50 - 100 = some how slow 
+>100 = really slow that does not allow voip 
+
+                                                     PING -i
+
+By default ping waits one second before sending a packet , to stop the ping for waiting do the followijg 
+
+ ping -i  (number of seconds less tha 1)
+
+ Note: this allowed only for privilege users 
+
+
+                                                     GETTING SUMMARY OF THE PING 
+
+
+                                                     PING -Q
+
+
+
