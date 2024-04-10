@@ -37,8 +37,12 @@ To display the DNS servers or default gateway run the following command
 
                                                    or 
 
-                                                   route- n  ( display all network configiration in the numerical format)
-                                                   
+                                                   route- n  ( display all network configiration in the numerical format) or iproute show 
+NOTE: flags with G is the default gateway                                                    
+
+
+to see  the dns server  = systemd-resolve --status     scorlling down you will see the dns servers 
+
 
                                         HOW TO SET NETWORK INTERFACES
 
@@ -90,12 +94,34 @@ To add an ip address to an interface you can use
 On ubuntu the netplan can be used to make static configuration to network interfaces, 
 
 
-                                                         
+                                                 
+                                                         DELETING THE DEFAULT GATEWAY
+If there is a default gateway already configired then the default gateway has to be removed; 
+ before deleting the default gateway run the 
+
+                                      route -n  = this shows the default gateway  which has the letter G 
+
+so to delete  the default gateway do the following command 
+
+                                                     route del default gw (ip address of the default gateway)  or ip route del default
 
 
+                                                          ADDING THE DEFAULT GATEWAY
+                                        
+                                                    route add default gw (ip address of the default gateway) or ip route add default via (the ip address here)
 
+                                               
+                                                 CHANGING THE MAC ADDRESS OF AN INTERFACE
+To change the mac address of an interface run the following command
+ 
 
+ 1.  ifconfig (the enp0s3 = which is the address of the ethernet facing the internet) down
 
+  then after that run the code ; 
+  
+2. ifconfig (the enp0s3 = which is the address of the ethernet facing the internet) hw ether (the new mac address)
+
+3. ifconfig (the enp0s3 = which is the address of the ethernet facing the internet) down
 
 
 
