@@ -121,7 +121,7 @@ To change the mac address of an interface run the following command
   
 2. ifconfig (the enp0s3 = which is the address of the ethernet facing the internet) hw ether (the new mac address)
 
-3. ifconfig (the enp0s3 = which is the address of the ethernet facing the internet) down
+3. ifconfig (the enp0s3 = which is the address of the ethernet facing the internet) up
 
 
 

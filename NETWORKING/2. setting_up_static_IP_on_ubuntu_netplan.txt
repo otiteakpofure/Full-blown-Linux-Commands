@@ -1,0 +1,43 @@
+setting up static interfaces 
+
+since the introduction of latest network configuration tools , netplan has become the default configiration model for network interfaces
+It uses yaml files which are located in /etc/netplan/
+
+NETPLAN 
+to render back end interfaces , network manager , systemd , networkd on ubuntu based services 
+
+1.  NETWORK MANAGER : is mostly used on desktop based machines 
+2. system d and  networkd =  on servers without gui 
+
+                                             SETTING UP A STATIC IP ADDRESS USING NETPLAN 
+UBUNTU DESKTOP 
+
+ To set up Ip address on ubuntu desktop click on the right hand side with the icon pointing down ad choose wired settings 
+ and click setting or go to ipv4 or ipv6 and choose manual then set it up statically 
+
+
+                                             CONFIGURING THE NETWORK INTERFACE ON A SERVER WITH NO GUI USING SYSTEMD  & NETWORd
+FIRST STEP: Disable the network manager . the network interface is managed using network both the networkD and network maager can manage network interfcae but not by both at the same time 
+
+then stop network manager : systemctl stop NetworkManager
+                            systemctl disable NetworkManager ( this disable the network manager)
+
+TO CHECK IF A SERVICE WILL START AT BOOT TIME :
+                             SYSTEMCTL IS-ENABLED (NAME OF SERVICE) IN THIS CASE NETWORK MANAGER 
+
+note: if the command out is (disabled) it means it wont start at boot time
+
+                                             THE NEXT STEP IS TO CREATE A YAML FILE 
+
+IF YOU DONT USE THE NETWORK MANAGER ANYMORE , ITS BETTER YOU REMOVE THE EXISTIING NETPLAN YAML FILE 
+
+ so what you do is open a vim and create a file 
+
+ vim /etc/netplan/config.yaml
+
+
+                                                   THE CONTENT OF THE NETPLAN FILE 
+The netplan file starts with network 
+
+
+
