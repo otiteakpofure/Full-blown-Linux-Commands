@@ -19,3 +19,5 @@ connecting to a port: to connect to a port other than the default port (22) use 
 
 PUTTY IS used in windows 
 
+NOTE: You must not use an ssh with a username . it isnt compulsory . you can use telnet to check open ports  by doing telnet (ipaddress of the server) (port number)
+
