@@ -1,0 +1,11 @@
+Default installation of ssh does not provide security 
+
+the server configuration file of ssh is located in the /ect/ssh/ and it is called sshd_config = configuration file of the ssh deamon
+ ssh_config = configuration file of the ssh client
+
+
+
+To change anything you do this file and restart the file 
+
+
+

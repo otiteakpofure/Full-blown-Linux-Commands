@@ -4,4 +4,5 @@ if you cannot connect to the ssh server
 2. THE REMOTE HOST IDENTIFICATION HAS CHANGED displays when the server you are trying to connect to has changed its Ip address  but if its 
 right server even though this message popped you can remove the server key from the known host file . it is an hiddden directory on the client machine 
 .go to the .ssh/known_hosts and remove the server key 
-3. 
+3. you can run the ssh using ssh -v  or ssh -vv
+

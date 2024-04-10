@@ -1,0 +1,17 @@
+linux firewall is called netfilter iptable
+
+you can check if there is any firewall rule running and check if policy is to accept  usig  = iptables -vnL
+
+
+if you see any rule or your firewall has an issue you can see its the ufw 
+
+ufw is used managing iptables firewall rules and its make firewall rules easier 
+
+NOTE: ON UBUNUT UFW SHOULD BE DISABLE BY DEFAAULT 
+
+LIST ALL APPLICATIONS RUNNING ON THE SERVER  = UFW APPLIST 
+
+to cinfigiure the ufw firewall = ufw all (the the name of the service)
+
+
+
