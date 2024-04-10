@@ -1,0 +1,10 @@
+when you run nmap on a specific host , this involves checking if services are running 
+
+to check if a service is running on a particular host , do the following: 
+ nmap -p (state the port number) (ip address of the service)
+
+ NOTE: if you get a reply and it is stated that the host seems down, then do the following 
+ 
+ nmap -p (state the port number) (ip address of the service) -Pn
+
+ 
