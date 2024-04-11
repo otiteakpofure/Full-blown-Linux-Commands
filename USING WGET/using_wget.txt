@@ -1,0 +1,17 @@
+using wget helps to download files from http, https, ftp servers 
+
+It can start downloads , resume downloads , limit bandwiths, mirror a website 
+
+                                 USING WGET AND SAVING A FILE SIMULTANEOUSLY 
+To download a file and save a file, do the following 
+
+  crate the directory  and run the command:
+   wget -P  thecreateddirectory  linktothewebssite
+
+       TO LIMIT THE BANDWIDTH 
+
+To limit the bandwith so that wget does not consume the entire bandwith and slow the network do the following 
+                  wget --limit-rate =100k -P  thecreateddirectory  linktothewebssite
+
+NOTE : The 100k represents 100k per second , use M for megabytes and G for gigabytes
+
