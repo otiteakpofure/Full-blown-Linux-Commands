@@ -1,0 +1,60 @@
+RSYNC
+snychronizes files between two locations 
+
+it can be used for backups and mirroring  rsync is used for professional backups frequently 
+
+rsync  = is preinstalled in various linux distributioons and when it is installed we do not need applications for backing up 
+
+                                       BASIC EXAMPLE OF RSYNCE 
+                    rsync source(oneormorefiles/directories)  desintation(directories)
+
+NOTE : TO USE RSYNC , read permissions must be granted on the source location and write permissions must be granted in the destination location
+                                     
+                                      COPYING FILES OR BACKING UP FILES BETWEEN TWO locations
+                                            RSYNC -AV sourcedirectory  destinationdirectory 
+
+ a= run in archive mode , preserve symlinks, the owner , the group , copy recusrively 
+
+ NOTE: IF THE DESTINATION DIRECTORY DOES NOT EXIST RSYNC WILL CREATE IT 
+                                                          SYNCING IN QUIET MODE 
+
+To sync in quiet mode , the rsync can be used appending q to it , this will ensure that no output is shown when copying 
+ RSYNC -AQ sourcedirectory  destinationdirectory 
+                                                              RSYNC AUTOMATION
+Suppose you want to copy files which have been copied before , rsync will know which new file has been added and copy the file instead of copying the whole folder again 
+
+                                                          TO ALLOW DIRECTORIES HAVE THE SAME CONTENTS AT EACH TIME (MIRRORING)
+ RSYNC -AV  --DELETE sourcedirectory  destinationdirectory 
+
+                                                              UNDERSTANDING / WHILE COPYING DIRECTORIES 
+
+NOTE: if you are copying directories the / plays a big roles 
+
+NOTE : if you use for example a man directory like this = /man/ = it will copy the contents of the directory but if you use /man = it will copy the directory itself 
+
+                                                          BACKING UP AND EXCLUDINg files
+For example , you want to back up files and directories while excluding some files , the following can be done:
+                                   let say you have created various files and diretories and you want to exclude some files and directories
+
+            rsync -av --exclude -from = "thepathtothelistoffilesyouwanttoexclude" thesource thedesination
+
+let say you have five files you want to exclude , the best thing to do is to create a file in which the relative path of those files are kept 
+in a created file . for example lets say you create the file excludeed.txt so you will place this file which contains excluded files to eb synced from copying
+
+                     rsync -av --exclude -from = "excluded.txt" thesource thedesination 
+
+
+NOTE : In the excluded files to exclude a directory , used a / after the directory name man/ 
+
+
+
+                                              QUICK EXCLUDING OF FILES AND DIRECTORY
+If you want to quickly exlucde a diretory , you can qucklydo ths for both files and directories 
+
+   rysnc -av --exclud = "*.txt" source thedesination
+
+
+                                          EXCLUDING MULTIPLE FILES/DIRECTORIES 
+To remove more than one directory or files, you can use the exclude option more than once 
+        rysnc -av --exclude = "nameofthedirectory" --exclude ="nameofthedirectory"source thedesination
+        
