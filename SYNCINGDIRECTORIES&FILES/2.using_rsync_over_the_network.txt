@@ -1,0 +1,24 @@
+using rsync to synchroznize local directories to a remote system 
+
+RSYNC should be first choice 
+
+
+NOTE: The user who runs the rsync command should have read access to all files innthe location and the derstination should have write access 
+
+                         TO SYNCRHONIZE OVER THE INTERNTET 
+
+To synchroznize over the internet , the use of rsync is necessary as this allows copy files to the remote system
+
+     sudo rsync --av -e ssh (sourcedirectory) usernameoftheremotesystem@ipaddressoftheuserontheremoteystem: destination folder 
+
+
+                          WANTING DIRECTORIES TO HAVE THE SAME CONTENT
+In ensuring that all directories have the same content at each point in time , the following can be done 
+  sudo rsync --av -e ssh  -delete (sourcedirectory) usernameoftheremotesystem@ipaddressoftheuserontheremoteystem: destination folder 
+
+                         SPECIFYING AN SSH PORT OTHER THAN THE DEFAULT 22 
+To specify another ssh port which is not port 22 can be done like this , so for example if the port is not port 22 bur rather port 2701, do this 
+
+  sudo rsync --av -e "ssh -p 2701" (sourcedirectory) usernameoftheremotesystem@ipaddressoftheuserontheremoteystem: destination folder 
+
+  
