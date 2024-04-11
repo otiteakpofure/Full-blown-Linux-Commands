@@ -1,0 +1,51 @@
+using wget helps to download files from http, https, ftp servers 
+
+It can start downloads , resume downloads , limit bandwiths, mirror a website 
+
+                                 USING WGET AND SAVING A FILE SIMULTANEOUSLY 
+To download a file and save a file, do the following 
+
+  crate the directory  and run the command:
+   wget -P  thecreateddirectory  linktothewebssite
+
+       TO LIMIT THE BANDWIDTH 
+
+To limit the bandwith so that wget does not consume the entire bandwith and slow the network do the following 
+                  wget --limit-rate =100k -P  thecreateddirectory  linktothewebssite
+
+NOTE : The 100k represents 100k per second , use M for megabytes and G for gigabytes
+
+                          RESUMIMG AN INTERRUPTED download
+For example , when you are downloading a file and network interrupts the file the download will start from beginning but to ensure your download continues from where it stopped ,  you can continue its download by doing the following:
+
+wget -c -P  thecreateddirectory  linktothewebssite
+
+
+
+                              TO DOWNLOAD MULTIPLE FILES 
+To download multiple files do the following:
+
+                   create a file and store the links of all files theRE   
+
+                   wget -i thepathtothefile
+
+for a huge download , put the download in the background by adding the following command:
+  wget -b -i thepathtothefile
+
+                     
+       for example you close the terminal and want the download to continue , the following should be done
+
+      nohup  wget -i thepathtothefile
+
+                                        CREATING AN OFFLINE COPY 
+To create an offline copy of the file so you can review when the download has started or when the  
+
+    wget --mirror --convert-links --adjust-extension --page-requisites --no-parent (andthesiteaddress) or wget -mKEPNP (thelinktothesite)
+
+mirror= makes the download recurisvie 
+convert-links= makes the download be able to parse any form of documenrts such as css, js etc
+adjust-extension= makes the download be able to suitable extnsions to file names
+page-requisites= makes the download be able to download css stylesheet and images 
+no-parent= makes the download not to be able to donload to parent directories
+
+
