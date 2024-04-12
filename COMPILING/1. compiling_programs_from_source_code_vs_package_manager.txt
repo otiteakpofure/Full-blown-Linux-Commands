@@ -7,3 +7,6 @@ sometimes it is important to compile from the source code and as such the follow
 for example, you download an appliction and certain services are not enable instead of using APT you can download the source code and place the missing 
 services and compile it. 
 
+NOTE: The best practice involves downloading or isntalling from APT as first option and first know the proper compilation you will like to make 
+
+
