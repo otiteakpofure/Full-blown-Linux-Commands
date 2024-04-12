@@ -1,0 +1,9 @@
+                                        COMPILING APPLICATIONS FROM SOURCE CODE 
+
+sometimes it is important to compile from the source code and as such the following should be done because its advantageous;
+
+                              benefits of compiling from source code 
+- you can compile applicatios with certain options which may be missing or disabled in the standard distribution package.
+for example, you download an appliction and certain services are not enable instead of using APT you can download the source code and place the missing 
+services and compile it. 
+
