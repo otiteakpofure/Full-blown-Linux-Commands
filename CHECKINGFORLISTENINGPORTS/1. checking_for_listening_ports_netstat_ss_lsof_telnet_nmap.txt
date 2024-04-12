@@ -9,6 +9,19 @@ To display all open ports,
  u = udp ports
  p= process ID and the name of the programme which is listening 
  a= all ports both listening and not listening 
- n= numerical addresses 
+ n= numerical addresses instead of trying to determine  SYMBOLIC HOST AND POST NAMES
+
+NOTE:in the local address column if you see somthijg like 0:0.0.0 of an ip address it means that the process is listening in all ip address of the host 
+
+
+
+                       CHECKING IF A SPECIFIC PORT IS LISTENING 
+To chek if a specific port is listening for example port 22 you can do the following 
+
+                          netstat -tupan | grep :22
+
+NOTE: IF an ouput shows under this command it means that the port is opened , but if an ouput does not show under this command
+it means the port is closed 
+
 
  
