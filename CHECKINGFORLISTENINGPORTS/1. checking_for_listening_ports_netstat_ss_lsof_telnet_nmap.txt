@@ -59,6 +59,59 @@ This command checks which files various ports have opened in the system   for ex
 
                                                 lsof -iTCP -sTCP:LISTEN
 
+This shows files that open tcp ports which are in the listen state, 
+
+                                                  
+
+                                                TO CHECK THE files which the open ports have made available WITH HOSTNAMES AND PORTS 
+
+This displays port and hostsnames in numeric format 
+
+
+                                             lsof -iTCP -sTCP:LISTEN -nP
+
+                                TO CHECK AN OPEN PORT AND UNDERSTAND WHICH FILE HAS OPENED IT 
+
+This command checks which particular file  has openeed a port 
+
+                                               lsof -iTCP:22 -sTCP:LISTEN -nP
+
+
+
+NOTE: NETSTAT, SS AND lSOF can be used to display open ports on the current system.  this checks ports running on your own  system 
+
+
+
+                       SCANNING PORTS ON SYSTEM WHICH IS NOT YOURS 
+YOU CAN USE THE TELNET COMMAND OR NMAP  TO SCAN PORTS ON AN ANOTHER SYSTEM 
+
+
+                                  TELNET
+
+Scanning ports in another Ip address 
+                  for example you want to scan port 22 in another SYSTEM
+
+                  telnet (ipaddress) portnumber 
+
+   NMAP 
+which is a professional port scanner , to use nmap 
+
+nmap (ipaddress)
+
+  to scan a specific port using nmap 
+
+nmap (ipaddress) portnumber 
+
+to scan the portnumnber version 
+
+nmap (ipaddress) portnumber  -sV 
+
+
+
+
+
+
+
 
 
 
