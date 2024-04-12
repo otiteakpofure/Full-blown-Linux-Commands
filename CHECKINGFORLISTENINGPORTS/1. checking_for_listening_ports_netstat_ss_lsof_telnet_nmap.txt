@@ -23,5 +23,49 @@ To chek if a specific port is listening for example port 22 you can do the follo
 NOTE: IF an ouput shows under this command it means that the port is opened , but if an ouput does not show under this command
 it means the port is closed 
 
+NGINX is a well known web server 
+
+                                                         USING THE SS COMMAND 
+This is a new command and might replace netstat in the future  ; ss = socket statistics and shows informagtion similar to netstat
+. it shows more tcp and udp information and its faster than netstat
+
+                                                    TO GET ALL LISTENING PORTS 
+        ss -tupan 
+
+                                                        LSOF = LIST OPEN FILES
+ This gets a list of open files  run the LSOF command
+
+                                CHECK ALL THE FILES OPEN BY THE PROECESSES OF A SPECIFIC USER
+    
+to get all the list of files open by a specific user run the lsof -u username. for example, the username is jake 
+
+                                            lsof -u jake
+
+                                            CHEKING ALL FILES OPEN BY ANYONE EXCEPT A SPECIFIC USER
+To check all files open by others users apart from a specifi user . for example , you want to check all files open by other users except the one 
+jake has  open 
+
+                                           lsof -u ^ username  = so to check this , run the lsof -u ^ jake 
+
+
+                                             TO LIST ALL FILES OPEN BY A SPECIFIC process
+
+                    TO LIST ALL FILES OPEN BY A SPECIFIC PROCESS such as when you start a service  for example  NGINX
+
+                    you can run  the command =  lsof -c nginx 
+
+                                               TO CHECK THE files which the open ports have made available 
+This command checks which files various ports have opened in the system   for example lets check all the tcps files that have been open 
+
+                                                lsof -iTCP -sTCP:LISTEN
+
+
+
+
+
+
+
+
+
 
  
