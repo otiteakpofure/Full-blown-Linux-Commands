@@ -1,0 +1,14 @@
+when troubleshooting network connectivity issues , is to check if the server is listening on a specific port
+
+                                               TO DISPLAY ALL OPEN PORTS 
+this is used to check services and which port they are listening on 
+To display all open ports, 
+ netstat -tupan
+
+ t = tcp ports
+ u = udp ports
+ p= process ID and the name of the programme which is listening 
+ a= all ports both listening and not listening 
+ n= numerical addresses 
+
+ 
