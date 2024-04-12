@@ -28,4 +28,36 @@ To install multiple packages at once, you can run the following command :
  a. when all the packages are deb files 
  b. when all the packages depend on each other
 
- 
+NOTE : Please when you are installing multiple packages ensure everything remains in one line
+
+                                          for example packages 1,2 and 3 is the deb and to install 3 of them run the following command
+
+                                          dpkg -i 12 3 
+
+                                           TO GET A LIST OF ALL PACKAGES 
+To get a list of all installed packages , run the following command 
+
+                                       dpkg --get -selections
+
+
+NOTE: It will show a list of all installed programs in the system 
+
+
+                                             IF YOU  WANT TO SEE THE PACKAGE ARCHITECTURE , DESCIPTION AND DETAILS 
+To see such run , the following command 
+
+                                dpkg -query -l
+
+NOTE: this will show a list of all installed programs in the system displaying their versions,architecture etc and the output can be filtered 
+using grep 
+
+NOTE: When you run the command and see ii , these mean two things:
+
+                                    ii =  meaans desired state which is install and the package status  which in installed 
+
+                                            LISTING ALL FILES INSTALLED ON YOUR SYSTEM FROM A PACKAGE
+A debains package is an archive which contains other files , if you want to list all files installed on your system from a package run the following command 
+
+                                                     
+
+
