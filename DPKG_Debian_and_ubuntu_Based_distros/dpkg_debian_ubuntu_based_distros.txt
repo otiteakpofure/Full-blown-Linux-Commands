@@ -1,3 +1,6 @@
+
+NOTE: Please note debains is a low level package tool and its important that APT is used for managign packages 
+
 most applications on linux are open source either we compile them or install them  from a binary package.  
 deb= installing package used in debian distros and infact an archive including the exectubale application and comes from the deborah which is the wife name of debain founder 
  
@@ -58,6 +61,31 @@ NOTE: When you run the command and see ii , these mean two things:
                                             LISTING ALL FILES INSTALLED ON YOUR SYSTEM FROM A PACKAGE
 A debains package is an archive which contains other files , if you want to list all files installed on your system from a package run the following command 
 
-                                                     
+1. find all the packages installed on your system . for example, you download chrome and you want to check all the files installed after downloading chrome , do the foollowing 
+                                         dpkg -L (and the package name which is shown on the screen )
 
 
+NOTE: Do not write the package name if yuou know it on head verify its name by output it through ls 
+
+                                             
+                                               IF YOU WANT TO SEE WHAT PACKAGE A SPECIFIC FILE BELONGS TO 
+
+This is used to check what specific packages a specific file belong to , for an important file from a downloaded package got corrupted and you 
+want to download that file , do the following command
+
+                                            dpkg -S (and the filepath to the file)  this command is similar to which command 
+
+                            TO REMOVE AN ALREADY INSTALLED PACKAGE 
+This command is used to remove and already installed package 
+
+            dpkg -r (and the name of the package)
+
+
+-r = does not remove the configuration file as if the package is downloaded it will come with the arlier installed packages 
+to rmeove both the configuration file and the all data use this command, 
+ 
+ 
+                                        dpkg -P (and the name of the package)
+
+
+                                                   
