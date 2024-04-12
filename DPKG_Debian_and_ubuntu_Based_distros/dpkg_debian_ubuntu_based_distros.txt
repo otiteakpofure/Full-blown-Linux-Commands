@@ -1,0 +1,31 @@
+most applications on linux are open source either we compile them or install them  from a binary package.  
+deb= installing package used in debian distros and infact an archive including the exectubale application and comes from the deborah which is the wife name of debain founder 
+ 
+ 
+ dpkg -apt - graphical front end (synaptics)
+
+
+                               dpkg 
+contains list of packages installed in the deb NOTE: APT also called dpkg behind the scenes 
+
+                                    INSTALLING A DEB FILE 
+
+ After you downloaded a deb file , you can install its package using the following command 
+ NOTE: check its extension if its a deb file 
+
+Then run the following command 
+
+                       dpkg --info (and the name of the file ) = this command will show its contents 
+
+
+and to install the file , you can run the following command
+                                      dpkg -i (and the name of the file) and this will install the package
+
+
+                                    TO INSTALL MULTIPLE PACKAGES AT ONCE 
+To install multiple packages at once, you can run the following command :
+ This is useful in two ways 
+ a. when all the packages are deb files 
+ b. when all the packages depend on each other
+
+ 
