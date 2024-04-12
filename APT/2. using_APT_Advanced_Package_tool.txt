@@ -45,3 +45,62 @@ if you want to upgrade the system as whole , use the following command
 
 
 NOTE: RUNNING THE FULL UPGRADE COMMAND FROMA SHELL SCRIPT 
+
+apt full-upgrade  -Y  
+
+
+                                     REMOVE AN INSTALLED PACKAGE
+To remove an installed package, run the following command
+apt remove andthenameofthepackage
+
+
+NOTE: 1. PROVIDE SPACES For more than one file 
+      2. This does not completely remove the file , as there are still some configuration files left in 
+
+
+                                 REMOVING ALL FILES , CONFIGURATION FILES AND EVERYTHIG 
+
+To remove all configuration files and everything as reagrding the application , do the following command 
+
+      apt purge andthenameofthefile
+
+
+
+NOTE: when using apt to install packages , the libraries are installed even if the purge or remove command is run and to handle this the following can be done:
+
+
+apt autoremove 
+
+this be default will reomove all libraries 
+
+note: all files and packages dowloaded are stored in the archive directory 
+
+
+                           CLEARING OUT THE LOCAL REPOSITORY OF RETRIEVED PACKAGE FILES
+To clear out the respository of retrieved package files do the following command 
+
+apt clean = it remove everything execpt the lock file from the archived directory 
+
+
+                                 TO LIST ALL AVAIAL PACKAGES
+this command will list all packages insralled  = apt list 
+
+NOTE: POSTFIX IS A WELL KNOWN EMAIL server
+
+
+                          TO SEARCH FOR PACKAGEW WHICH CONTAIN A PARTICULAR PHRASE 
+
+TO search a package which contain a particular phrase ;
+
+   apt search "placethephrasehere"
+
+                               get a list of installed packages 
+
+                               apt list --installed 
+
+                    TO FIND INFORMATION OF A PACKAGE , DESCRIPTION OF CONTENT 
+This command gives comprehenssive formation of paackage , the size, the architecure, the libraroies 
+                    APT SHOW (PACKAGENAME)    
+
+NOTE: SYNAPTIC IS A PACKAGE MANAHGER THAT WE CAN USE TO MANAGE AND DELETE PACKAGES 
+
