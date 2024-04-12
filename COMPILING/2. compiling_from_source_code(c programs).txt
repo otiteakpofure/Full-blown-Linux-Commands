@@ -1,0 +1,50 @@
+compiling software from source code 
+
+
+COMPILING : is basically transforming the source code into human readable machine code 
+
+
+TYpically servers need to be compiled and to do this the gnu compiler or gcc is a collection of compilers of c languages.
+
+the default ubuntu repository contains a package is called build essentials which contains lots of libraries , compilers and languages that are 
+used 
+
+                                 TO COMPILE SOFTWARE
+To install build essentials for software compilation the following command can be run;
+
+                sudo apt update && sudo apt install build-essential
+
+                               FOR COMPILING C SOFTWARE 
+For compiling software and used for cprograms 
+                          gcc --version  ( it is the C compiler)
+
+
+                                C++ COMPILER 
+G++ --version is the C++ compiler 
+
+
+                                        make 
+it is utility used to build a collection of source files 
+
+
+  for centos 
+
+there is a package group called development group that contains all the required componeents 
+
+so to install it in centos 
+dnf  groud install "development tools"
+
+                               COMPILING A SINGLE SOURCE APPLICATIONS
+
+compiling a simple c program . imagine its a program that prints simple hello 
+
+  gcc thesourcefilewhichcontainsthecode -o binary(thebinaryistheoutputofthecompliation)
+                                        gcc hello.c -o hello
+
+
+to execute an executable use the ./ command 
+
+
+ 
+
+
