@@ -1,0 +1,47 @@
+NOTE: only root can manage package 
+
+update package indx = apt update
+NOTE: NEESSARY  TO RUN THE COMMANE DURING 
+
+
+APACHE2 
+
+If you are downloading another webserver and trying to use it and see somerthing like adddress alreay in use or cannot start the web server , just know that it is an earlier exisitng web server and
+
+      USING APT TO INSTALL MORE THAN ONE package
+To install more than one package , you need to specify them as a seperated list ,  for example you want to install gparted = for managing application disk, vlc 
+
+so to do this you  run apt thenameofpackage1 thenameofpackage2
+
+
+                   USING APT YOU CAN ALSO INSTALL A PROGRAM FROM A LOCAL DEB FILE 
+
+You can install local deb file installed in your computer , by running the command and navigating to the path of the local file 
+
+                      apt install thepathofthelocaldebfile
+
+for example you download a  deb file for example google chrome deb , to install this googlr chrome deb 
+
+                      apt install googlechromdeb
+
+
+NOTE : If you dont put the correct file path , the apt package will try to download the files from the internet 
+
+                                 TO GET A LIST OF ALL PACKAGES THAT WILL BE UPGRADED 
+To get a list of all packages that will be upgraded run the following command 
+
+                            apt list --upgradable 
+NOTE: IF THE PACKAGE ALREADY INSTALLED APT WILL INSTALL IT 
+
+
+
+
+                       UPGRADING THE SYSTEM AS A WHOLE 
+
+if you want to upgrade the system as whole , use the following command 
+
+                        apt full-upgrade 
+
+
+
+NOTE: RUNNING THE FULL UPGRADE COMMAND FROMA SHELL SCRIPT 

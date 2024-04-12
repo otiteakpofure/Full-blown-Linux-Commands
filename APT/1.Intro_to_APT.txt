@@ -1,0 +1,13 @@
+APT = Advanced package tool 
+The recommended way to manage package on ubuntu and debains based distributions using APT 
+
+NOTE: From the latest linux distributions , there is no need to use APt-get or apt-cache just use apt whicch combines all functions 
+
+unlike dpkg, apt does not understand deb files, it calls the dpkg repository in which all files are downloaded from a repository
+
+An APT repository is collection of APT services, 
+
+
+A special kind of repository hosted on servers are laucnhpad which are PPA (personal package archivees) which are maintained by people who are not ubuntu developers
+
+
