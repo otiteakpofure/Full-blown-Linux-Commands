@@ -1,0 +1,66 @@
+cron allows users to perform task at a specific time and it is used to automate repetitive task also known as cron task and runs as a deamon
+
+CRON TAB  = TEXT FILE THAT CONTAINS USERS CRON JOB IS CALLED THE USERS CRON TAB. there is such a file for each users and in ubuntu the files are located in
+/var/spool/cron/crontabs 
+
+NOTE: There is a command called crontab used to manag the crontab files and there is also a configuration file for system cronjobs located in /etc/crontab
+
+ TYPES OF cronjobs
+ There are two types of cronjobs called 
+ a. system wise 
+ b. individual user cronjobs 
+
+                                                 individual user cronjobs 
+each user has a crontab file which is short for cron table where all scheduled cronjobs of that user are specified . these files are located 
+in a subdirectory of /var/spool/cron/
+
+you can edit the crontab file on a text editor but its recommended to edit using crontab command which will open the default editor
+
+                                 TO DISPLAY THE CONTENTS OF THE CRONTAB FILE OF THE CURRENT USER 
+
+RUn this command , crotab -l 
+
+                                 TO EDIT THE CURRENT USER CRONTAB FILE
+Run this command crontab -e 
+
+NOTE: YOU WILLK BE PROMPTED WITH SOME EDITORS TO CHOOSE FROM IF NOT EDITOR IS SET 
+
+NOTE:EACH TASK TO RUN SHOULD BE DEFINED BY A SINGLE LINE THAT CONSIST OF 6 FIELDS SEPERATED BY WHITE SPACE 
+
+      THE FIRST FIVE FIELD REPRESENTS WHEN TH TASK WILL BE RUN AND THE LST FIELD REPRESENTRS THE COMMAND 
+
+      first field = minutes (m)
+      2nd field = hours (h)
+      3rd field = day of month (dom)
+      4th field =month (mon)
+      5th field =day of week (dow)
+      6th field = command  
+
+the crontjobs can be scheduled to run anytime of the day 
+
+
+if for a specific you use an * it means always or any value for the field. an * in the day or week field means everyday or everyweek. the minimu 
+time used by cron is thr MINUTE  you can use seconds in cron
+
+
+NOTE: HOURS USE 24 METHOD , DAY USE 0-7 0= SUNDAY  
+
+
+                              PERFORMING CRON AT SPECIFIC TIMES 
+
+For example you want to run cronjobs at specific times of the day or month , for example you want the cronjon to run at 5am ,7am , 6am 
+
+you can write  * 5,7,6 * * * (command here )
+
+
+                                      SEPCIFYING A RANGE OF VALUES 
+
+
+
+
+
+
+
+
+                                               
+
