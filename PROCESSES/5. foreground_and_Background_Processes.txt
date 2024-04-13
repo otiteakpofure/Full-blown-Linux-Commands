@@ -24,3 +24,9 @@ run only when it is finished.
 The /dev/null is a directory in which processes output that you dont want to show on the screen can be sent 
 
 
+                              STARTING A PROCESS IN FOREGROUND USING A DEBUG mode
+
+
+You can start a program in deubg mode by running the program and using the -n command . for example you want to start proFTPD, you can run this by 
+
+                                                   ./proftpd -n

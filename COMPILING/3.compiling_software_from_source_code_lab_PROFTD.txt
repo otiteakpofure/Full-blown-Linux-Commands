@@ -15,4 +15,6 @@ NOTE: when you are in configure , do not go further until you fox ths configure 
 10. once the compilation is done finally , run make install command as this will create the directory in which the sofware will be stored 
 11. after this move in to sbin/ the file named proftpd which is where the server reside 
 12. a server runs as a deamon and anytime you see daeoman remember you habe to run the application in the backgorund 
-13.  
+13.  NOTE: You cannot control a server compiled using system ctl it is different from the one built using APT. you start it by running the executable 
+    and stop it by using the kill command 
+14.  connceting to the server using ftp client 
