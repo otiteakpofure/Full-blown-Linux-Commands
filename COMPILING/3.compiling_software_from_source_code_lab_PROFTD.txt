@@ -1,0 +1,18 @@
+                                     COMPILING A SERVER
+well know proFTPD = PROFESSIONAL FPTD(Daemon)
+
+1. first step when compiling a program is getting its source code by downloading its latest version
+2. second step which is OPTIONAL but highly recommended is to check the intergrity of the file
+3. 3rd step is to extra the archive using the tar command 
+4.  the after extracting move to the src directory which contains all the source code and in this folder , move to configure
+NOTE: when you are in configure , do not go further until you fox ths configure the issue , this configure file has loads of options to configuire the SERVE
+5. run the configure executable file
+6. when compiling a program it is always BEST to use the PRefix option 
+7. while enabling services remember to install all required services 
+8. then after checking for necessary services you can run the command ./configure --prefix=/opt/proFTPD (opt comes from optional option)
+   NOTE: IT is recommend programs that are not controlled by the package manager should be installed in OPT directory 
+9.  the next step is to run make command , it does the real compilation by involking the gnuc compiler . MAKEFILE = contains details of how the final product should be 
+10. once the compilation is done finally , run make install command as this will create the directory in which the sofware will be stored 
+11. after this move in to sbin/ the file named proftpd which is where the server reside 
+12. a server runs as a deamon and anytime you see daeoman remember you habe to run the application in the backgorund 
+13.  

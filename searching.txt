@@ -110,11 +110,12 @@ You can produce the output of a command into another file
 
 this is different from pipe 
                   ifconfig > a = it will print the statisitcs of ifconfig and create a file called a 
+
 if you want to compare files use the cmp command 
 for example there are 2 files called a and b = to compare both of them use cmp a b it will print the output 
 
                                            using sha256 
-sha256sum and path to the 1st file path to the second file 
+sha256sum and path to the 1st file path to the second file   
 
                                                 USING THE DIFF 
     NOTE: THE dIFF COMMAND IS USED ONLY FOR TEXT FILES 
@@ -127,6 +128,13 @@ diff -i = ignores casinsenstivie
 diff -c = fpr more detailed comparison 
 diff -y = shows differences between two lines sides by side in columns 
 
+
+                                       using md5
+  to compare information between two files let me say filea and fileb 
+
+                          run the md5sum firtsfile secondfile 
+
+                          
 
 
                               using the PATCH COMMAND 
