@@ -92,9 +92,39 @@ There are several cron makers used to specify the most frequently used values;
       on ubuntu ,you can see cronjobs on /var/log/syslog 
       on centos, you can see cronjobs on /var/log/cron
 
+                                                 REMOVING THE CRONTAB FILE
+                                   to remove the crontab file RUN THE crontab -r  = THIS COMMAND REMOVES YOUR CURRENT CRONTAB 
+                                    TO REMOVE THE CRONTAB FOR OTHER USER run the following command  crontabe -r -u username
 
 
+                                           CREATING A CRONTAB FOR OTHER USERS CRONTAB
+This command CREATEDS A CRONTABLE FOR OTHER USERS 
+  crontab -e -u (andusername)
+
+  NOTE: this will open the crontab of the user and as well you can still add anything into the crontab even if you want to delete it 
+
+                        
                                                          
+                                                DENYING USERS TO RUN CRONTAB IN A SYSTEM 
+
+  The root can restrict who can perform cronjobs on a system . by specifying users in the cron.allow or cron.deny file this can determine who run cronjobs in the organization
+
+
+         VARIOUS WEB APPLICATIONS TO MAKE CRONJOBS MORE EASY 
+
+crontab.guru or crontab-generator.org
+
+                                                     SYSTEM WIDE CRONJOBS 
+
+There are some systemwide cronjobs and this cronjobs goes roung the whole system inorder to do that the scripts should be move into a directory which
+can be found by running the ls /etc/cron.
+
+while /etc/crontab specify exaclty when these crontabs will be run 
+
+NOTE: CRONJOBS ARE meant for system that run continuously without no interruption,  if the system is down when the task is scheduled to be run 
+the task will be lost , it will not be run when the machine starts 
+
+
 
 
 
