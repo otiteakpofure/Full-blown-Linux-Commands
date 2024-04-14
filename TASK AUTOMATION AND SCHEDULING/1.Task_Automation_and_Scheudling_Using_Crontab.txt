@@ -70,7 +70,31 @@ so imagine you want the script to run at certain range of intervals that is from
                                                            USING THE SLASH OPERATOR 
 
 You can use the slash operator to replace values that can be repeated over a certain interval    . for example you have */3 in day field it means the action 
-will be performed every 3 days 
+will be performed every 3 days  or */2 for minutes means it will be repeated every 2 minutes 
+
+                                    10  4,21 */3 * * pathtothefile
+
+                                                                       SEVERAL CRON MARKERS 
+There are several cron makers used to specify the most frequently used values;
+
+@yearly (pathtothescript) = this will run yearly, on the 1st of january midnight once a year 
+@monthly (pathtothescript) = this will run monthly, on the 1st of each month 
+@weekly= once a week at midnight on sunday 
+@daily = once a day at midnight 
+@hourly = runs the task once an hour at the beginning of the hour 
+@reboot = runs the specified task at boot time 
+
+
+                                                              TO CHECK WHETHER THE CRON IS WORKING 
+
+      To see the ouput of the crom command you can run the tail -f and the path to the file 
+
+      on ubuntu ,you can see cronjobs on /var/log/syslog 
+      on centos, you can see cronjobs on /var/log/cron
+
+
+
+                                                         
 
 
 
