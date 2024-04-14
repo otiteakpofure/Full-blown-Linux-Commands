@@ -40,7 +40,7 @@ the crontjobs can be scheduled to run anytime of the day
 
 
 if for a specific you use an * it means always or any value for the field. an * in the day or week field means everyday or everyweek. the minimu 
-time used by cron is thr MINUTE  you can use seconds in cron
+time used by cron is thr MINUTE  you cant use seconds in cron
 
 
 NOTE: HOURS USE 24 METHOD , DAY USE 0-7 0= SUNDAY  
@@ -50,15 +50,27 @@ NOTE: HOURS USE 24 METHOD , DAY USE 0-7 0= SUNDAY
 
 For example you want to run cronjobs at specific times of the day or month , for example you want the cronjon to run at 5am ,7am , 6am 
 
-you can write  * 5,7,6 * * * (command here )
+you can write  * 5,7,6 * * * (command here is usally the path to script )
 
 
                                       SEPCIFYING A RANGE OF VALUES 
 
+ to run a cronjob between a specific range of times do the following
+
+ 
+you can write  * 5,7,6 * * * (command here is usally the path to the script )
+
+
+so imagine you want the script to run at certain range of intervals that is from 9am to 5pm and between monday to friday , then the crontab can be written as 
+
+ * * 9 -17 * * 1-5 (put the path to the command or script here)
 
 
 
+                                                           USING THE SLASH OPERATOR 
 
+You can use the slash operator to replace values that can be repeated over a certain interval    . for example you have */3 in day field it means the action 
+will be performed every 3 days 
 
 
 
