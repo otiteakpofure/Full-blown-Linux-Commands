@@ -1,0 +1,10 @@
+
+                                    ANACRON
+Anacron is similar to cron just that it is used on systems that are up all the time.  It is doesnt not expect to the be run on a system that works
+as a server.  if you wana a backrgound job to be executed on a machine that is not up all the time. 
+
+NOTE:CRON runs as a daemon but anacron is just a command , Anacron is run automatically each time the system starts 
+so anacron is run by root and the frequencey of its job execution is expressed in days and not in minutes 
+
+
+
