@@ -6,5 +6,24 @@ as a server.  if you wana a backrgound job to be executed on a machine that is n
 NOTE:CRON runs as a daemon but anacron is just a command , Anacron is run automatically each time the system starts 
 so anacron is run by root and the frequencey of its job execution is expressed in days and not in minutes 
 
+                                               LOCATING THE ANACRON EDITOR AND FILE 
+1. the file which specifies the anacron jobs is /etc/anacrontab
+2. After locating the file ,  /etc/anacrontab when you open this file , there will be 3 jobs which will be related to cron 
+
+NOTE: run-parts is a command which runs all the executable files found in a directory.
+
+3.  there are 4 fields in an anacron job which is found when the file is open 
+
+1           5        cron.daily    run-parts --report /etc/cron.daily
+7           10        cron.weekly run-parts --report /etc/cron.weekly
+@monthly    15         cron.monthly run-parts --report /etc/cron.monthly
+
+they include 1st field = period in days it specifies the job execution in days . for example 1 means run it everyday 7 means every seven days or weekly 
+ 2nd field = delay in minutes it specifies how long anacron will wait before  excuting the job , the delay feature is intended to keep  the system overloaded with loads of job if anacron determine it needs to run several command when things starts up 
+             it wont run them simultaneously with a delay 
+
+3rd field = job indentifier , it should be unique for each job , and it is the name of a file that will be created  under /var/spool/anacron
+           this is called the job stamp time and it will indicated when the job was executed 
+
 
 
