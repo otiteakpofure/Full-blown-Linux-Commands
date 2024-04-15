@@ -19,7 +19,7 @@ NOTE: run-parts is a command which runs all the executable files found in a dire
 @monthly    15         cron.monthly run-parts --report /etc/cron.monthly
 
 they include 1st field = period in days it specifies the job execution in days . for example 1 means run it everyday 7 means every seven days or weekly 
- 2nd field = delay in minutes it specifies how long anacron will wait before  excuting the job , the delay feature is intended to keep  the system overloaded with loads of job if anacron determine it needs to run several command when things starts up 
+ 2nd field = delay in minutes it specifies how long anacron will wait before  excuting the job , the delay feature is intended to keep  the system from being overloaded with loads of job if anacron determine it needs to run several command when things starts up 
              it wont run them simultaneously with a delay 
 
 3rd field = job indentifier , it should be unique for each job , and it is the name of a file that will be created  under /var/spool/anacron
@@ -34,6 +34,16 @@ they include 1st field = period in days it specifies the job execution in days .
 @monthly    15         cron.monthly run-parts --report /etc/cron.monthly
 
 after the file is open by deffault there are 2 jobs already stated and they are running , so under the @montly line write the anacron job that you want to execute 
+
+for example 
+
+2      1    backup   date>>tmp/anacron.txt 
+
+                                          SYNTAX ERROR CHECK IN ANACRON 
+before running anacron syntax errors can be checked and this is done by running  
+
+                                    anacron -T 
+
 
 
 
