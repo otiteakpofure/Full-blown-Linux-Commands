@@ -1,3 +1,9 @@
 to chek size of directory run the fullowing command 
 
  du -sh (thepathtothedirectory)
+
+
+
+ to check the available space on a file system runn
+
+ df -h 

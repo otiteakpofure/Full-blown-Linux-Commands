@@ -1,0 +1,26 @@
+                     DD 
+It is a system command line utility used to copy files 
+
+why it is is different from the cp command which is used for only files and directroies , the dd command can be used to copy files 
+from special direcctories in which the cp command cannot do 
+
+
+NOTE: Please note , remember hardisk in  linux are represented as special device files 
+on some linux these special files can be called sda5
+
+dd can work diretory can also backup  the boosector of an hardrive , cloning a disk partition to another one , cloning a bootable usb disk 
+
+NPTE: DD has dirve erasion capcabilities so backup of data is important 
+
+                                  COMMAN SYNTAL FOR DD
+CLONING ONE PARTITION TO THE OTHER 
+dd if = thenameoftheexternalharddrive derived from mouting   of=pathtothefilewheretheclonewillbekept status=progress
+
+if = input file 
+of= output file 
+
+it clones both empty and used files. if you have a usb devce of 10gb and only 1gb is used and 9gb is free the dd command will copy 
+both used and filled space 
+
+
+
