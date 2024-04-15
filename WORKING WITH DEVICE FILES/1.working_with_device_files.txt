@@ -12,8 +12,8 @@ dd can work diretory can also backup  the boosector of an hardrive , cloning a d
 
 NPTE: DD has dirve erasion capcabilities so backup of data is important 
 
-                                  COMMAN SYNTAL FOR DD
-CLONING ONE PARTITION TO THE OTHER 
+                                            COMMAND SYNTAX FOR DD
+CLONING ONE PARTITION TO THE OTHER  (copying from an external hardiver to your system)
 dd if = thenameoftheexternalharddrive derived from mouting   of=pathtothefilewheretheclonewillbekept status=progress
 
 if = input file 
@@ -22,5 +22,8 @@ of= output file
 it clones both empty and used files. if you have a usb devce of 10gb and only 1gb is used and 9gb is free the dd command will copy 
 both used and filled space 
 
+
+                                  COPYFING FROM YOUR SYSTEMTO YOUR EXTERNAL HARDRIVE 
+dd if = Pathtothefilewheretheclonewillbekept   of=thenameoftheexternalharddrive derived from mouting status=progress
 
 
