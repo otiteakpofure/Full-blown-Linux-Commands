@@ -52,6 +52,6 @@ NOTE: IF THERE ARE ANY ERRORS IT WILL PRINT OUT THE ERROR
 bY default anacron runs in the backergound but to see the anacron job use the command below to see its output
 Run the anacron -d command 
 
-NOTE: Anacron 
+
 
 

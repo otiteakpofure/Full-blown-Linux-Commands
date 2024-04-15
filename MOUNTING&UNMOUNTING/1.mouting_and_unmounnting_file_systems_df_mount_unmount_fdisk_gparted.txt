@@ -1,0 +1,132 @@
+                               Mounting and unmounting file systems in linux 
+
+Mounting and unmounting file systems allowed external devices to be connected to certain directories as dependent on the curren user 
+linux structure is heighreical 
+
+to see the root directory run ls / 
+
+if you want to acess anohter fie system that is on another partition disk , you need to mount it or logically attach it to an existing directory and that directory is called mount point 
+
+                                mouting
+
+to mount or attach  a file system in the dirtrectory tree use the mount command . 
+NOTE: if you run it it without a directory tree it will display all file systems, attached 
+
+
+
+                         TO DISPLAY ONLY CERTAIN FILE SYSTEM 
+
+ In displaying certain file system , the command can be for example you want to display ext4 which is linux filetyppe in major linux distubitions 
+
+ so to view the ext 4  run the following comand , NOTE: ThIS COMMAND CAN be used to check other file types as well
+
+                              mount -l -t (filetype)
+
+                              mount -l -t ext4 or 32 partitions called vfat 
+
+NOTE: AN OUTPUT REALED TO THE FILE WILL BE SHOWN 
+
+NOTE: if you mount a device its properties will be saved on the media directory 
+
+                       MOUNTING A NEW FILE SYSTEM TO A GIVEN LOCATION OR MOUNT POINT 
+
+For example , you want to access the usb disk 
+
+PLEASE NOTE : if you want to access the usb disk in virtual box you have to instll the extension pack 
+
+in ubuntu , if you mount a usb disk it will be saved on the media/usernameof the user logged /and create anotjer dirctory directory 
+
+IN linux a storage device  or external storage device is automatically mounted or known as a char device , in /dev direcorty and 
+and because of the file type which is vfat the mount point will be found in /dev/sdb 
+
+                                   TO LOCATE THE EXTRNAL DEVICE OR USB STICK
+
+Run ls -l /dev/sdb  and this will show you information of th external drisk 
+
+                                    TO GET THE NAME OF THE EXTERNAL DEVICE 
+
+Run fdisk -l under the directory 
+
+                                         but to find the exact name of the device 
+
+run the dmessage command   and this will print the exact name of the device 
+
+
+                             MOUTING THE DEVICE FILE TO A directory
+After running the above command and discovering the name of the device , then you can mount the external device file to a different directory 
+
+first create the directory wherre ypu want 
+
+then run      mount thenameoftheexternaldevicefile  pathtothecreateddirctory  for this example the name of the device is /dev/sdb 
+
+
+so run ,    mount /dev/sdb  and pathtothefiledirectory
+
+
+
+NOTE: YOU CAN ALSO MOUTH THE EXTERNAL DEVICE TO VARIOUS DIRECTORIES and the mount command also detect the file system type 
+
+but however some file system may not be detected by file system  i mean vfat or ext4
+
+
+                                               SPECIFYING THE FILETYPE SO THE SYSEM CAN DETECT THE EXTERNAL FILE DEVICE
+
+Sometimes , the filetype is not detected by the external device and as such to determine such filetypes so the external device will be detcted , the following command needs to be run 
+
+
+                                         mount -t (typeofthefile in this example is vfat) /dev/sdd pathtothecreateddirctory/files
+
+
+
+                               UNMOUNTING A AN EXTERNAL FILE DEVICE
+
+When you want to unmount an external file device , run the unmount command and only the file to the created directory 
+
+                               unmount (pathtothecreateddirctory) 
+
+
+
+NOTE: YOU CAN ONLY UNMOUNTN PARTITIONS IF THEY ARE NOT USED 
+
+OR 
+
+YOU CAN TRY LAZY UNMOUNT AND THIS CAN UNMOUNT A BUSY FILE SYSTEM  
+                                  
+                               unmount -L (pathtothecreateddirctory) 
+
+
+                               SEPCIFYING OTHER ADDITIONAL OPTIONS COMMAND S FOR MOUNTING 
+            MOUNT -O  (PLACETHE OTHER OPTIONS COMMAND S FOR MOUNTING)  THEPATHTOTHEFILE
+
+                      options such as ro = readonly can be used 
+
+    NOTE: IF YOU HAD MADE A MISTAKE MOUTING AS RO , YOU CAN REWRITE THE EXSITNG MOUNTING BY CHANGINT THE THE RO TO RW = READ WRITE 
+
+
+
+
+                                              MOUTING AN ISO FILE
+
+To mount and isofile , start by creating the file you want to be able to interact with the iso file 
+
+ sudo mount (pathtotheisofile)  (pathtothecreateddirctorytohousetheisofile) -o loop
+
+                                            TIPS ABOUT DISK PARTITIONING 
+
+UTILITY TO MANAGE DISK AND PARTITION:  
+ FDISK 
+
+ NOTE: but be careful with this command because it is very destructive 
+
+
+
+
+  GPARTED 
+
+  TO EASILY MANAGE DISK AND PARTITION DOWNALOD GPARTED 
+
+  AFTER DOWNLOADING IT RUN SUDO GPARTED 
+
+  
+
+
