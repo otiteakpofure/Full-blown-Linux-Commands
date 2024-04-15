@@ -26,4 +26,42 @@ both used and filled space
                                   COPYFING FROM YOUR SYSTEMTO YOUR EXTERNAL HARDRIVE 
 dd if = Pathtothefilewheretheclonewillbekept   of=thenameoftheexternalharddrive derived from mouting status=progress
 
+                               USING SYNC 
 
+The use of sync in dd allows synchron FOR BOTH INPUT FILES AND OUTPUT FILES 
+
+dd if = Pathtothefilewheretheclonewillbekept   of=thenameoftheexternalharddrive derived from mouting status=progress CONV = SYNC
+
+
+            CLONING A PARTIONG TO ANOTHER ONE
+NOTE: If you are cloning one partition to another, you should note that the destination partition should be same size as the source partition
+
+for example, you have a hardrive of 70gb and you want to clone a partition of it which is   or you want to clone a partition of your system into 
+a flash drive 
+
+ dd if=thenameofthepartitionyouwanttoclone of=thenameoftheparitionthattheclonewillbesentto  status=progress
+
+
+                              BACKUP AND RESTORE THE MBR (MASTER BOOT RECORD)
+master boot record is a spcial kind of disk sector at the very beginning of the disk. it holds the information on how the logically partiton containing file system
+are organized on that medium and contains executable code and it is usually referred to as the the bootloader
+
+it represents the first sector of the disk with the size of 512 bytes
+
+                                       SPECIFIYING THE BLOCK SIZE USING BS COMMAND 
+
+You can specify the block size by using the command 
+
+dd if=thenameofthedisk  of=thenameofthemasterbootrecord (/root/mbr.dat) bs=512 count=1
+
+                                          CREATING A BOOTABLE DISK SUCH AS FLASH USING DD
+To make the system bootable , it must be formatted 
+
+
+
+
+
+TO SEE A NAME OF A PARTITION :
+Run fdisk -l 
+
+NOTE: when this command is run check for properties such as device model and then you will know that 
