@@ -23,7 +23,17 @@ they include 1st field = period in days it specifies the job execution in days .
              it wont run them simultaneously with a delay 
 
 3rd field = job indentifier , it should be unique for each job , and it is the name of a file that will be created  under /var/spool/anacron
-           this is called the job stamp time and it will indicated when the job was executed 
+           this is called the job stamp time and it will indicated when the job was executed and it is also done to indeitfy the job and messages in the log file 
+
+4th field = it is the command that will be executed
+                                     executing an anacron job 
+
+
+1           5        cron.daily    run-parts --report /etc/cron.daily
+7           10        cron.weekly run-parts --report /etc/cron.weekly
+@monthly    15         cron.monthly run-parts --report /etc/cron.monthly
+
+after the file is open by deffault there are 2 jobs already stated and they are running , so under the @montly line write the anacron job that you want to execute 
 
 
 
