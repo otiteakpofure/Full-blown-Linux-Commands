@@ -55,7 +55,22 @@ You can specify the block size by using the command
 dd if=thenameofthedisk  of=thenameofthemasterbootrecord (/root/mbr.dat) bs=512 count=1
 
                                           CREATING A BOOTABLE DISK SUCH AS FLASH USING DD
-To make the system bootable , it must be formatted 
+
+NOTE: Creating a usb drive simply means it involves creating an operating system from the usb drive
+
+To create a bootable disk such a flash using dd
+
+1. find the name of the device file  using lsblk
+2.  to make the usb drive bootable , it must be formatted by file system  a. first unmoountthedisk  b.format the disk using  mkvas and the file system such as vfat or ext4 
+                                                     mkvas . vfat   
+NOTE: MKFAS shows an output of various file types such as vfat , ntfs , minix ,ext4, ext2 ,ext3 etc 
+
+                                             mkvas . thefilesystem  thenameoftheusbdrive 
+3.  to make the usb drive bootable, that means creating an operating system from the usb drive , run the command below 
+
+                               dd if=thepahtothedownloadedoperatingsystem of=thepathtotheusbdrive bs=sizeoftheblockstorage status=progress
+
+                        
 
 
 
@@ -64,4 +79,4 @@ To make the system bootable , it must be formatted
 TO SEE A NAME OF A PARTITION :
 Run fdisk -l 
 
-NOTE: when this command is run check for properties such as device model and then you will know that 
+NOTE: when this command is run check for properties such as device model and then you will know that
