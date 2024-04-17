@@ -132,4 +132,4 @@ UTILITY TO MANAGE DISK AND PARTITION:
 
  TO LIST BLOCK DEVICES 
 
- Run LSbLK  
+ Run LSbLK   = this command displayes all block devices such as the hardisk , partitions etc

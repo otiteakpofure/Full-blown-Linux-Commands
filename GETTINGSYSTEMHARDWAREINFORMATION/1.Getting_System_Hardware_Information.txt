@@ -1,0 +1,180 @@
+GETting information about the system hardware gives information about the system hardware and what is inside the computer , there are many reasons 
+to find out details about your hardware . either find out informatio about why some applictions does not work on your hardware, 
+
+NOTE:In virtualized environment, the information displayed about the operating system is the operating system of the virual servers/os creatd in virtual environment 
+and  not the main operating system 
+
+
+
+                                    GETTING OVERVIEW OF THE SYSTEM HARDWARE 
+                                    
+To display an overview of the system hardware , run the following command                                                    
+                                              LSHW
+
+NOTE: this is a small tool that will show detailed information about the machine. it will show the port, the exact information, memory configuration, cpu version, main board configiuration, speed cache configuration 
+       bus speed and manny more 
+
+       to make it better use it with grep or send the output into a file 
+
+if you need the output inanother format, you can use the following command  eith json or html as required by you
+
+                                      lshw -json  ( and this will show the output in a different format)
+
+
+
+                                            CHECKING ONLY SUMMARY OF THE HARDWARE information
+TO  get only a summary of the hardware information and not comprehensive information
+
+                                lshw -short 
+
+                                                     GETTING INFORMATION ABOUT THE HARDWARE ELEMENT 
+To get information about the hardware element;
+
+                                 inxi -Fx 
+
+NOTE: This command is  not avalaible on all linux distributions 
+
+
+                                                          GETTING INFORMATION ABOUT CPU 
+
+LSCPU = 
+
+This gives information of the CPU 
+
+                                                   TO GET THE INFORMATION OF THE CPU BUT IN ANOTHER format
+
+To get the information about the cpu in another format , do the following 
+
+                                            lshw -C cpu 
+
+NOTE: THIS print informatio  about the cpu in another format
+
+
+                                                     VIEWING CPU INFORMATION
+
+TO view certain information   about the cpu , do the following . for example , you want to view information about the mhz of the cpu 
+
+                                                      lscpu | grep -i mhz 
+
+This will show information about the mhz of the cpu 
+
+                                               TO VIEW THE CPU INFORMATION IN JSON format
+
+To view the cpu information in JSON format , do the following . 
+
+                                                   lscpu -J 
+
+
+
+                                                 GETTING ALL POSSIBLE DETAILS ABOUT THE COMPUTER MEMORY 
+
+To get all possible details about the computer memory and their capacity run the command 
+NOTE: DMIDECODE list information about the ram memory instaled on the system 
+
+
+
+                                 dmidecode -t memory (the memory word here shows informatio about the memory)
+
+to see the memory size for example,  run the command 
+
+                                         dmidecode -t memory | grep -i size
+
+     for checking maybe like maximum memory that can be installed on a system , use this command 
+
+                                         dmidecode -t memory | grep -i max   
+
+                                     TO SEE THE AMOUNT OF MEMORY USED OF FREE 
+    RUN free -m  = this will display the amount of free or used mormey or total memory 
+
+
+                                                LISTING PCI BUSES
+
+This command list all pci buses and showcase the devices attached to them such as vj adapters,graphic card, network adapters , usb ports. run the 
+
+                                               lspci 
+
+NOTE: This list all pci buses and showcase the devices attached to them
+
+                                                LISITING INFORMATION ABOUT WIRELESS CARD 
+
+To list information about the wirless card 
+                                               lspci | grep -i wireless or lspci | grep -i vga
+NOTE: This showcases all wireless card , 
+
+
+                                                    TO VIEW YOUR IP CONTROLLERS 
+To view your  USB CONTROLLERS ,   
+
+                                 LSUSB 
+
+                                information about about all usb ports = lsusb -v 
+
+                                                      INFORMATIO ABOUT THE HARDISK
+
+To get detailed infirmation about the hardisk,  
+
+                                                lshw -C disk
+                                                to get a single line of infirmation abiut each disk or shorter information run 
+
+                                                lshw -C disk -short 
+
+
+
+                                                  TO GET INFORMATION ABOUT SIZE, NUMBER FO SECTOR FILE SYSTEM TYPES, NUMBER OF PARTITIONS , HARDISK                                                                   
+
+fdisk -l  and the name of the disk   for example fdisk -l /dev/sda     
+
+NOTE: with the use of fdisk , you can change partitions, view crreate or remove partitions on a hardrive 
+
+                             GETTING SATADRIVE PARAMETERS
+                                                   HDPARM
+To get information about the satadrive parameters,  run the command , can also be used to check the performance of hardsk
+
+                                               hdparm -i /dev/sda   ( to get more details change the i to I )
+
+checking disking information using timing sequence 
+
+                                                 hdparm -t --direct (thenameofthehardive) =/dev/sda 
+
+this can be used to check the pefromrnace between partitions on the hardisk 
+
+t= check time of device performance 
+
+                                to show informatio  about the wirless devices 
+
+run iw-list command 
+                                                     file system of deviess wirless, attached , fixed etc 
+
+/etc/proc     
+
+In this proc directory is where all information of devices, size and all aociated devices will be shown , version of the kernel
+
+
+                                                DISPLAYING VERSION OF KERNEL 
+To display the version of the running kernel run,
+
+                                            uname -r    
+
+to display a more detailed version run , uname -a 
+
+                                                 COMMAND TO SHOW BATTERY 
+
+for example , you can login into another system using ssh and want to check if the device uses battery or power source 
+
+to do that run apt install acpi 
+
+and to see the battery status run ,  acpi -bi 
+
+
+                                                 
+                                                 
+
+
+
+
+
+
+
+
+
+
