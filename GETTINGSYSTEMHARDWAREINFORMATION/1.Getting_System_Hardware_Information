@@ -7,3 +7,57 @@ and  not the main operating system
 
 
                                     GETTING OVERVIEW OF THE SYSTEM HARDWARE 
+                                    
+To display an overview of the system hardware , run the following command                                                    
+                                              LSHW
+
+NOTE: this is a small tool that will show detailed information about the machine. it will show the port, the exact information, memory configuration, cpu version, main board configiuration, speed cache configuration 
+       bus speed and manny more 
+
+       to make it better use it with grep or send the output into a file 
+
+if you need the output inanother format, you can use the following command  eith json or html as required by you
+
+                                      lshw -json  ( and this will show the output in a different format)
+
+
+
+                                            CHECKING ONLY SUMMARY OF THE HARDWARE information
+TO  get only a summary of the hardware information and not comprehensive information
+
+                                lshw -short 
+
+                                                     GETTING INFORMATION ABOUT THE HARDWARE ELEMENT 
+To get information about the hardware element;
+
+                                 inxi -Fx 
+
+NOTE: This command is  not avalaible on all linux distributions 
+
+
+                                                          GETTING INFORMATION ABOUT CPU 
+
+LSCPU = 
+
+This gives information of the CPU 
+
+                                                   TO GET THE INFORMATION OF THE CPU BUT IN ANOTHER format
+
+To get the information about the cpu in another format , do the following 
+
+                                            lshw -C cpu 
+
+NOTE: THIS print informatio  about the cpu in another format
+
+
+                                                     VIEWING CPU INFORMATION
+
+TO view certain informatio  about the cpu 
+
+
+
+
+
+
+
+
