@@ -3,4 +3,73 @@
 To control the systemd  and service manager use the systemctl command . using systemctl to manage services 
 
 
+                                CHECKING IF THE APPLICATION IS WORKING OR NOT
+ if you download an appliction , a service or whatever mechanism that can run on your system , to know if its working or not do the following 
+                              run the 
+                                  systemctl status (andtheservicenamehere)
 
+
+                                            TO STOPPING A SERVICES
+
+ systemctl stop (andtheservicenamehere)
+
+                                               RESTARTING A SERVICE 
+
+  systemctl restart (andtheservicenamehere)
+
+
+NOTE: IF YOU CHANGE ANY CONFIGURATION IN THE SERVER YOU NEED TO RELOAD THE SERVER 
+
+
+
+                                                RELOADING A SERVICE
+         
+  systemctl reload (andtheservicenamehere)           
+
+
+
+                                 RELOADING AND RESTARTING 
+You can reload or restatrt the service 
+
+          systemctl reload-or-restart (thenameoftheservice)
+
+
+                                     CONFIGURING THE SERVICES TO START AT BOOT time
+To configure a services to start at boot time
+
+                          systemctl enable (andtheservicenamehere)
+
+
+                                TO CHECK IF A SERVICE WILL START AT BOOTTIME 
+
+    systemctl is-enabled (andtheservicenamehere)
+
+
+
+                                     TO DISABLE A SERVICE FROM STARTING AUTOMATICALLY 
+            systemctl disable (andtheservicenamehere)
+
+
+NOTE: ENABLING A service does not mean the service will start now in the current session. start,stop and restart session happens immediately, while enable and disabled refers what will happen at bootime 
+
+
+                                     PREVENTING A SERVICE FROM STARTING AUTOMATICALLY OR MANUALLY 
+
+systemctl MASK  (andtheservicenamehere)
+this command links it to /dev/null
+                                                    TO DO THE OPPOSTIE OF THE STATED COMMAND ABOVE 
+
+systemctl unmask  (andtheservicenamehere)
+
+
+after running unmask then run the mask command 
+
+                                     to see a list of all active unit know by systemD 
+
+                                     systemctl list-units
+
+ To see a list of all systemD unit to showcase whether the service is running or not 
+
+     systemctl list-units --all
+
+     
