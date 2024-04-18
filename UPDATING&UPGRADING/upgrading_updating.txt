@@ -1,0 +1,4 @@
+To update and upgrade your server , you can run the following command 
+
+
+apt update & apt upgrade -y

@@ -28,5 +28,9 @@ when you open  a configuration file:
 9.  Maxauthtries  = authentation attempt per connection 
 10. MaxStartups = discusses the number of non authenication users
 11. Logingracetime = server logouts the user when
+12. to make any configuration to the ssh connectiion , open the sshd-config file using the vim editor
+
+
+
 
 

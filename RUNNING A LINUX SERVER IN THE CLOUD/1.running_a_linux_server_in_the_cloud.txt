@@ -1,0 +1,7 @@
+   To run a linux server all you need is machine to install linux and static ip address 
+
+   VPS 
+
+   A Virtual private server is a server which allows users to perform any form of function they want 
+
+   NOTE: CONSOLE IS ALWAYS AVAILABLE WHENEVER ANY PROBLEM AIRS 

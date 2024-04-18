@@ -1,0 +1,28 @@
+we have running virtual private servers called droplets using digital oceans
+
+setup ssh pki authentication 
+                       steps in performing this action
+1. generating keypair ( public key will be with the clients and publick key will be with the server)
+2.  to generate a keypair run the 
+                             ssh-keygen -t rsa -b 2048 -C "place comment here"
+  t= type 
+  b= amounts of bits 
+  c= comment
+
+
+  to locate the keypair go to the .ssh directory from user home directory YOU SEE BOTH AND PRIVATE AND PUBLICK KEY THERE 
+
+
+                                       TO COPY YOUR SSH KEY FROM 
+
+TO COPY THE SSH FROM WHERE GENERATE RUN THE 
+
+                        SSH-COPY-ID THENAMEOFTHESERVER OR CLIENT @ IPADDRESS OF SERVER OR CLIENT
+
+nOTE: On the server , the public key will be saved there under the authorized key files 
+
+
+
+once you have authenticated to the sever , you do not need to be placing passwird when constantly authenticating 
+
+
