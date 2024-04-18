@@ -1,0 +1,6 @@
+
+                                    using systemctl
+To control the systemd  and service manager use the systemctl command . using systemctl to manage services 
+
+
+

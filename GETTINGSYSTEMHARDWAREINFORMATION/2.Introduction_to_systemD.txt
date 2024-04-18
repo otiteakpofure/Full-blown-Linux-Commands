@@ -1,0 +1,38 @@
+Most linux system uses systemD for its services manager strarting from ubuntu 18 v . it replaced the sysVInit system.
+
+sysetemD is the system initializationn daemon and service manager , login , booting , it is the initialization manageer during the boot and start time 
+
+The linux boot process has the following phases;
+
+1. the system powers up  
+2.the  boot loaders boots the kernel 
+3.  systemd starts with PID which is its first process  and continues to mount the kernel process 
+4.                                    to see systemD runs the  ps -ef command 
+5.  when this command is run , the 1st line when the ps-ef command is run is systemD with the /sbin/init splash command 
+6.  
+
+
+                                checking systemD version
+        systemD --version
+
+NOTE: This list the properties assocaited with systemD 
+
+                                                   TO SHOW HOW LONG SYSTEMD TOOK to boot
+
+ systemD- analyze 
+
+
+                           showing a list of running units showcasing the time they took to analyze 
+this command showcases the running unit and time they took to analyze which showcases how each time of each processes booted 
+
+ system-analyze blame 
+
+ NOTE: SYSTEMD inroducessthe concept of systemD unit and introduces the units associated with system services , service unit , slide unit , service unit etc. 
+
+
+for service managemen file , the service file has or contains configuration about services , it involves how to start services , can be started, removed updated and closed. 
+
+
+
+
+                                                             
