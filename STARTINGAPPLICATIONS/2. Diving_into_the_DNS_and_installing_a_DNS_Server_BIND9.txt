@@ -1,0 +1,26 @@
+                   creating and installling your personal dns server 
+we can instlling a dns server ussing the bind 9 dns server 
+BIND = BARCLARYS INTERNET NAME DOMAIN 
+
+FULL FEATURE DNS SERBER WHICH IS WIDELY USED 
+
+                                    INSTALLING A DNS SERBVER ON EC2INSTANCE OR DROPLET 
+
+you can install th bind9 server using = apt install bind9 bind9untils bind9-doc 
+   
+
+                                       ALLOWING THE BIND9 SERVER RUN IPV4 ADDRESS 
+after installing the bind9 server , you can run the following command  vim /etc/default/named in this named it is where you can 
+operated to choose between ipv4 or ipv6 . under the startup options for the server you can add 4 under the 
+
+                               OPTIONS = "-U BIND - 4" OR -6 WHEN YOU ADD 4 OR 6 IT SHOWS WHICH IP YOU WANT TO ADD 
+
+note: when making changes to any linux services , the service must be restart
+
+                                   
+
+
+
+
+
+

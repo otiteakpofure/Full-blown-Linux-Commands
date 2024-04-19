@@ -1,5 +1,0 @@
-NOTE: All applictions can be downloaded on linux and then can be run throuhg the terminla 
-
-for example you install wireshark  you can run wireshark using sudo wirshark command which starts the application 
-
-

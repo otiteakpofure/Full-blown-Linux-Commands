@@ -21,3 +21,21 @@ PUTTY IS used in windows
 
 NOTE: You must not use an ssh with a username . it isnt compulsory . you can use telnet to check open ports  by doing telnet (ipaddress of the server) (port number)
 
+
+The `ssh` command is used to connect to a remote computer securely over a network. The `-l` option in `ssh` is used to specify the username to use when connecting to the remote server. Here's the basic syntax:
+
+```
+ssh -l username hostname
+```
+
+Where:
+- `-l username` specifies the username you want to use for the SSH connection.
+- `hostname` is the address or hostname of the remote server you want to connect to.
+
+For example, if you want to connect to a server with the username "user" and the hostname "example.com", you would use:
+
+```
+ssh -l user example.com
+```
+
+This command will prompt you to enter the password for the specified username on the remote server, assuming password authentication is enabled. Alternatively, you can use key-based authentication for a more secure and automated login process.

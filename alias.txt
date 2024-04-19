@@ -1,0 +1,6 @@
+USING THE ALIAS command
+when you run certain command frequently you can create and alias for them and this will run the command faster 
+
+for example for cat  man.txt , instead of opening over and over agin you can set an alias then run the alias command with it 
+
+alias vps = "this input should b place there "  so instead of typing the whole word just run th alias name set up

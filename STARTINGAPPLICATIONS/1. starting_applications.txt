@@ -1,0 +1,82 @@
+NOTE: All applications can be downloaded on linux and then can be run throuhg the terminla 
+
+for example you install wireshark  you can run wireshark using sudo wirshark command which starts the application 
+
+
+                            to get an ip address of a domain name 
+to get an ip address of a domain name, you can do the following 
+
+1. ping the ipaddress
+2.nslookup 
+3.dig 
+4.host 
+
+                             GETTING DOMIAN NAMES 
+1. godaddy.com
+2. namecheap 
+
+                             PURHCASING FREE DOMAIN NAMEES
+1. freenom   2. dot.tk    
+
+
+                             DNS SERVER 
+
+It is wise to have 2 dns server and this is the primary master server and secodary server also known as the slave server.  
+
+                              DNS PROPAGATION
+
+IT IS PERIOD OF TIME WHEN YOU MAKE CHANGES TO A DOMAIN AND ALLOW THE CHANGES TO TAKE PLACE. it is also a tim in which ISP NODES ACROSS 
+
+TAKE TO UPLOAD THIEIR CACHES ABOUT THE NEW DNS SERVER JUST CREATED 
+
+                       TO CHECK IF THE AUTHORITATIVE DNS SERVERS WERE UPDATED 
+After the dns propagation has taken place , to chcec if the dns was uodated run this command 
+
+                dig -t ns (andthedomainame)
+ this will display the authoritaitve name servers for the domain 
+
+                           asking for dns server 
+
+you can still ask dns servers for domain names using varioius names servers, for example to ask the localdns server in the local network 
+
+use dig -t a @localhost (then the domain)
+
+-t a = type address 
+
+NOTE: IF YOU WANT TO ASK ANOTHER DNS SERVER FOR AN IPADDRESS 
+
+
+
+
+                                      CONFIGURING THE SERVER 
+
+INTERATIVE DNS QUERY: It is the query in which the dns server will you to check other server by offering other servers whicb may have the answer for your seacrch query 
+RECURSIVE QUERY: It is th   the query in which the dns server will check for your resources by querying other server and then hand you want you are looking for 
+
+                                             DNS FORWARDER
+
+
+
+when a dns server receives a query it attempts to resolve the query  using zoes hosted locally or by using its cache,  if it can not be find locally 
+ 
+
+A dns server configured to use a forwarder behaves as follows:
+
+1. whn the DNS server recives a query it , attempts to resolve this query 
+2. if th query cannot be resolved using local data , the DNS server forwards the query recursively to the DNS server that is designated as a forwarder 
+3. if the forwarder is not unavailable, the DNS server attempts to resolved the query by itself , using iterative queries 
+
+
+NOTE: what a dns forwarder is if the dns server you set cannot to the work another capable dns sever will do it 
+
+for example , you have a dns server called AI if that dns server cannot do the work , you can set google as the dns server which helps forwarder upur request 
+
+
+                                             TO SET THE DNS forwarder
+
+
+To set the dns forwarder, open the vim /etc/bind/named.conf/options
+
+  then under forwarders apply the various dns servers such as 8.8.8.8 and 8.8.8.4
+
+  
