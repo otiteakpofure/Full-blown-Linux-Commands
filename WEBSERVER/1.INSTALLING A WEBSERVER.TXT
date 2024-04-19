@@ -1,0 +1,26 @@
+to most widely used webservers in the world is NGINIX and APACHE , 
+APACHE is availble within ubuntu default repositories, 
+
+                                    INSTALL apache2
+
+NOTE: APACHE automtically starts after installing 
+
+                                     after installing apache2 the next step is to configire or manipulate the firewall 
+
+cheking the status of firewall 
+
+ufw status 
+
+NOTE: IF THE FIREWALL IS inactive no action is required but if its active actions is required 
+
+to allow the webserver talk to ufw then run the command ufw allow "Apache Full"
+
+                                       USING THE cURL     
+
+If you set up the ip address to be private but use port forwarding to make it available to the internet then you can see the address 
+using  
+
+                                    curl -4 ident.me 
+
+
+                                    

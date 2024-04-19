@@ -1,0 +1,59 @@
+
+Any domain name should be hosted on a authoritaitve nameserver , and the final holder for the information for that domain 
+
+                            TO FIND AUTHORITATIVE nameserver
+
+dig -t ns andthenameofthedomanin for example, you want to check google.com 
+
+run the command 
+
+                                 dig -t ns google.com 
+
+NOTE: These shows the authoritatieve nameservers 
+
+                                and if you want to see the authoritative nameservers, IP addresses 
+
+imagine google.com has the nameserver ip addresses , ni.google.com
+
+                                 dig -t a andthenameserver name
+
+                                 so to find the ip address of that name server then run 
+
+                                 dig -t a ni.google.com
+
+
+                                      CONFIGURING THE NAMESERVER TO BE AUTHORITATIVE 
+1.LOAD THE BIND9 SERVER TO CHECK IF IT WORKING USING SYSTEMCTL 
+note: after loading the dns server , ensure that the zones files are loaded as this master server already loads the dns server which holds the zone files 
+which contains important information about the zones which is called dns records and 
+                                      
+                            ADDING A NEW DOMAINS IN WHICH THE SERVER WILL BE AUTHORITATIVE 
+TO ADD A NEW DOMAINS IN WHICH THE SERVER WILL BE AUTHORITATIVE USE THE vim /etc/bind.named.conf.local
+
+NOTE: LINES IN THIS FILE COMMENTED OUT BEGING WITH // 
+
+                IN THIS FILE ADD THE ZONES 
+
+                BY PUTTING TYPE MASTER IN THIS FILE mkes it the primary zone file and using the zone forms a new zone
+
+2. create the zone file   
+
+            in this zone file , the following wikll be showing
+            1. the zone contains 3 types of entries , comments 
+            2.  directives 
+            3. resources records 
+
+
+                                               DNS records
+SOA = start of authority records                
+NS = NAME SERVER RECORD 
+IN = INTETNET
+@ = BASED DOMAIN WHICH @ = GOOGLE.COM FOR EXAMPLE THIS GOOGLE.COM CAN BE ANNY DOMAIN NAME 
+
+
+THE LOCAL SERIAL 1 HELPS TO TELL OTHER NAMESERVER THAT CONTENTS OF OTHER NAMESERBERS ARE UPDATEED
+
+note: any change made on a configuration file for a dns server , increment the serial numner 
+
+
+
