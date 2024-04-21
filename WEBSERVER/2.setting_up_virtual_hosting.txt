@@ -1,1 +1,2 @@
                             virtual hosting 
+if you want to host more than one domain on an apache webserver that has a single ip address , you use a virtual hosting
