@@ -1,2 +1,15 @@
                             virtual hosting 
 if you want to host more than one domain on an apache webserver that has a single ip address , you use a virtual hosting
+
+
+Apache serves document to the client from the DOCUMENT ROOT , which is found in /var/www/html/
+
+NOTE: IF YOU HAVE A WEBSITE OR RATHER PREWRITTEN CODE , COPY IT TO THE ABOVE DIRECTORY AND APACHE WILL SERVER IT TO THE WEB BROWSER
+
+
+
+NOTE: IF YOU WANT TO HOST MORE THAN ONE WEBSITE/ domain and they share the same IP address , you need to create document root for all the documents
+and this is what it means having one website on a single serrver 
+
+
+                                  TO CREATE MORE DOMAINS
