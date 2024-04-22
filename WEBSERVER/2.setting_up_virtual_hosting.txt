@@ -13,3 +13,53 @@ and this is what it means having one website on a single serrver
 
 
                                   TO CREATE MORE DOMAINS
+
+you will need to create more root document for each domain names undert the /var/www/html/
+
+and set the ownership of the document to the user in which the apache server runs  .please check the video for this  and as well change the file permission for the directory 
+
+After that , changing the ownership and permissions of the document , you need to open the html file and make your changes as you like 
+
+after the changes have been done , you need to configure apache to serve contents when a user visits the ports  and by doing this  create a directory 
+on /etc/apache2 and locate the sites-available directory. 
+
+and in this directory, open the sites available command to showcase the    configiration file to edit configurations, 
+                in this configuration file 
+
+                write the following 
+
+                <VirtualHost *:80>
+                ServerName: thenameofthedomain 
+                ServerAlias:thenameofthedomain 
+                DocumentRoot:the location to where the document root was created for the domain 
+
+                The 3 above is compulsory 
+
+                ServerAdmin: theemailaddressoftheadmin 
+                Errolog:thepaht to the error logs which is found in the var/log 
+                CustomLog:path to the error logs 
+                
+                </VirtualHost>
+
+After this close and save the file and run the following command: 
+
+
+
+after this file is saved , please note that the virtual host is not saved ane enable , and so to enable it, RUN THE COMMAND 
+
+a2ensite andthenameofthevirtualhist file 
+
+NOTE: THIS SHOULD BE DONE WITHOUT CONF EXTENSION AT THE END 
+
+IN APACHE , THE FOLLOWING DIRECTORIES ARE IMPORTANT 
+
+1/etc/apache2/ = will allow all sites from sites-enabled 
+
+
+NOTE: WITH MORE WEBSITE , YOU CREATE A DIRECTORY UNDER THE 
+
+/VAR/WWW = 
+
+AND THEN you create a virtual host file in sites available 
+
+and enable the site using a2ensite and then restart the webserver 
