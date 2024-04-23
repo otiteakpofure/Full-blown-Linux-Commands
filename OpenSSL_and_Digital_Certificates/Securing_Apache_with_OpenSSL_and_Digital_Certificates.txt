@@ -1,0 +1,17 @@
+This includes securing the communication using OpenSSL and digital certificates.
+
+in creating this for a server , do the following 
+1. obtaining  a diigital ceritificate for the server  (comodo certificate authority)
+2. using the OpenSSL certificate to encrypt connection through the digital certificate  (lets Encrypt)
+
+
+1. first steop involves installing certbot which is a client for the CA by running the command  apt update && apt install certbot python3-certbot-apache
+2. after doing this, this will alow the CA to provide the domain with a certificate  by running certbot-d (andthenameofthedomain)
+
+NOTE: THIS SHULD BE THE PATH TO THE DOMAIN IN WHICH HOUSES THE VIRTUAL HOST 
+
+3. CERTBOT runs twice a day and to check th e expiration/renewal date of certbot run the command below
+
+                                                                      certbot renew --dry-run
+
+

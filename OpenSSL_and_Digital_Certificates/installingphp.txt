@@ -1,0 +1,10 @@
+php is a server side set up which allows code to be displayed dynamically. 
+
+you will install php and php-mysql which allows php to talk to database made in sql 
+
+to isntall php run the command  apt update && apt install php php-mysql libapac2-mod-php 
+
+to check if php is working with the apache server because it displays content dynamically , create a document under the document root folder and 
+
+this will allow to see if php is working with the apache server
+
