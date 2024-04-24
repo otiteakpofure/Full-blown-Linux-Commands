@@ -18,4 +18,39 @@ every linux distribution has a few alias placed
 Run the alias command 
 
 NOTE: An alias with the same name of a command for example you give ls = printme and then you write printme in the . the printme will superced the ls command everytime 
+                                             
+                                             TO CREATE AN ALIAS 
+
+Run the following 
+
+                              alias thenameyouwanttogivethecommand = "therealcommand" which is 
+                              for example the command is  ls 
+                              so it will now be 
+
+                              alias c = "ls"
+
+so anytime you type c it will replace the ls command 
+
+
+
+
+NOTE: IF YOU OPEN A NEW TERMINAL THE ALIAS WILL NOT WORK , IT WORKS ONLY IN THE TERMINAL IT IS CREATED BUT IF UOU WANT TO DECLARE THEM 
+      AND MAKE THEM PERSISTENT , YOU GO TO THE ~/.bash_profile or ~/.bashrc
+
+
+
+when you open this file , under the file you write your alias command and make it persistent 
+
+
+                                            DATE AND TIME   
+
+To print the date and time , run the command:
+
+                                     date +%F\ %T  
+
+                                              TO REMOVE AN ALIAS 
+To remove an alias run the ;
+                               unalias command alongside the command name yu want to remove 
+
+
 

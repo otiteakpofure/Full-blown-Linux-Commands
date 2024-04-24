@@ -1,0 +1,28 @@
+                   introduction to bash shell scripting 
+shell is a program which takes command from the user throuhg the keyboard and gives them to the operating system to do something with it and as well checks to see them if they are corrected 
+
+shell gets started when a user logs in 
+
+                                     TO SEE WHAT A SHELL HAS STARTED WHEN A USER LOGS IN 
+
+Run echo $0 
+
+
+ A shell is an exectuale file that contains shell command and other specific structures.when you find yourself do aparticular task over and over again, you should use
+ shell scripting. this is known as repetitive taks automation 
+
+ NOTE: The chances of errors are well reduced 
+
+ example of shell scripting is
+  -backing up 
+  -monitoring systems
+  - creating an email based alert system
+
+
+
+
+                                                   using .sh 
+It is important to use .sh command to the shell script 
+
+
+
