@@ -4,3 +4,18 @@ when you run certain command frequently you can create and alias for them and th
 for example for cat  man.txt , instead of opening over and over agin you can set an alias then run the alias command with it 
 
 alias vps = "this input should b place there "  so instead of typing the whole word just run th alias name set up
+
+
+
+
+                                                ALIAS COMMAND 
+
+if you tired of writing long command and you want to shorrten the command you use an alias 
+
+every linux distribution has a few alias placed 
+
+                                              TO SEE THE LIST OF ALIAS
+Run the alias command 
+
+NOTE: An alias with the same name of a command for example you give ls = printme and then you write printme in the . the printme will superced the ls command everytime 
+

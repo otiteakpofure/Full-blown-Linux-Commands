@@ -1,0 +1,22 @@
+wordpress is a content management system on the web and it is written in php 
+
+paired with sql or mariadb 
+
+
+after performing all the process on the sql server, the following should be done next 
+
+first exit the sql server and then go to the /tmp/ and then run the wget https://wordpress.org/latest/tar.gz
+
+and after this extract the archive 
+
+the wordpress will sever as the frontend   which will be installed 
+
+
+                                                             SECURING wordpress
+Wordpress needs to follows various security practices 
+1. update word press and keep updates auotmatically 
+2. limit logins 
+3.use WAS such as wordfence
+4. ensuring two factor authentication
+5. protecing the wp admin directory 
+6. make backups regularly 

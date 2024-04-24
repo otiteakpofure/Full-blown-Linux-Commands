@@ -1,0 +1,61 @@
+mysql will help to store and manage our database and  to install MySQL use the command 
+
+apt update && apt install mysql-server 
+
+NOTE: Once the installation is complete the sql server starts automatically, and also my sql is not secure , so it essential that a security script
+      is run with mysql to ensuring all services are secured , this scripts is pre-installed with sql 
+                  - this includes removing some sql accounts and setting the administrator password 
+
+to do this run the command : mysql_secure_installation ( this shows the validate password component)
+and this is used to test the strenght of sql users password ensure the stronggest level of the password is chosen 
+
+and after set the password for root of the sql server which only has power associated with the root account of sql  
+
+after this is done remove the anonymous users accoint which exists  and well restricting root access to the data machine and removing the test database as well 
+
+if putting yes if you want to reload the privilege tables 
+
+and to test the communication with the sql server : to test this , use the sql client which connects to the sql server 
+
+ and to connect run the command  
+
+                                              mysql -u (andthenameoftheusername)  NOTE: in this example, i used root as the name of the user 
+
+NOTE:  This command allows you log into the sql server and then you can run all configurations 
+
+
+1. CREATE A DATABASE 
+To create a database run create database andthenameofthedatabase for this project the databse name is wordpress 
+
+so you run , CREATE DATABASE wordpress;
+
+NOTE: Every sql statement ends with a semi-colon
+
+
+2. CREATE USER IN DATABASES 
+
+CREATE USERS "wordpressuser" (which is the name of the user you want to create ) @ "theipaddressoftheserver" IDENTIFIED BY "createastrongpassword";
+
+NOTE: The quotes should be SINGLE QUOTE 
+
+
+3. GRANTING ALL PRIVILEGES OF THE USERS IN THE DATABASES
+
+TO GRANT THe created user all access to every area within the database , that is administrative control the following command can be run 
+
+ GRANT ALL PRIVILEGES ON wordpress. * ( * which means all tables  and wordpress. is the name of the database)  to "thenameofthesuser"@"ipaddressofthesqlserver"
+
+
+ once the permissions is set , it is necessary to reload the privileges 
+
+ to reload the privileges run the FLUSH privileges command 
+
+ 
+
+
+
+
+
+
+
+
