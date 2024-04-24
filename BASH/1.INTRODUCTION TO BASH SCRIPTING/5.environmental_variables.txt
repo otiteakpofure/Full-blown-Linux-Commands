@@ -1,0 +1,32 @@
+                                                   ENVIRONMENTAL VARIABLES 
+environment variable are defined for the current shell and its also inherited by the current processes. they are displayed using env or printenv 
+and they can be used for providing inheritance to other processes within the current process 
+
+THEY ARE USED TO pass information to other processes in the current shell
+
+                                                              SHELL VARIABLES 
+shell variables : shell variables are for the curreent shell and its contained in the shell environment . and it isdisplayed using set 
+
+
+                                                        VIEWING ENVIRONMENTAL VARIABLES 
+
+You can view environment variables by using the env command which list the number of variables.   environment variables are named in uppercase letter 
+
+                                                          VIEWING ENVIRONMENTAL VARIABLES
+You can also view environment variables and also the values of the ENVIRONMENTAL variable by using PRINTENV command 
+
+
+to use the printenv command , run the printenv command and the name of the environment variable you want to check:
+
+                                   printenv (thenameoftheenvironmentalvariable)
+
+NOTE: YOU CAN APPEND MORE THAN ONE ENVIRONMENTAL VARIABLE TO THE PRINTENV COMMAND 
+
+                                            SET COMMAND 
+
+The set command is used to display the output of the variable set by the user and also the variables set by environmental variables 
+
+NOTE: ENvronmental variables can be sued when you want to change the default settings of your system 
+
+
+
