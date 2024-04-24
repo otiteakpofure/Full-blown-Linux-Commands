@@ -23,6 +23,13 @@ Run echo $0
 
                                                    using .sh 
 It is important to use .sh command to the shell script 
+NOTE: traditionally linux files do not need extensions
+
+EXECUTING SCRIPT 
+
+SRIPTS CAN BE EXECUTED USING RELATIVE OR ABSOULUTE PATH 
+
+
 
 
 

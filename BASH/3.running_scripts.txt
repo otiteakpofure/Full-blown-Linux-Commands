@@ -1,0 +1,36 @@
+There are different ways of running bash scripts 
+
+1. add execution permission to the file and add the abolute path 
+
+
+ANOTHER WAY TO RUN THE SCRIPT:
+To run a script  the use of the interpreter can be used:
+
+for example you want to run bash , it will be   
+
+                           bash thenameofthescript
+
+if its python , you can run the same thing python3 andthenameofthescript
+
+NOTE: When using this method it is not mandatory to have the execution permission set 
+
+                                  USING THE SOURCE COMMAND 
+
+To run the file , the source command can be used:
+
+this involves using the 
+
+                           source andthenameofthescript
+
+for example, the script is called james.sh 
+
+                           source james.sh 
+
+NOTE: When you use the path variable to execute script such ./nameofthescript and source andthenameofthescript . the difference is the firs opens
+
+a new terminal in which the scriot will be run while the second one does not do that 
+
+
+instead of using source andthenameofthescript , you can as well use  . (spacebetweenthem) andthenameofthescript
+
+

@@ -1,0 +1,35 @@
+                              SHEBANG
+The shebang helps to tell which script will run the file, 
+
+NOTE: IF YOU EXECUTE A SCRIPT WITHOUT SHEBANG IT WILL RUN WITH THE DEFAULT SHELL 
+
+                                              SHEBANG
+The shebang contains  #!(andthenthepathtotheinterpreterthatwillrunthefile)
+
+for examaple you want python to run it you write 
+
+
+        #!(andthenthepathtotheinterpreterthatwillrunthefile)
+
+
+NOTE: TO SEE THE PATH TO THE INTERPRETERS LIKE FOR EXAMPLE , BASH 
+
+                        YOU RUN WHICH -a BASH 
+
+NOTE: After you create a file , please ensure you create and executable permission so the file can be executed 
+
+                                           COMMENTS IN BASH 
+
+When there is an error in a line , a good idea to check for errors is to go to exactly the line of the errors
+
+NOTE: BASH does not support multi line documents 
+
+
+to check the number of lines in the file , go to the bottom of the file and run 
+
+ :set nu 
+
+ NOTE: when the line numbers are displayed using  SET NU , to make it persisten open the vim rc and write set nu inside 
+ 
+  
+

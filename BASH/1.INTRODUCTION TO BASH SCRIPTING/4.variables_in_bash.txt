@@ -1,0 +1,75 @@
+variable in bash 
+
+                     creating a variable in bash 
+
+for example, you want to create a variable called os , then you can do os=linux 
+
+NOTE: YIU DO NOT NEED SPACE BETWEEN THE VARIABLES
+
+IF linux was going to be written as i love linux 
+
+         os = "i love linux"
+
+NOTE: BASH DOES NOT REQURED TO STATE WHAT TYPE OF VARIBLE AND IN BASH THERE ARE NO FLOATING POITN NUMBERS 
+
+
+VARIBALE NAME CONVENTIONS 
+
+CANNOT START WITH A NUMBER
+DO NOT USE SPECIAL CHARACTERS
+
+                                    SHOWING OUTPUT OF A VARIABLES
+
+To show the output of a variable, then do the following:
+
+   to show it use $andthenameofthevarbiale 
+
+   for example, if the varibale is called man , then run $man 
+
+   this will show the name of the variable 
+
+
+
+NOTE: To reference a variable inside a string enclise everything in "". for example, if the variblae name is called man , to refernece it in a string do the following:
+
+                                     "i am a  $man"
+
+
+NOTE: IT IS MUST BE DOUBLE QUOTES 
+
+                                         USING \ 
+
+FOR EXAMPLE , YOU WANT TO WRITE $OS AND ALSO ENSURE IT REMAINS $OS IN THE TEXT 
+
+BY USING \ IT WILL ALLOW IT TO REMAIN THE SAME 
+
+                           "I AM A MAN WITH \$OS"
+
+
+
+ A VARIBALE CAN HOLD MORE THAN ONE VARIBLAE , FOR EXAMPLE YOU HAVE A VARIABLE CALLED 
+
+ $1= CAR 
+ $2 = MAN
+
+ and you can create a 3rd varible which will have the following 
+
+                whatname = "$! AND $2" 
+
+                THIS whatname will hold the values for two of them 
+
+                     GET A LIST OF ALL FUNCTIONS AND VARIABLE 
+
+                     set command 
+
+                     NOTE: THIS SHOWS ALL THE VARIABLES SET BY YOU 
+To see the list of functions and variable set by you  , run the set command 
+
+
+
+                         UNSET COMMAND  = IT is used to remove a variable which is set by you 
+
+
+
+
+
