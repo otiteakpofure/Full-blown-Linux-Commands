@@ -26,7 +26,35 @@ NOTE: YOU CAN APPEND MORE THAN ONE ENVIRONMENTAL VARIABLE TO THE PRINTENV COMMAN
 
 The set command is used to display the output of the variable set by the user and also the variables set by environmental variables 
 
-NOTE: ENvronmental variables can be sued when you want to change the default settings of your system 
+NOTE: ENvronmental variables can be sued when you want to change the default settings of your system
 
+running the set -o POSIX allows the set command to show the varibals you sert and environment variables 
+
+
+
+for example , you create various scripts in a directory and instead of writing each directory name by using the ./ command name , you can run them by just writin the
+name of the directory and the scripts in that direcoryt will be executed , to do this you can do the following:
+
+
+
+to do this open the .bashrc file and underwrite 
+
+                            export PATH = $PATH : AND THE DIRECOTY YOU WANT TO ADD 
+
+note: when this directory is placed instead of running scripts by adding ./ it can be run by using its normal name 
+
+
+                                    CRATING A NEW ENVIONRMENT VARIBAL ENVIONRMENT
+
+                    in the bashrc folder run 
+
+                     export thenameofthevaraibel = thevalueofthevaribale 
+
+
+and if you want the new variable created by you to be avialble to all suers then do this in the /etc/bash.bashrc file 
+
+                                                        /etc/environment 
+
+this directory  describe all the values of the envoroment varibal ein the file 
 
 

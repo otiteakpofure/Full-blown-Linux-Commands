@@ -1,0 +1,17 @@
+                                   READ 
+TO get a user input the command use the read command . in using the read command , the user is asked for a prompt and the programme pauses  till the user supplies this command 
+
+to do this you can write read name and this will wait til the user place its name 
+
+
+
+if you want to display an option so when the user uses it , then  you can do the following:
+
+                          read -p "Enter the iP address" and the name iif the variable
+
+
+                           to enter a text witout showing it in the terminal 
+
+                           read -s -p "enter the text you want to out here" and the name of the variable 
+
+                           
