@@ -70,6 +70,21 @@ To see the list of functions and variable set by you  , run the set command
                          UNSET COMMAND  = IT is used to remove a variable which is set by you 
 
 
+                           ENVIRONMENTAL SHELL VARIABLES THAT ARE INTRODUCED BY THE OS  OR STARTUP SCRIPTS
+
+FOR EXAMPLE CHECKING THE HOME , USER OR HISORYT 
+
+
+ echo $HOME 
+ echo $HISTORY 
+
+                      TO ENSURE A VARIABLE REMAINS CONSTANT
+To ensure a variable remains constant,  and does not change , the use of declare 
+
+                         declare -r thenameofthevariable = "thevalueofthevariable"
+
+NOTE: This makes it read only and cannot be changed
+
 
 
 
