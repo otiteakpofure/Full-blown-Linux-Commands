@@ -1,0 +1,32 @@
+  in many cases , 
+
+  ARGUMENTS 
+
+  These are seperated, fields which make them unique to the script,  
+
+                                  SPECIAL VARIABLE AND or  POSITIONAL ARGUMENTS 
+
+  there are various predefined variables IN LINUX which are explained below:
+
+
+  ./script.sh filename dir1 10.0.0.1
+
+ $0 = name of the script itself (script.sh)
+ $1 = first positional argument (filename1)
+ $2 = second positional argument (dir1)
+ $3 = third positional argument (10.0.0.1)
+ $9= would be ninth arugument and ${10} the tenth 
+
+NOTE: After the ninth argument , the argument after should be in {}
+
+ $# = number of positional arguments
+ "$*"= string representation of all positional arguments: $1 $2 
+ $? = most recent foreground command exit status
+
+
+
+ NOTE: YOU CAN ADD ANYTHING TO THE ARGUMENTS EVEN A FILE PATH OR A DIRECTORY ITSELF 
+
+
+
+ 

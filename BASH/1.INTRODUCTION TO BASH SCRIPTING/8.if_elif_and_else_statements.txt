@@ -1,0 +1,32 @@
+programming flow logic and allow to execute 
+
+
+if[some condtion here]
+then 
+  //execute some code here 
+elif[some condtion here]
+then 
+//execute some code here
+else
+//execute some code here
+fi   
+
+
+NOTE: IT IS NOT MANDATORY TO HAVE AN  ELIF OR ELSE STATEMENT 
+    IT IS MANDATORY TO HAVE A SPACE  AFTER THE IF STATMENT BEFORE THE CONIDITION FOR EXAMPLE SHOW BELOW
+    THERE IS SPACE BAFTER THE IF STATMENT AND BEFORE THE CONDITION WRITTEN 
+
+                                  IF [ SOME CONDITION HERE ]
+
+fi is similar to closing brace 
+
+                                         -f 
+
+using -f returns true only if the value after it is a file , it is as testing condition 
+  for example 
+
+                     if [ -f checkingifthevaribleisafile]
+for example if man is a file 
+
+                      if [ -f man]
+
