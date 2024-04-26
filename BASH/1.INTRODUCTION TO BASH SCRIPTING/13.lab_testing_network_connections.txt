@@ -1,0 +1,19 @@
+for example , you want to use your machine to check if your network gateway is still working or to check its connection to another
+computer on your server 
+
+ you can test 
+
+ #!/bin/bash
+ output = "$(ping -c 3 )"
+ #echo "$output"
+
+ if [[ "$output" == *"100% packet loss"*]]
+ then 
+
+    echo " connection is working"
+
+ else 
+    echo " connection is not working"
+
+fi 
+

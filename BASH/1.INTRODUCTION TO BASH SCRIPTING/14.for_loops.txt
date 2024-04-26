@@ -1,0 +1,35 @@
+                         the for loop 
+
+the for statement is used to execute a block of operation 
+
+ for item in LIST 
+ do 
+  COMMANDS 
+
+   done 
+
+   the list can be a series of strings, seperated by spaces , a  range of numbers , output of a command , an array and so on 
+
+
+   NOTE: THE LIST IS A SERIES OF STRINGS, seperated by spaces.
+
+   for example 
+
+   for os in ubuntu linux
+   do 
+   echo "$os"
+   done
+
+   NOTE : IF ONE OF THE ELEMENT IN THE ABOVE LIST CONTAINS A SPACE , then that element should be enclosed in "" what i mean is this  which is shown below 
+
+
+
+    for os in ubuntu linux "fedora version22"
+   do 
+   echo "$os"
+   done
+
+################################################################################################################################
+
+
+

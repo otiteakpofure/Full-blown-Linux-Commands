@@ -90,3 +90,13 @@ Dont forget to always ensure when citing variables use them in ""
 
 
 
+note: to see the output of a varibale in multiple lines , for example you run ping -2 3 command inorder to see it in multiple lines
+especially when you store the value in a variable name you do 
+
+              echo "thenameofthevariable"
+
+              man = $(ping -c 3)
+
+              echo "$man"
+
+              
