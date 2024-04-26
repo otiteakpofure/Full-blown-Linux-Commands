@@ -1,0 +1,12 @@
+remember in bash there are only integers 
+ run man test and check for integers
+
+ a. INTERGER1 -eq INTERGER2  =  interger1 is equal to   interger2
+ b. INTERGER1 -ge INTERGER2 = interger1 is greater than or equal to interger2
+ c. INTERGER1 -gt INTERGER2 = interger1 is greater than interger2
+ d. INTERGER1 -Le INTERGER2 = interger1 is LESS than OR EQUALT TO interger2
+ e. INTERGER1 -lt INTERGER2 = interger1 is less than interger2
+ f. INTERGER1 -ne INTERGER2 = interger1 is not equal to interger2
+ h. file1 -ef file2 = file1 and file2 have the same device and inode numbers 
+
+ 

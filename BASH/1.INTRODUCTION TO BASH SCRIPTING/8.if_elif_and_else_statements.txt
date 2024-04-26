@@ -20,13 +20,22 @@ NOTE: IT IS NOT MANDATORY TO HAVE AN  ELIF OR ELSE STATEMENT
 
 fi is similar to closing brace 
 
-                                         -f 
+                                       using  -f  and -d 
 
-using -f returns true only if the value after it is a file , it is as testing condition 
+using -f returns true only if the value after it is a file , it is as testing condition  and -d returns true only if it is a directory 
   for example 
 
                      if [ -f checkingifthevaribleisafile]
-for example if man is a file 
+for example if man is a file  
 
-                      if [ -f man]
+                      if [ -f "man"] NOTE: it is necessary to place $man in a string because it is considered a string 
+
+
+NOTE: TO CHECK ALL TESTING CONDITIONS , RUN man test 
+
+                                                    SINGLE SQUARE BRACKET []VS DOUBLE SQUARE BRACKET [[]]
+
+SINGLE SQUARE BRACKET ARE USED FOR TESTING CONDITIONS BUT IT IS OLD BUT PREFERBLY USING [[]] IS BETTER AND SAFER TO TESTING , IT PREVENTS STRING SPACING 
+
+
 
