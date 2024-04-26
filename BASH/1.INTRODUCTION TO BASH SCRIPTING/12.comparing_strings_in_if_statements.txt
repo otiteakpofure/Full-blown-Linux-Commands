@@ -1,1 +1,47 @@
-As a common administrtaive command , you can  
+As a common administrtaive command , you can compore the output of a string and another string and base on the report , you can act accrodingly . 
+
+                  COMPARING STRINGS IN BASH 
+Two strings are equal when they have the same length and contain the same sequence of characters in the same order.  
+
+                           the comparison operator for string
+the comparison operator for string is the = if []  or == if [[]] is used 
+
+FOR EXAMPLE  : IF ["STR1" = "STR2"]
+
+                                  checking how a sting contains a substring 
+there are multiple ways to do it but these are few;
+ what this means for example you have  string called "man of the world", so to check if this string has for example "man" in it thats what this means  
+
+1. surrouding the substing with * which means match all characters:
+
+ let say , you have a string   
+
+    str1 = "man of the world" 
+
+     if [ [ "$str1" == *"man"*]]
+
+     then 
+         echo "there is a man in the world"
+
+
+                                             CHECK IF A STRING RESULTING FROM ANOTHER OPERATION
+YOU WANT TO CHECK IF A STRING RESULTING FROM ANOTHER OPERATION . FOR EXAMPLE COMMAND subsitiion
+
+you can do this by using - n = if the string is more than zero then the string returns true  (string non-zero length)
+                        -z = if it zero and return true   (string zero length)
+
+            
+
+            for example, 
+
+                      my_str = "abc"
+
+    if [ [ -z  "$my-str"]]
+       then 
+            echo "the string is zero|"
+
+
+
+
+
+                                                

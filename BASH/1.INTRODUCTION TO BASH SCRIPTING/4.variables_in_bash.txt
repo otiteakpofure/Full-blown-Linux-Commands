@@ -86,5 +86,7 @@ To ensure a variable remains constant,  and does not change , the use of declare
 NOTE: This makes it read only and cannot be changed
 
 
+Dont forget to always ensure when citing variables use them in ""
+
 
 
