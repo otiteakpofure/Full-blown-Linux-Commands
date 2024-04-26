@@ -1,0 +1,7 @@
+                                multiple testing conditions 
+The logical and  or or operators allows for multiple testing conditions
+  and = && 
+  or = ||
+
+
+   a nested if statment is called nested because there is an inner if statememt inside a outer one 

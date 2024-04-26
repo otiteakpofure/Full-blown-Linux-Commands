@@ -1,0 +1,17 @@
+command substitution is not more than running a shell command and storing it in a variable for later use 
+IT IS simply running  a command and storiung it in a variable
+
+                     FORMS OF COMMAND substitution
+
+1. `WRITINNT THE COMMAND WITHING THOSE BACKTICKS` note : because the output is a string variable, then use double quotes  
+             for example man = "`ls -l`"
+
+2. wirting the command between  $(command)
+
+                 for man = "$(who)"
+
+3.   you can append a command subsitiion inside plenty commands. for example, you want to ctreate various date for backups 
+
+    for example , the etc folder so this can be:  etc $(date +F %M%H)
+
+    
