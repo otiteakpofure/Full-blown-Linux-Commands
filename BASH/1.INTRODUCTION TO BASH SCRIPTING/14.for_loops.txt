@@ -33,3 +33,37 @@ the for statement is used to execute a block of operation
 
 
 
+
+
+for num in {3..7}
+
+do 
+
+    echo "num is $num"
+done 
+
+
+                                                       Incrementing through a list of NUMBERS
+for example, you want to go through a range of numbers, using an increment of 5 , you can do this by using: 
+
+
+for num in {30..70..5}
+
+do 
+
+    echo "num is $num"
+done 
+
+NOTE: ./* means any file in the current directory  WHILE *.TXT OR *.DIR WHICH MEANS ALL FILES IN TXT FILES IN THE CURRENT DIRECTORY
+
+
+                                                 CREATING A STRING THAT RENAME A FILE
+
+FOR FILE IN *.TXT 
+do 
+   mv"$file" "renamed_by_script_$file"
+done 
+
+NOTE: YOU CAN ALSO WRITE SCRIPTS IN OTHER PROGRAMMING LANUGAUES BUT YOU CAN WRITE THOSE SCRIPT IN USING SHEBANG 
+
+
