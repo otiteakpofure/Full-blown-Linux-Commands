@@ -1,0 +1,3 @@
+ case construct allows for the testing of string and numbers and its a simpler form of elif statements 
+
+ 

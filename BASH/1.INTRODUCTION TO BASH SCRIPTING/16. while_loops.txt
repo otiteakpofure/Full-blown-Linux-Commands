@@ -1,0 +1,48 @@
+                       THE WHILE LOOP 
+while CONDITION
+do
+   COMMANDS 
+
+done
+
+the set of command s are executed as long as the condition is true
+
+for example create a bash script to check if the condition is true, 
+
+
+
+i=0
+
+while [[ $i -lt 10]]   
+do 
+   echo $i   
+       ((i++))
+done 
+
+                                adding two variables 
+
+for example , you want to add a variable: when doing arithmentic operations
+
+a = 5
+b= 6 
+
+         c= $((a+b))
+         echo $c                          which is the same  let c = a +b 
+
+################################################################
+
+
+
+NOTE: ENSURE THE LOOP DOES NOT REMAIN INFINITELY 
+                                               OR INFINITE LOOP CAN BE CREATED USING :
+
+                                               WHILE : 
+
+THE COMMAND ABOVE CREATES AND INFINITE LOOP
+
+                             WHILE TRUE IS EQUALS TO WHILE :
+
+
+   
+
+ 

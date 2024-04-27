@@ -1,0 +1,12 @@
+  for example, you want to drop Ip address 
+
+  you can create the file and wirte the ips inside 
+
+  let say a file named ip woth ips 6.6.6.6 7.7.7.7 8.8.8.8
+
+  for ip in $(cat ipnames.txt)
+      do
+       (write the firewall rules)
+
+done 
+

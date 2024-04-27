@@ -11,7 +11,7 @@ the for statement is used to execute a block of operation
    the list can be a series of strings, seperated by spaces , a  range of numbers , output of a command , an array and so on 
 
 
-   NOTE: THE LIST IS A SERIES OF STRINGS, seperated by spaces.
+   NOTE: THE LIST IS A SERIES OF STRINGS, seperated by spaces. "man  woman child"  the space between them seperate them 
 
    for example 
 
