@@ -1,0 +1,52 @@
+this shows a special type of dos attack called FORK BOMB  OR RABBIT VIRUS 
+
+it can be executed by a non-prvivilege user 
+
+TO RUN THIS ATTACK, CREATEA  SCRIPT
+
+NOTE: AT THE TOP OF THE SCRIPT , PLEASE DO NOT SPECIFY A BASH SCRIPT 
+
+
+$0 && $0 & = IT PERFORMS   A DOS attack which makes systems to make calls, using the fork system to create and infimite number of sources 
+
+$0 = is the scrript itself and running itself recursively 
+
+& = puts the process in the background 
+
+This will crash the system within a few minnutes and no resources will be abke to be used. 
+
+TO RESTORE THE SYSTEM ,REBOOT THE SYSTEM AGAIN
+
+
+
+                              PREVENTING FORK BOMB 
+
+To prevent forkbomb , run the command ulimit -u 
+and this command will duisolayt the amout of available current  processes for the user 
+
+                        ulimit -a = showcases the amount of limit available to different processes. 
+
+
+
+
+to prevent forkbo,b, we will allow the number of processes a user can start , the processes cannot comtinue to repliacate themselives 
+
+
+
+open the /etc/security/limits.conf  = 
+
+after opening this file under the last part run the 
+
+thenameoftheuser  hard nproc  and place a value (such as 2000 and above)
+
+showing this below includes 
+
+student  hard nproc  2000 
+
+
+                                            
+
+
+
+
+

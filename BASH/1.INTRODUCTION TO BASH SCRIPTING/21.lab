@@ -4,3 +4,21 @@ common administrative task using bash menus
 grep -w = find a full word on a file 
 
 ps  -ef = list all procresses
+
+
+
+#!/bin/bash
+PS3="YOUR CHOICE"
+
+select ITEM in "add user" "list all procresses" "kill processes"  
+do 
+if[[ $reply -eq 1]]
+then 
+   read -p "enter the username:" username
+   output = "$(grep -w $username /etc/passwd)
+   if [[ -n "$output"]]
+   then 
+      echo "the username $username already exists"
+    else 
+
+     sudo useradd -m -d /bin/bash "$username"
