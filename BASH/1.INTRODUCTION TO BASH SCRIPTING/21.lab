@@ -2,3 +2,5 @@ common administrative task using bash menus
 
 
 grep -w = find a full word on a file 
+
+ps  -ef = list all procresses
