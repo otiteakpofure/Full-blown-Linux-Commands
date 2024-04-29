@@ -21,7 +21,7 @@ NOTE: After the ninth argument , the argument after should be in {}
 
  $# = number of positional arguments
  "$*"= string representation of all positional arguments: $1 $2 
- $? = most recent foreground command exit status
+ $? = most recent foreground command exit status ( CONTAINS STATUS OF THE PREVIOUS RUN FUNCTION)
 
 
 

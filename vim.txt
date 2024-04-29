@@ -138,4 +138,4 @@ when these files are spread accross windows use the ctrl + w to move between all
                                vim-d first file second file  or vimdiff first file second file
 
 
-
+w! = saves and runs the file

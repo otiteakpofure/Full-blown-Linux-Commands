@@ -1,0 +1,17 @@
+A varibale is where something is visible 
+GLOBAL VARIBALE : IN BASH ALL VARIBALES ARE GLOBAL WHETHERE INSIDE A FUNCTION OR NOT 
+
+VAR1= bb
+VAR2= CHECK
+
+function checkingscales(){
+    var1=cc    
+
+}
+
+checkingscales   
+
+NOTE: If this function is called , the variable inside the fucntion will be called still even if its inside because function is bash are global without the local keyword 
+
+SPECIFIC VARIABLE
+

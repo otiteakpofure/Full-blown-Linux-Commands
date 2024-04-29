@@ -18,3 +18,34 @@ nameofthefcuntion(){
 
 }
 
+NOTE IN BASH : DO NOT EVER PUT ANYTHING INTO () IN BASH SCRIPTS
+
+
+ CREATING A FUNCTION WITH ARGUMENTS 
+
+
+  creatfiles(){
+    echo"creating firsst file $1"
+  }
+
+  # so to add arguments do the following
+
+  creatfiles  bb.txt
+
+NOTE: BASH Functions use the return statement just to print out the last line  , a return status of zero indicated evertything went successfully and  non-zero value imdicates everything an error has occured 
+
+                        using the return value 
+
+$? = CONTAINS THE STATUS OF THRE PREVIOUSLY RUN FUNCTION
+
+
+NOTE: GREP -C = FINDS THE NUMBER OF OCURRENCE OF A PATTERN IN A FILE 
+       for example grep -c "james" = this will find the number of occurences of james in a file.  
+
+
+RETURN : YOU CAN USE RETURN STATEMENT BUT ONLY AS A COMMAND subsitiion
+
+
+
+                                                             
+
