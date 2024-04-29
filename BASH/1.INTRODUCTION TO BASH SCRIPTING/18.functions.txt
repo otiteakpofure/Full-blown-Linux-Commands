@@ -6,3 +6,15 @@ NOTE: AS  compared to other languages , bash functions are somehow limited
                           USING BASH functions
 There are two different format to display a function:
 
+1. function andthenameofthefunction
+
+             function andthenameofthefunction (){
+
+             }
+
+or second way : yu can just write the name of the function without stating the name 
+
+nameofthefcuntion(){
+
+}
+
