@@ -1,3 +1,80 @@
  case construct allows for the testing of string and numbers and its a simpler form of elif statements 
 
- 
+ case statement is similar to switch statement 
+
+ the case statement takes the following form:
+
+ case EXPRESSION in 
+     PATTERN_1)
+      STATEMENTS 
+
+      ;;
+
+      PATTERN_2)
+      STATEMENTS 
+
+      ;;
+
+      PATTERN_N)
+      STATEMENTS 
+
+      ;;
+
+PATTERN_N)
+      STATEMENTS 
+
+      ;;
+
+      *)
+
+
+esac
+
+NOTE:YOU CAN HAVE MULTIPLES PATTERNS SEPERATED BY VERTIFICAL BAR, THE PARENTHESES SEPERATED THE PATTERN LIST. A PATTERN CAN CONTAIN 
+     SPECIAL CHARACTERS SUCH AS * OR ? 
+
+AND ITS ASSSOCIATED COMMANDS ARE KNOWN AS A CLAUSE ( A CLAUSE IS A PATTERN AND ITS ASSOCIATED COMMANDS) AND EACH CLAUSE MUST BE TERMINATED WITH ;;
+
+THE COMMAND MATCHING TO EACH PATTERN ARE EXECUTED. 
+
+
+THE WILDCARD SYMBOL AS A FINAL PATTERN TO DEFINE THE DEFAULT CASE, THIS PATTERN WILL ALWAYS MATCH
+
+
+AFTER THE FIRST MATCH , THE CASE STATEMENTS TERMINATE WITH THE LAST STATUS OF THE COMMAND THAT WAS EXECUTED. 
+
+
+                                             echo-n 
+
+                                             allows you to print al string and allow only one like and you can store the output in a variable like this 
+
+                                             echo -n "what is your favoprite pet"
+                                             read Pet 
+
+        to writr a case statement do the following;
+
+        
+                                             echo -n "what is your favoprite pet"
+                                             read Pet 
+
+        case "$PET" in 
+        dog)
+                          echo "your fav pet is dog"
+                          ;;
+         cat|cat)
+                          echo "your fav pet is cat"
+                          ;;
+        
+      fish|"african turtle")
+                        echo "fish or turtle are great"
+                        ;;
+            *) = this means if the user enters any value , the statement of this pattern means anything the user put will be displayed 
+
+                    echo "your favorite pet is $PET"
+            esac
+
+
+
+
+
+            

@@ -1,0 +1,8 @@
+functions to organize cods in block and ensure our programs can  be used for later
+
+NOTE: AS  compared to other languages , bash functions are somehow limited
+
+
+                          USING BASH functions
+There are two different format to display a function:
+
