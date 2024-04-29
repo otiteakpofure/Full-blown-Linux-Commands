@@ -1,0 +1,26 @@
+creating bash menus generate a list of items from 
+
+
+select ITEM in LISt
+do 
+commands 
+done 
+
+
+note: in menus, the loop does not end except the user , pressers ctrl +c or there is  abreak 
+
+lets look at creatine menus 
+
+select country in germanay france "east sprain "
+do 
+    echo $country
+    echo $reply
+done 
+
+the way this works , is if the the counrty are printed tho the screen after the last line which is east sprain, then the #? shows
+this means that the user is meant to select either one of the country display on the screen
+gernmany means 1 , france means 2 , east sprain means 3 
+
+so if the user selects 1 it will show in the reply varibale that is created automatically . 
+
+

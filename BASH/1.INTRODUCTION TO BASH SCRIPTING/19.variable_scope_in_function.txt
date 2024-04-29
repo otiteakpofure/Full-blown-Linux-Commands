@@ -15,3 +15,12 @@ NOTE: If this function is called , the variable inside the fucntion will be call
 
 SPECIFIC VARIABLE
 
+to ensure a varible is local to a function, do the following  this is done by using the local keyword 
+
+VAR1= bb
+VAR2= CHECK
+
+function checkingscales(){
+   local  var1=cc    
+
+}
