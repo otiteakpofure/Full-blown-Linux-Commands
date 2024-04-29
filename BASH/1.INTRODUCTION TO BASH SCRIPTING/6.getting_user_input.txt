@@ -15,3 +15,7 @@ if you want to display an option so when the user uses it , then  you can do the
                            read -s -p "enter the text you want to out here" and the name of the variable 
 
                            
+
+                            USING GREP 
+
+                            GREP - W = searches for the whole username
