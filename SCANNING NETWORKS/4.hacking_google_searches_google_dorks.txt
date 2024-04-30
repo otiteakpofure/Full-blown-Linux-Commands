@@ -58,6 +58,16 @@ to search for either or one or the other the or operator can be used
                             bitcoing| ethereum 
 
 
-to add some stuff such as 
+to add some stuff such as to look for something more from the logical or operators 
+                            for example to check for the hash algorithms 
+
+                            (bitcoin| ethereum) hash algorithms 
+
+
+
+NOTE:YOU CAN USE THE GOOGLE ADVANCED SEARCH OPTIONS , FOR EXAMPLE , GO TO GOOGLE.COM/ADVANCED _SEARCH 
+
+
+
 
 
