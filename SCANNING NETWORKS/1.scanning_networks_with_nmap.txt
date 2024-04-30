@@ -33,4 +33,22 @@ To scan multiple ports , use the following command:
                          nmap  22,80,443 ipaddrress
 
 
-                         
+                                                   scanning all ports
+    to scan all ports , we do the following:
+
+    nmap -p- ipaddress
+
+
+    NOTE: This can take a really long time and if you press the enter key it will tell you hiw many percent has gine 
+
+
+
+    PERFORMING A UDP SCAN 
+
+    NMAP -su ipaddress 
+
+    PERFORMING AN ICMP SCAN 
+
+    nmap -sn or -sP  ipaddress 
+
+    

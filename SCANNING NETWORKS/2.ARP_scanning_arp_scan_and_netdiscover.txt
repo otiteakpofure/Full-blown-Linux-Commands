@@ -1,0 +1,59 @@
+                                              ARP SCANNING 
+
+Allows for scanning of the localarea network . arp scanning is useful when there are host on the network who wish to remain hidden or stealthy 
+and do not respond to any requests like ping, tcp or upd scans. 
+there are alot of firewalls which block incoming packets except arp , arp is not routable 
+
+
+                                      arp scan 
+1. To chaeck if arp is installed run , arp-scan and can install it using apt install arp-scan
+2. 
+
+
+                          to scan the entire network while generating addressees use the command below 
+arp-scan -I thenamoftheinterface -l 
+
+I = means interface 
+L = localnetwork
+
+note: ARP SCAN IS VERy noisy and as such IDPS/ system administrator can find out information
+
+                                                NETDISCOVER 
+
+Netdiscover is like an arp scan although ot is more stealthier and quieter than the arp scan;
+
+it is both an active and passive arp recornissiance tool
+
+first install netdiscover,  
+
+
+                                     to start an arp scan
+
+run the command netdiscover . NOTE: THIS IS THE ACTIVE MODE , WHERE NETDISCOVER IS SENDING ARP SCAN TO FIND OIUT MORE HOST ON THE NETWORK 
+
+
+note: yiu havr to stop it by pressing q or ctrl +c 
+
+
+
+                                    SCANNING INTERFACE USING NETDISCOVER 
+TO SCAN A PARTIUCLAR INTterface, run the command 
+
+                                    netdiscover -i andthenameoftheinterface 
+
+NOTE: IF THR INTERFACE IS NOT STATED, THE SCAN USED THE AVAILABLE ONE INTERFACE
+
+
+                               USING -R 
+
+this sends arp scan in a given range , for example ,    netdiscover -i andthenameoftheinterface  -r ipaddressanditsubnet (192.168.0.4/24)
+
+
+
+                                     running nerdiscver in passive command 
+
+    netdiscover -p 
+
+    NOTE: IN THIS MODE , IT DOESNT NOT SEND ANY ARP REQUEST OR SEND ANY SIGNALES , IT ONLY SNIFFS THE TRAFFIC 
+
+    IT IS MANDARORY TO ALSO CHANGE YOUR MAC ADDRESS BEFORE LAUNCHING A PASSIVE SCAN 
