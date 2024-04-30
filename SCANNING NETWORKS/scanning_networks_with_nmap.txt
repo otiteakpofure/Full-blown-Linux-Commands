@@ -1,0 +1,36 @@
+nmap = network mapper 
+
+security audting tool used by many admiinistrators its is a complex appliction 
+
+NMAP can perform variety of scans which includes the following:
+a. TCP Scans:
+     SYN scan: -sS (root only)
+     connect scan: -sT  (DOEs not require root prvivilege)
+
+UDP Scans:-sU 
+ICMP SCAN: -sn or -sP 
+
+
+                                LSOF = LIST FILES THAT ARE OPEN BY ANY PROCESS IN THE SYSTEM 
+
+IT CAN SCAN THOURSANDS OF PORTS WITHIN SECONDS IF NO FIREWALL RESTRCITS THE SCAN , IT CAN ALSO BE CALLED HALF OPEN SCANNING BECAUSE IT DOES NOT PERFORMSA FULL TCP CONNECTION
+
+                                             default tcp 
+
+nmap andtheipaddress 
+
+NOTE: BY default nmap scans 1000 ports , so its smart you change all wellknown ports to other ports 
+
+for example, i change ssh to port 50000 since nmap scans the first 1000 ports and well known ports so to check such ports you have use p 
+
+
+                                               SCANNING MULTIPLE PORTS 
+
+To scan multiple ports , use the following command: 
+
+ nmap listtheportsusing ,,,, and ipaddress , lets say we want to scan 22,80,443, so we do the following 
+
+                         nmap  22,80,443 ipaddrress
+
+
+                         

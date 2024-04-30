@@ -44,7 +44,11 @@ showing this below includes
 student  hard nproc  2000 
 
 
-                                            
+you can also do this for a group , which is shown below 
+
+@groupname hard nproc 4000
+
+
 
 
 
