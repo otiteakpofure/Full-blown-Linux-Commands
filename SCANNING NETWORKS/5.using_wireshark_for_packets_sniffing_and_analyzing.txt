@@ -1,0 +1,15 @@
+wireshark is used for sniffing and analyzing network traffic . wireshark monitors network that comes from your interface and all network passing through interface
+
+NOTE: TO ALLOW NAT USERS , YOU HAVE TO FOLLOW A CERTAIN CONFIGURATION PATTERN 
+
+NOTE:WHEN YOU PLACE WIRESHARK IN PROMISCIOUS MODE, WIRESHARK CAN READ ALL TRAFFIC IN ALL INTERFCAES 
+
+COLORS IN WIRESHARK AND
+
+LIGHT PURPLE = TCP TRAFFUC 
+
+BLUE = UDP TRAFFICE 
+
+to see what the color means , yoi can click on  view on the header of wireshark and check coloring rules 
+
+the most imprtant file format for wireshark is pcanng and pcap format
