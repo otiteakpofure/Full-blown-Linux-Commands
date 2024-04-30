@@ -1,0 +1,63 @@
+google hacking or google dorking, is a computer hacking techniiques that use google search to find loppholes in the configurations that websh+ites use
+this can be used to idtnify vulnerbailities in web applications.
+
+
+searhing for an exact string 
+
+to search for a particular thig on the web enclose it in double ""
+
+searching to remove old result 
+
+to do this click on tools on the and change the year 
+
+you can also attach a particular file type :  to add file type
+
+
+writethenameofwhatyouarelookingfor filetype:choose what type of file you are looking for (txt or pdf )
+
+
+
+                        SEACRCHING FOR A PARTICULAR CONTENT IN A PARTICULAR YEAR 
+
+To do that attach the year of what you are looking for and the search contents;
+
+                                   placetheyear contentsofwhatyounarelookingfor 
+
+
+
+
+to search for a contents and remove other contents within do this 
+
+for example you want to search for purchaase apple products but not iphone , do the following 
+
+                 placetheyear contentsofwhatyounare -whatyoudontwanttosee 
+
+                 2024  apple productsfor sale -iphone 
+
+
+
+
+   to limit you searches only to websites 
+
+   to search for contents but those contents should be websites or whatever applications you wanna see do the following 
+
+
+         site:nameofthesite intitle:whatcontent youare lookingfor 
+
+
+         site:wikipidia.com intitle:winneroftheworld 
+
+
+
+
+                                           using logical operators
+to search for either or one or the other the or operator can be used 
+
+                            contentyouwanttosearch | contentsyouwanttoseearch 
+
+                            bitcoing| ethereum 
+
+
+to add some stuff such as 
+
+
