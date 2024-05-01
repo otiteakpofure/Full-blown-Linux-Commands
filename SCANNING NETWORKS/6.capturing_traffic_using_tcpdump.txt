@@ -1,0 +1,79 @@
+it is compatable with wireshark , and its a command line tool 
+
+                           CHECKING THE NETWORK INTERFACE
+
+to checks what network is coming to a particular interface 
+tcpdump -i nameoftheinterface 
+
+you can check the interface by running ifconfig 
+
+SO AFTER DOING THIS , YOU CAN CHECK THE CAPTURED PACKETS ON THE INTERFACE, 
+                                                   TO and from SEE PACKET FROM AN ipaddress
+For example , you want to check packets coming from an specific ipadress to yoyr hosrt machine
+
+             lets say traffic coming from google to you 
+
+                      tcpdump-i nameoftheinterface host ipaddress here 
+
+                      tcpdump-i nameoftheinterface host google.com
+
+                                     to see traffice coming from either src or dst do the following
+tcpdump-i nameoftheinterface dst theipaddress -n   -n = means that the dns server will cimvert either the ipadrreess to numbers 
+
+                                     to see traffic comming or going to a specific port 
+
+to see traffic coming or going to a specific port do the following:
+
+  tcmpdump -i nameoftheinterface dts port placeportnumber -vv -n 
+
+                                                  CAPTURE PACKEET GOING TO OR FROM A PARTICULAR SUBNET 
+
+tcpdump-i nameoftheinterface net thesubnetaddress 
+
+
+                                                                       SEEING PACKETS FROM A PARTICULAR applications
+To see packets coming froma particular application/ port number 
+
+                        tcpdume-i nameoftheinterface port placeportnumberhere -vv -n 
+
+so lets say its coming from   https port number 443 
+
+so it goes like this 
+
+                                                
+  tcpdump-i nameoftheinterface port 443 -vv -n 
+
+                             to see the ascii string add the -A option
+
+                              tcpdume-i nameoftheinterface port 443 -vv -n  -A 
+
+                              NOTE: TO USE BOTH ASCCII AND HEXADECIMAL DATA  CHANGE -A TO -X 
+
+                                  moving packet captured data to a file 
+
+it is often useful to move captured packet data to a file:
+                                       TO MOVE CAPTRUED DATA TO A FILE USUALLY CALLED PCAP FILES DO THE FOLLOWING;
+
+FOR EXAMPLE SAVING HTTP PACKETS TO AFILE 
+
+                   TCPDUMP -I nameoftheinterface port 80 -W NAMEOFTHEFILE.PCAP 
+
+                   TO READ THE FILE AFTER CAPTURING 
+
+                   TCPDUMP -R NAMEOFTHEFILE 
+note: when reading the file yo can still run other commands on it , which means when the file is open from reading 
+
+you can run command like this  tcpdume-i nameoftheinterface port placeportnumberhere -vv -n  and any other commands it will sitll work 
+
+
+                             USING LOGICAL AND OR OR OPERATORS 
+FOR EXAMPLE TO SEE AN ACTION COMING FROM A PARTICULAR HOST , LETS SAY YOU WANT TO SEE ICMP PACKETS COMING FROM A HOST 
+
+TCPDUMP -I THENAMEOFTHEINTERFACE ICMP AND HOST THENAMEOFTHEHOSTIPADRESS 
+
+NOTE: IT WILL CAPTURE ICMP PACKETS TO AND FROM THE ADRESS 
+SO FOR EXAMPLE CAPTURING ICMP FROM GOOGLE.COM
+
+                       TCPDUMP -I THENAMEOFTHEINTERFACE ICMP AND HOST GOOGLE.COM
+
+    

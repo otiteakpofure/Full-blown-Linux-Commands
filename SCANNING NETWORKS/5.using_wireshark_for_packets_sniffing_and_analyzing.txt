@@ -13,3 +13,9 @@ BLUE = UDP TRAFFICE
 to see what the color means , yoi can click on  view on the header of wireshark and check coloring rules 
 
 the most imprtant file format for wireshark is pcanng and pcap format
+
+                                 TCPDUMP 
+
+you can open a pcap file from wireshark by running the command 
+
+tcpdump -vv -r andpathtothefile 
