@@ -1,0 +1,46 @@
+ipfs files exist as someones keeps it , and it uses an aggressive caching , files are only lost when they are not peers that stores the files
+
+
+TO PREVENT COLECTION RUBBISH FILES AND TI ENSYRE THAT ONLY PROPER FILES ARE COLLECTED AND KEPT , YOU PIN THE HASH OF THE FILE 
+
+NOTE: OBJECTS ADDRED WITH IPFS ADD ARE PINNED BY DEFAULT 
+
+ THERE IS A MECHANISM THAT TELLS IPFS TO KEEP A FILE AND NEVER REMOVE IT FROM THR IPFS NETWORK 
+
+ TO ADD A FILE RUN , IPFS ADD THENAMEOFTHEFILE 
+
+                                     LISTING ALL OBJECTS PINNED TO LOCAL STORAGE 
+To list all objects pinned to local storage, 
+
+                            ipfs pin ls --type=all 
+
+        once a file is pinned it wont br remove by the garbage collector 
+
+                                             UNPINNING A FILE
+SUDO IPFS PIN RM ANDTHEHASHOFTHEFILE 
+
+
+TO CJECK IF THE FULES NO LONGER EXIST AFTER UNPINNING IT 
+
+RUN  SUDO IPFS REPO GC -garbage collector
+
+THEN AFTER RUN IPFS CAT HASHOFTHEFILE 
+
+                                            NOTE: LOCAL PINNING MAYBE NEEDED TO ENSURE THAT FILES ARE ALWAYS KEPT 
+
+                TO ENSURE IMPORTANT DATA IS KEPT AND NOT REMOVED BY THE garbage  collector  you can use pinning services 
+
+
+                PINNING SERVICES INCLDE 
+
+                1.PINATA.CLOUD
+                2.INFURA.IO 
+                3.  ETERNUM.IO 
+
+
+                YOU NEED TO CREATE AN ACCOUNT ON THE SERVICE AND TO PIN DATA ON THE SERVICE 
+
+
+
+
+
