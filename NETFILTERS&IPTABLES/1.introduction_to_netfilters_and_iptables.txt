@@ -1,0 +1,10 @@
+netfilter is firewall inside the linux kernal , it can be cofigured to protect yoir infrastructre and servers.it is the most used and profeessional builder for builing firewalls on linux operating systems. netfilter is controlled by 
+the iptables command 
+
+iptables is a tool that belongs to the user-space used to configure netrfiler
+netfilter and iptables are often combined into a single expression netfilter /iptables 
+every linux distubution  uses netfilter/iptables there is nothing extrta that should be installed
+only root user can use or confiugure the netfilter franework '
+
+netfilter belongs to the kernel space and iptable belongs to the user space
+

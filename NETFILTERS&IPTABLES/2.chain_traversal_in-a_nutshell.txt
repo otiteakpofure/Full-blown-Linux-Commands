@@ -1,0 +1,8 @@
+incoming traffuice is filtered on the input chain of the filter table
+outgoing traffic is filtered on the output chain of the filter table
+router traffic is filtered on the forward chain of the filter table
+snat/masqurred is performed on the postrouting vahing of the nat table
+5. dnat. port forwardins is performed on the prerouting chain of the nat table
+6. to modify values from the packet headers add rules to the mangle table
+7. to skip the connection tracking add rules with notrack target to the raw table. 
+
