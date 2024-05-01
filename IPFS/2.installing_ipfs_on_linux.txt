@@ -1,0 +1,41 @@
+to download ipfs go to download ipfs.io 
+
+1st : download ipfs.io
+
+2nd: download the go.ipfs which is the ipfs programming protocol written in go programming language 
+
+3rd: after downloading the file ensure you run its script as root 
+
+4th:after isntalling and downlaoding ipfs you shpould initialize a repository so it can store and internalize its data 
+
+5th: extract the files and run the script 
+
+6th: run ipfs using sudo ipfs init  when the script is run under it you will see a peer indentity with a hash and this is called a node id. this node id 
+
+allows other host to connect with you
+
+7th: to see your node run ipfs id 
+
+this initializes the ipfs reposiroty online 
+
+8th: then take the node online by starting ipfs daemon and as root run ipfas daemon  and this join the ipfs daemon to the public network 
+
+9th: ipfs uses a peer -discovery meaning used by bittorrent which uses a dht (distributed hash table), 
+
+10th: seeing ipfs addresses of peers discovered using dht : 
+
+                sudp ipfs swarm peers  - this shows a list if ids of peers 
+
+            and with this you can obtains objects from the network 
+
+to obtain objects from the network , do the following = sudo ipfs cat /ipfs/hashofthefile > choose anly location you want to stoire the obkjec table
+
+11th: to see ipfs on local node : localhost:5001/webui 
+
+
+ipfsc companion is a browser extension it simpleifes access to ipfs resource in the browser 
+
+
+
+
+

@@ -1,0 +1,29 @@
+running an ipfs node on linux from command linE TO SERVE CONTENT ON THE NETWORK OR TO RETREIVE CONTENT ON THE NETWORK 
+
+IPFS NODE IS JUST AN IPFS CLIENT THAT SERVES THE NETWORK 
+
+STEPS 
+
+1ST =CREATE A DIRECTIRY UIN THE USER OMA DIREXTIRY 
+2ND = ADD THE DIRECROTY TO THE IPFS USING  ipfs add -r thenameofthecreatedirectory  -r = means addint contents from the directory recursively 
+
+
+                                     requesting files from an ipfs node 
+
+imagine you want to collect from an ipfs gateway which serves as the hub to retreieve and collect data ; 
+
+we can do the following 
+
+1. ipfs.io/ipfs/hashofthefile
+2.localhost:8080/ipfs/hashofthefile
+NOTE: By defaulf the gateway is not exposed to http it only works locally 
+3.  the user can request a directoru and it will list all contents of the directory 
+
+                                       LIST ALL CONTENTS OF A DIRECTORY USING ipfs
+
+To list all the files in a directory , you can run the ipfs ls anthehashofhtdirectory 
+
+NOTE IF A FILE HAS NEVER BEEN REQUESTED FROM THE IPFS NODE AND THE IPFS DAEMON IS DEAD THEN THE FILE WILL NOT BE DELIVERED BY THE IPFS
+
+
+

@@ -43,12 +43,13 @@ NOTE: AN HASH IS GEENRATED
 note: what happens after a file is generated is that the file is chunked into bloacks and save locally in a folder and would be only avaialbnle if other blocks if the ipfs gateway is opened 
 
 after the file is requested , it will be saved in the gateway hash , ipfs allows data to be retrieved locally even when the network is downby local access 
-i mean that documents can be accessed even if the network is down 
+i mean that documents can be accessed even if the network is down which is the ipfs deaomon 
 
 the main ipfs gateway is ipfs.io/ipfs/ thehashofthefile 
 
 http and https : are loction based 
 
+files are only lost when a peer does not keep it or no peer to peer network 
 
 
 
