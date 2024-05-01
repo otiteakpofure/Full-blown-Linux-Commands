@@ -1,0 +1,56 @@
+Interplanetary file system (IPFS ) is a protocol designed to create a permanent and decentrlized methods of storing and sharing files 
+
+IPFS aims to replace http and build a better web 
+
+
+IPFS properties 
+IPFS is a peer-to-peer decentralized and distibuted file system 
+IPFS is a  CDN 
+IPFS is also fault-tolerant with zero downtime 
+IPFS is censhorship-resistant  - IT IS LIKE A PERMIANANT WEB ONCE IT IS ON ITS ON ITS NETWORK IT IS SAVED 
+IPFS uses cinten address not location address like http 
+
+it is based on bitorent  and git and used for delivery static images ,videos, documents saving and delivering 
+
+
+a machigne that runs ipfs software is an ipfs node , it is a peer-to-peer decentralized and distibuted file system which has directory and files that can be moiunted 
+
+NOTE: IT IS IMPOSSIBLE TO REMOVE A FILE IN IPFS , EVEN IF THE ORIGINATOR DELETES IT OTHERS WILL STILL HAVE A COPY OF IT  
+
+
+                                               CONTENT ADDRESSING VS LOCATION ADDRESSING 
+
+LOCATION ADDRESSING:   contents is assesssed by loication 
+                        whoever contros the locatio contrils the content 
+
+CONTENT ADDRESSING: FILE ARENT ANYMORE BASED ON "WHERE THEY ARE" but based on "what they are "
+                    there is no location of the files, no one controls the files:
+
+                    to see contents regardless of the location they are stored on IPFS referes to those contents by # which signifies the contents itself 
+
+      it works by taking a file and hashing it cryptographically . it works by taking a file and hashing it cryptographically and then with the file has a unique hash 
+      and the hash is the address of the file               
+
+pinning is a mechamism that allows you to tell IPFS to always keep a given object and never remove it 
+
+                                            ADDING A FILE TO THE IPFS NETWORK 
+sudo ipfs add thenameofthefile
+
+NOTE: AN HASH IS GEENRATED 
+
+                                AND TO ACCESS THE FILE, THE HASH IS GENERATED 
+
+note: what happens after a file is generated is that the file is chunked into bloacks and save locally in a folder and would be only avaialbnle if other blocks if the ipfs gateway is opened 
+
+after the file is requested , it will be saved in the gateway hash , ipfs allows data to be retrieved locally even when the network is downby local access 
+i mean that documents can be accessed even if the network is down 
+
+the main ipfs gateway is ipfs.io/ipfs/ thehashofthefile 
+
+http and https : are loction based 
+
+
+
+
+
+

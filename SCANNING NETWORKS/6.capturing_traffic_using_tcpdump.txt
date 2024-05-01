@@ -76,4 +76,11 @@ SO FOR EXAMPLE CAPTURING ICMP FROM GOOGLE.COM
 
                        TCPDUMP -I THENAMEOFTHEINTERFACE ICMP AND HOST GOOGLE.COM
 
-    
+                   TO CAPture one traffic or the other 
+
+for example,you want to capture either http or https traffic, 
+
+                       tcmpdump -i nameoftheinterface port 80 or port 443 
+
+
+                       
