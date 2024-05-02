@@ -1,0 +1,32 @@
+if youw ant to completely flush the iptables rules and create a fresh iotables state , you should set the accept policy on all chains and delete all iptables users defined chains 
+
+foreward chains is used for routed pacektes and that means the linux machine is also the function of the routter 
+
+to deleta a firewall do the following , THIS DOESN NOT ESSENTIALLY DELETE THE FIREWALL , IT CLEARS ALL POLICY AND CHAINS WRITTEN FOR PACKERS AND 
+RETURNS IPTABLES TO THE ORIGINAL STATES WHEN THE MACHINE WAS BOOTED WITHOUT THE ALTERLING THE FIREWALL 
+
+
+1. set the accept polciu 
+
+iptables -P INPUT ACCEPT 
+iptables -P OUTPUT ACCEPT 
+iptables -P FORWARD ACCEPT
+
+
+2.flush all tables 
+
+iptables -t filter -F 
+iptables -t nat -F
+iptables -t mangle -F
+iptables -t raw -F
+
+NPTE: IF THE TABLE HAS NO RULE NOTHING HAPPENS 
+
+NOTE: THE THIRD STEPS IS OPTIONAL AND ONLY USED IF THERE ARE USER DEFINED CHAINS 
+
+
+3 DELETE USER DEFINED CHAINS
+iptabbles - X
+
+note: if uyou are using ipset to drop large collection of ipaddress like entire countries you can alsos flush and delete the set. 
+
