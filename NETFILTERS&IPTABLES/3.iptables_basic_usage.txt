@@ -1,0 +1,140 @@
+IPtables is used to configure netfilter 
+ensure that when writing iptable rules , ensure evertyhign is correct 
+
+before strating writing rules and run the iptables command 
+
+ RULES FOR IPtables
+
+ 1. to check the tabales for input, outpout and forward chains use - iptables -L
+ 2.  to check rules from othertablles use = iptables -t (thenameofthetable) -l  tables includes  netfilter(dfeault), nat, mangle and raw 
+ 
+
+
+
+  TABLES       
+   filter
+   nat 
+   mangle 
+   raw  
+
+   COMMAND 
+   -a (appeND) - Append the rule to the end of the selcted chain
+   -i (INSERT) - insert one or more rules in the selected chain on a specific position by default on top 
+   -D(DELETE)  - list all rules in the selected chain . if no chain is slected all chains are listed 
+   -R(REPLACE) - list all rules in the selected chain . if no chain is slected all chains are listed 
+   -F(FLUSH)  - flush the selcted chain ( all chains in the table if  none is given)
+   -Z(ZERO)   - zero the packet and byte counters in all chains , or only the given chain
+   -L(LIST)   -
+   -S(SHOW)
+   -N    - create a new user-defined chaing by the given name  
+   -X  - delete the user define specifid chain 
+   -P - set the policy for the built-in chain (INOUT, output and forward)
+
+
+NOTE: ALL THESE ARE WRITTEN IN CAPITAL LETTERS AND MUST BE ONE AT TIME ON A GIVEN RULES EXCEPT OTHERWISE STATED 
+
+
+   CHAIN 
+
+-input , -output , -forward , -prerouting , -postrouting , - user-defined 
+
+
+   MATCHES 
+-S source_ip
+-d dest_ip 
+-p protocol 
+--sport (source_P)
+--dport (dest_P)
+-I incoming_int 
+-o outgoing_int
+-m MAc    
+-m time 
+-m quota
+-m limit 
+-m recent 
+
+target/jump 
+Accept, drop , reject, log , snat, dnat , masquerede, limit,return, tee , tos , ttl 
+
+
+  ADDING RULES TO THE IPTABLES TO DROP INCOMING PACKETS 
+  To do this: iptables -t nameofthetableyouwanttodroppackets -A INPUT -P(which states the protocol) place protocoal here  -J 
+  so to drop incoming packets on the netfiler tables
+
+                               iptables -t filter -A INPUT -p icmp --icmp-type echo-request -j DROP 
+
+NOTE: this command can be run without the -t filter option , this is only necessary when the table is not filter 
+
+LISTING CONNTES OF THE FIREWALL 
+this shows you rules associated with iptables 
+
+IPTABLES -L OR IPTABLES -VNL
+NOTE: when this command is run , there is number shown under it and it states the number of packets whuch are matched by the rule 
+
+
+                              DENYING A MACHINE ACCESS TO ANOTHER MACHINE OR WEBSITE 
+In doing this serveral things have to be considered for example ,  
+1. what kind of table are you going to use whether filter or nat 
+2. what kind of command are you using 
+which destination port and protocol and what website will be blocked  
+
+so for example blockingaccess to  a particular website 
+    iptables -t nameofthetable -A command to runing since its going outside -p typeof protocoll dport portnumber -d destinationwebsite -j(means jump to the specific target) DROP 
+    NOTE : TARGET AND COMMAND are always written in uppercase letters  
+
+    iptables -t filter -A OUTPUT -p tcp --dport 80 -d www.ubuntu.com -j DROP
+     iptables -t filter -A OUTPUT -p tcp --dport 443 -d www.ubuntu.com -j DROP
+
+                                  USING -A COMMAND 
+
+                     APPENDING A RULE TO THE OUTPUT CHAIN THAT DROPS INCOMING PACKET 
+
+NOTE: -A ADD RULES TO THE END OF THE IPTABLE CHAIN , SO THE RULE GOES TO THE BOTTOM OF THE CHAIN 
+
+
+iptables -t filter -A input -p tcp --dport 25 -j DROP 
+
+this drops incoming packets coming in throught port 25 
+
+
+    note: when a port is filtered after running nmap it shows the packets has been dropped  by the firewall
+
+
+        BLOCKING INCOMONG TRAFFIC TO PORT 80 
+    iptables -t filter -A input -p tcp --dport 80 -J DROP 
+
+
+                                  USING -I COMMAND 
+
+    NOTE : IT INSERTS RULES INTO A PARTICULAR POSITION IF NO POSITION IS GIVEN
+
+WHAT THIS MEANS THAT WHEN YIU STATE A FIREWALL RULE , THIS RULE WILL BE ADDED TO THE FRIST POSTION WHEN THE FIREWALL IPTALES -VNL COMMAND IS LISTED 
+
+FOR example dropping packets coming to port 69 iptables 
+
+iptables -t filter -I input -p udp --dport 69 -J DROP
+
+this command will be first command shown in the iptables chain '
+
+
+
+ NOTE: ENSURE WHEN SETTING RULES IMPORTATN RULES STAY AT THE TOP BECAUSE RULES ARE TRAVERSED FROM TOP TO BOTTOM 
+
+                                        ADDING RULES TO SPECIFIC POSITION 
+
+To specify a rule at a specific position 
+
+for example . you want to put a rule on the 3rd position 
+
+iptables -t filter -I input 3 -p udp --dport 69 -J DROP
+
+this will show the rule in the 3rd position 
+
+                                             ALLOWING TRAFFIC TO A PARTICULAR PORT
+For example , you want to acceopt a traffic to a particular port  the following can be done:
+  ALL YOU NEED TO DO IS USED ACCEPT AT THE END OF THE CHAIN 
+
+
+                      iptables -t filter -I input 3 -p udp --dport 69 -J ACCEPT
+
+
