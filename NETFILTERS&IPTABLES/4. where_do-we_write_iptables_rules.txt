@@ -1,0 +1,20 @@
+it is wise to run all the iprules in a script 
+NOTE: iptables do not save rules that are written on the terminal because once the system is shutdown , the rules are gone 
+
+to run a script for firewll rules to appy consistently 
+create a shell script and make it bootabele at boot time 
+
+NOTE: WHEN YOU STATE YOUR FIREWALLS AND WHEN YOU RUN THE SCRIPT, MUILIPLTE TIMES THE FIREWALL RULE WILL INCREASE, FOR EXAMPLE '
+YOU STATED 3 RULES BUT WHEN YIU RAN THE SCRIPT IT BECAOME 6 AND RUN IT AGAIN IT BECMAE 9, TO ENSURE THIS DOESN HAPPEN USE - f command 
+so in the script what you should do is first add 
+
+iptables -F before adding any more rules 
+
+
+
+
+                                 writing rules to change from private address to public address 
+iptable -t nat -A POSTROUTING -s theipadressesthatwillbrtranslated  -o outgoinginterfacewhichistheinterfacethattheprivateipaddresswillbechangedfrom -j SNAT --to-source publiciddressonthis 
+
+
+

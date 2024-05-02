@@ -1,0 +1,38 @@
+policy specifies what happens to packets that are not matched against any rule.
+by default policy is set accept all traffic
+policy can be changed only for INPUT, OUTPUT and FORWARD chains
+policy can be changed using -P option 
+
+traffice filtering is done in the filtering table ,
+
+
+if a packet passes all rules in the table from top to bottom without being matched against any rule then default policy is applied and maybe set to either accept or drop 
+
+when organizing firewall we should have the following options in mind:
+1. we can set the default policy to drop all packets and only allow rules to be matched to specifc sources that are trusted
+2. we can set the default policy to accept all packets and set rules to specifically drop or deny packets from plcaes that are not trusted
+
+NOTE: THE FIRST OPTIONS IS USED AND IT IS CONSIDERED MORE SECURE AND ITS USED FOR THE INPUT CHAIN , by default policy is set to accept 
+all packets except otherwise stated to drop any packets and rules 
+
+
+checking the policy 
+
+iptables -vnl
+
+when thiscommand is run by the side of the policy which is stated for example 
+
+chain ouput (policy accpts 0 packets , 0 bytes)
+
+if you see accept it means that the default policy is set to accept
+
+
+settig the default policy todrop packets 
+
+lets say we are tryign to drop all packets cominf into the networj 
+
+iptables -P INPUT DROP 
+
+NOTE:  setting the DROP policy ON AN INPUT CHAIN without any rule that accept traffic is like disconnecting the machine from the network 
+
+NOTE: ALways note that policy should be end of the firewall table , always ensue you create rules that accept traffice bfrore srtting the default policy in the itpabels 

@@ -53,7 +53,7 @@ NOTE: ALL THESE ARE WRITTEN IN CAPITAL LETTERS AND MUST BE ONE AT TIME ON A GIVE
 -m limit 
 -m recent 
 
-target/jump 
+target/jump / policy
 Accept, drop , reject, log , snat, dnat , masquerede, limit,return, tee , tos , ttl 
 
 
@@ -136,5 +136,83 @@ For example , you want to acceopt a traffic to a particular port  the following 
 
 
                       iptables -t filter -I input 3 -p udp --dport 69 -J ACCEPT
+
+
+                     using -L 
+
+list all rules on the specifed tables 
+
+iptables -l = list all rules and list all its chains 
+         -n = numberic 
+         -v = verbose 
+
+                            -f 
+means to flush all chains or slected chains  = to deleting all the rules 
+
+for example flushing the inout chaing =  iptables -F INPUT 
+NOTE: if the input or output is not specified the input flush will flush input ,output and forwarding as well
+
+
+FLUSHING ALL CHAINS OF NAT TABLE WHICH IS A TYPE OF FIREWALL  IPTABLES -T nat -F 
+
+
+                                  -z 
+which means zero the packet in the byte counter in all the chains or only in the given chain 
+
+
+for examples after staying variouis iptables chains and then running the iptables -vnl yoi see a list of pkts and byte
+
+fpr example after running the below command 
+
+iptables -t filter -I input 3 -p udp --dport 69 -J DROP
+
+when this command is done runnijg , there are pkts and bytle associtied with it , to clear out or remove the pkts and byte , run the 
+
+                                                              iptables - z command 
+this will clear the pkts and byte associated with the iptables rules 
+
+
+                                          -N 
+creates news user defined chanin
+for examples , 
+
+what this means is that when -N is used it used to created a chain for a specific user 
+for example , you can run the following command
+
+                             iptables -N nameoftheuser (lets say the user is jon)#
+
+                             iptables -N jon 
+
+when the iptables -vnl cvommand is run , it will show all the iptables rules associated with jon and oithers
+
+                                  - x 
+this command is used to delete a chain, for example 
+            iptables -X andthenameoftheuser 
+
+
+                           -P 
+set the defeault policy for the built in chain input ,output and forward. the default policy specifies what happens to packets that are not matched, by any rule and can either be ACCEPT OR dropped 
+
+the default policy is set to ACCEPT
+
+                                      CHANGING THE DEFAULT POLICY 
+
+for example changing the policy for forward, that is dropping all packets for forward
+
+  iptables -P forward drop 
+
+  this means each packet not accepted by a rule will,be dropped 
+
+
+      -d 
+NOTE: IT IS NOT ADVISABLE TO DELETE A RULE , RATHER CREATE A SCRIPTWHERE ALL THE RULES ARE RUNNING AND JUST MODIFY THE SCRIPT 
+BUT ESSENTIALLY TO DELETE, THIS INCLUDES 
+
+                      TO DELTE SPECIY THE LINE NUMBER YOU WANT TO DELETE 
+TO DO THIS RUN THE IPTABLES -L 
+
+note: the iptables does not show number so you have to count manually , 
+
+                      iptables -D output 2 
 
 
