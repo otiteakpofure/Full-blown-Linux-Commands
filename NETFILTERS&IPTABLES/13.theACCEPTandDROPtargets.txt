@@ -1,0 +1,14 @@
+ACCEPT and DROP is a terminating target 
+
+WHAT IS A PING : 1. TO CHECK IF THE DESINTATION IS AVAILABLE AND FOR ROUND TRIP TIME 
+
+ALLOWING ICMP PACKETS 
+
+TO allow icmp echo request from a partiuclar ip do the following 
+
+iptables -A INPUT -p icmp --icmp-type echo-request -s thesourceipfromwherrethereuwstcomesfrom -j ACCEPT 
+
+DROPPING ALL ICMP PACKETS THAT IS NOT THE ADDRESS 
+
+iptables -A INPUT -p icmp --icmp-type echo-request  -j DROP 
+

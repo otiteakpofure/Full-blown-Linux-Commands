@@ -1,0 +1,41 @@
+it is possible to filter traffic only by source mac address 
+NOTE: YOU can filter traffic only through source mac address and not the destination mac addreses 
+
+match: -m mac --mac-source place source mac address here 
+
+Example
+iptables -A INPUT -i nameoftheinterface -m mac --mac-source place source mac address here -j DROP 
+
+NOTE: mac address are only valid inside the local area network 
+      this is not a strong security protocol because it can be spoofed 
+
+
+                                 uses cases for mac addresses 
+1. drop packets from a specific mac address 
+2. permit only a list of trusted hosts (macs) through the firewall router 
+
+
+NOTE: REMEMBER MAC ADDDRESS BELONGS TO LAYER 2 AND AS MUCH if the packet is dropped other things are also dripped as well  
+
+to add a list of trusted mac addresses and remove mac addresses from the ones that are not stated in the fiule 
+
+1. create the script 
+2. flush 
+3. add a list of permitted mac addresses
+4. set the policy in the forward table to drop so that other addrsses are nit accepte 
+
+
+#!/bin/bash 
+
+iptables -F FORWARD 
+
+PERMITTED_MACS ="place the list of mac addresses here"
+
+for MAC in $permitted_macs
+do 
+
+   iptables -A FORWARD -m mac --mac-source $MAC -j ACCEPT 
+done 
+
+iptables - P FORWARD DROP 
+

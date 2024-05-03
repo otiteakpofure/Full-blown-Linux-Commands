@@ -10,10 +10,14 @@ NOTE: IT IS A GOOD IDEAD TO DROP INVALID PACKETS ON INPUT AND OUTPUT CHAINS
 SO TO WRITE A STATEFUL FIREWALL, 
 
 Iptables -F 
+NOTE: for example , you want to allow a specfic ip address to ensure it enters a system , place that ip address at the beginning of  the script 
 
 iptables -A INPUT -i lo -j ACCEPT 
 iptables -A OUTPUT -o lo -j ACCEPT 
+lo means loopback
 
+##to allow thr given ip address 
+iptables -A INPUT -p tcp --dport 22 -m state  --state NEW -S statetheipaddresshere -j ACCEPT
 
 iptables -A INPUT -m state --state INVALID -j DROP 
 iptables -A OUTPUT -o state --state INVALID -j DROP
@@ -26,4 +30,4 @@ iptables -P OUTPUT DROP
 
 
 
-      
+     

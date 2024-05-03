@@ -1,0 +1,53 @@
+filter by date and Time -1 
+
+-m time option
+
+time match options
+
+--datestart time = start and stop time , to be given in ISO 8601
+--datestop time ( YYYY[-MM[-DD]Thh[:mm[:ss])
+--timestart time = start and stop daytime (hh:mm[:ss])
+--timestop time =(between 00:00:00 and 23:59:59)
+--monthsdays value  list of days on which ti match , seperate by comma
+[!]--weekdays value list of weekdays on which to match , seperated b comma
+--kerneltz work with the kernel timezone instead of utc  NOTE: THIS DOES NOT WORK ALL THE TIME 
+
+
+
+to see  all the time and dates and how to configure them run =  iptables -m time --help 
+NOTE: By default netfilter uses UTC and not system time;
+   --kerneltz makes netfilter uses system time insrtead of UTC time (!!!!)
+
+   for example; permit incoming ssh traffic only between 10am and 4pm on weekdays 
+                allow access to a specific website only after working hours (>6pm ) suppose the machine is the router 
+
+
+ SUPPOSE TH MACHINE YOU ARE ON IS THE ROUTER 
+
+                         PERMITTED TRAFFIC AT CERTAIN TIMES 
+
+We can permit traffic on the iptables using the following:
+
+          iptables -F 
+so for example we want to permit trffice for ssh from 10am to 4pm we do the following:
+
+         iptables -A INPUT -p tcp --dport portyouwant -m time --timestart timethefirewallstart --timestop timethefirewallend  -j ACCEPT 
+
+         iptables -A INPUT -p tcp --dport 22 --timestart 10:00 --timestop 16:00 -j ACCEPT 
+        
+         NOTE: YOU WRITE THE RULE UNDER HERE ESPECIALLY WHEN THE POLICY IS SET TO ACCEPT BY DEFAULT 
+
+         iptables -A INPUT -p tcp --dport 22 -j DROP
+
+         note: use 24 hours formate when wroting the time 
+
+
+
+nopte: when younare on the machine that acts at the router the policy is forward 
+
+                          writing a policy that blocks access to a particular website at a given time
+
+iptables -A FOPRWARD -p tcp --dport 443 -d websitenamehere -m time --timestart startimeinwhichthewebostewillbeaccessed --timestop timeeoend  -j ACCEPT 
+iptables -A FOPRWARD - -p tcp --dport 443 -d websit -j DROP 
+
+

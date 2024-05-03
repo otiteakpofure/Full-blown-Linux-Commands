@@ -1,0 +1,6 @@
+LOG is a non-terminating target 
+it logs detailed information about packet headers 
+logs can be read with dmesg of from syslogd daemon
+log is used instead of drop for debuigging phase 
+ULOG has Mysql support 
+
