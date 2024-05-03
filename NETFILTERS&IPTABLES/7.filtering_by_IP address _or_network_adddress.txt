@@ -1,0 +1,31 @@
+1. match by source IP or network address 
+
+Match:-s , IP --source IP
+example: iptables -A INPUT -s placethesubnetofaddress -j DROP 
+
+
+2. Match by Destination IP or network address
+
+Match:-d , IP --destination IP
+Example: iptables -A FORWARD -s placethesubnetofaddress -j DROP 
+        iptables -A OUTPUT -d nameofthewebstite (like www.ubuntu.com) -j DROP  NOTE: USING THIS METHOD IS NOT ALWAYS A GOOD IDEA 
+
+
+
+DROPPING ALL INCONIMING TRAFFIC FROM ANOTHER IPADRESS 
+
+iptabls -A INPUT -s theipaddress -j DROP 
+
+
+                                          DROOPING BY DESTINATION address
+THIS DROPS TRAFFIC GOING TO  A PARTICULAR ADDRESS 
+
+                                   DROPPING PACKETS GOING TO A WEBSITE
+ dropping packets going to a webiste , involves lookingfor the wesbiste ips to deny access to the webiste incase the website has more than one ipaddress 
+ , you must dency access to each of the website by writing each iptables rules 
+
+NOTE: IP TABLES USES IPADRESS AND NOT DOMAIN nameofthewebstite
+       NOT BLOCKIGN BIG APPLICATION WEBSITE LIKF GOOGLE OR FACEBOOK IS WRONG TO DO SO , USING SPPLICAION LIKE SQUID IS THE BEST WAY TO BLOCK THOSE WEBSITTES
+
+
+note: if you see 0.0.0.0/0 means any ip address with any subnetmask 

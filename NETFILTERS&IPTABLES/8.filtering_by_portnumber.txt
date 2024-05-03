@@ -1,0 +1,17 @@
+filter by tcp or udp pirt 
+
+match option : -p tcp --dport portnumberhere 
+               -p udp --srport portnumberhere
+
+examples:
+
+iptables -A INPUT -p tcp --dport -j DROP 
+
+                  MATCH BY MULTIPLE PORTS 
+match option : -m multiport --sports | --dports port1, port2 
+
+example:
+iptables -A OUTPUT -p tcp -m multiport --dports 80, 443 -j ACCEPT 
+
+
+
