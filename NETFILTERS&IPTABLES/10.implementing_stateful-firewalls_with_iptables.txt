@@ -1,0 +1,29 @@
+                        creating a stateful firewall
+
+1/. 1. create a bash script that contains all iptablees rules 
+2. 2. allow loopback traffic on inoput and output chains 
+3.   
+NOTE: IT IS A GOOD IDEAD TO DROP INVALID PACKETS ON INPUT AND OUTPUT CHAINS 
+       THIS KIND OF FIREWALL IS GOOD FOR A DESKTOP OPERATING SYSTEM AS NO ONE CONNECTS TO THEM FROM THE OUTSIDE ONLY INTERNALLY . THE HOST COMMUNICTIONS TO ANY Destination
+       WHICH MEANS ALL OUTGOIG TRAFFIC IS PERMITTED BUT ANY INCOMIND TRAFFIC IS REMOVED 
+
+SO TO WRITE A STATEFUL FIREWALL, 
+
+Iptables -F 
+
+iptables -A INPUT -i lo -j ACCEPT 
+iptables -A OUTPUT -o lo -j ACCEPT 
+
+
+iptables -A INPUT -m state --state INVALID -j DROP 
+iptables -A OUTPUT -o state --state INVALID -j DROP
+
+iptables -A INPUT -m state --state ESTABLISHED , RELATED -j ACCEPT 
+iptables -A OUTPUT -o state --state NEW, ESTABLISHED, RELATED -J ACCEPT 
+
+iptables -P INPUT DROP 
+iptables -P OUTPUT DROP 
+
+
+
+      

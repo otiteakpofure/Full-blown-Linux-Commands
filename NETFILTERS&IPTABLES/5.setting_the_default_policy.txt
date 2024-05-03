@@ -3,6 +3,10 @@ by default policy is set accept all traffic
 policy can be changed only for INPUT, OUTPUT and FORWARD chains
 policy can be changed using -P option 
 
+
+NOTE: WHAT THIS MEANS IS THAT AS FAR I DIDNT STATE ANY RULE , THE DEFAULT ACTIONS WILL CONTINUE TO HAPPEN UNTIL I STATE A RULE 
+
+
 traffice filtering is done in the filtering table ,
 
 

@@ -1,0 +1,27 @@
+        stateful firewall
+netfilter has a module called conTRACK which allows people to  configure and monitor network traffic which uses a method called connection tracking.
+connection tracking refers to the ability of maintaining, statte information abiut a connection in the memory table. firewalls which do this are known as stateful firewalls 
+while statelss or packetbased 
+
+stateful firewall decide to acceot ir to drop packers based on the relations tese packets have witj other packers 
+
+netfilter is a stateful firewall
+
+
+
+packets state
+
+1.new = the first packet from a connection . i.e packets requesting a new connection , or the packets set  , firs packet of any connection
+2. established = packets that are part of an existing connection i.e second packets are in this state 
+3.  related = packets that are requesting a new connection and are already part of an exisitng connection ie requesting a new connection after being part of a old connectio 
+4. invalid = packets that are not part of any existing connection i.e packets are not identified and part of any conenction, good idea to drop everything in this state
+5. untracked = packets markeed within the raw table with the NOTRACk tARGET 
+
+                              to match packets based on their statest
+use the command:
+
+                      iptables -A INPUT -m state --state nameofthestate yowant -j ACCEPT 
+
+
+NOTE STATE ARE WRITTIG IN UPPER CASE LETTERS 
+

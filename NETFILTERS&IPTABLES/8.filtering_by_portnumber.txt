@@ -1,5 +1,6 @@
 filter by tcp or udp pirt 
 
+                         MATCH BY A SINGLE PORT 
 match option : -p tcp --dport portnumberhere 
                -p udp --srport portnumberhere
 
@@ -12,6 +13,34 @@ match option : -m multiport --sports | --dports port1, port2
 
 example:
 iptables -A OUTPUT -p tcp -m multiport --dports 80, 443 -j ACCEPT 
+
+
+
+  note: ICMP do not user ports at all     
+
+                                     PORTS STATES
+FILTERED PORT: A filtered pprt is infact an open port but there is a firewall that is dropping the packets 
+CLOSED PORT: is a port on whic no application is listening , which means we ereciev a tcp packet with the reste flag set 
+
+                            ALLOWING ONLY A SINGLE MACHINE T CONNECT 
+
+For example, you want a single machine or ipaddress to connect to the server and rpevent the rest people from connecting to the server;the following can be done 
+
+to do this the followiung steps can be done
+1. flush the iptables
+2. place the ipaddres you want to accept only aftee flushig 
+3. note: if the defeault policy is set to drop you do not meed to state any rule because it will drop all packets except the rule stated in number 
+       but ifs default  policy is set to accept , you will need to create the rule to drip the other ipaddress 
+
+       for example
+
+
+iptables -F 
+
+###create only the source ipaddress
+
+iptables -A INPUT -p tcp --dport 22 -s sourceipaddress -j ACCEPT 
+iptables -A INPUT -p tcp --dport 22 -J DROP ( and you can still specify the sourc -s 0/0 but it is not Mandatory)
 
 
 

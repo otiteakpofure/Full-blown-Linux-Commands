@@ -51,4 +51,13 @@ To scan multiple ports , use the following command:
 
     nmap -sn or -sP  ipaddress 
 
-    
+                                   scanning ports wothoit probing 
+
+for example , a port seems down when it writes the host seem down , for example port 80,443 to scan that port afte the pport seems down ,
+
+do the following command 
+
+ nmap -p wirtteportnumber ipaddress -PO 
+
+ -PO = sendin sanning without probing 
+
