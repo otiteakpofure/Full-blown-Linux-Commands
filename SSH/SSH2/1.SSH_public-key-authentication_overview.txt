@@ -1,0 +1,16 @@
+PKA OR Public key authentication is an authentication method that uses a key pair for authentication instead of a password whih is the default method 
+
+ADVANTAGES 
+-increased security 
+-authentication from within scripts or automation tools (authomated backups , upadtes , network aautomation)
+
+in PKA there are two types of keys generated 
+
+private key (stays on the client)
+
+publci key (stays on the server)
+
+NOTE: In PKA , the user creates both the public and private key and transfers the public key to the server,
+to increase security the use of passsword are essntial so as to allow users suply password when authentication is required
+
+on more seucre systems , either by creating an uncrypted key or using an encrypted 

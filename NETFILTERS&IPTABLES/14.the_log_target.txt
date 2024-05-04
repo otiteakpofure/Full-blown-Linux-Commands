@@ -4,3 +4,35 @@ logs can be read with dmesg of from syslogd daemon
 log is used instead of drop for debuigging phase 
 ULOG has Mysql support 
 
+if a packet is matched against the log target the packet headers are logged and the packet continues to traverse till it mathced by a rule set 
+LOG target is specially designed for obtaining detailed information about packet headers,  it does this via the kernlel logginf facility , which can be read from 
+syslogd daemon or message 
+
+NOTE: THE LOG Tagert is VERY USEFUL when testing firewalls , it is useful to replace the DROP packer when you create a firewall 
+      on a production machine and testing to see if its working 
+      a syntax error can cause severe production problems
+
+
+The log target takes two options 
+
+--log-prefix  = tells Iptables to prefix all log messages with a speific prefix or string whuch can be combined with grep to find specific problems or output from different rules 
+--log-level = indicates the priority and severity of the log
+
+example: iptables -A INPUT -p tcp -dport nameofhheport --syn -j LOG --LOG-prefix = "place any string here" --log-level info
+
+FOR EXAMPLE, LOGGINF NEW SSH TRAFFIC 
+for example, you want to login new ssh traffic, so as get information about tcp traffic 
+
+iptables -A INPUT -p tcp --dport 22 --syn -j LOG --log-prefix = "incoming ssh traffic" --log-level info 
+
+THIS MEANS THE MATCHED PACKET WILL CONTINUE TO TRAVERS THE DOM 
+
+                               kernel logs 
+TO SEE THE FIREWALL LOGS RUN dmesg 
+
+
+
+in ubuntu all kernels logs are found in 
+
+                                      tail -f /var/log/kern.log
+                                      -f means it will show data of the file in realtime 
