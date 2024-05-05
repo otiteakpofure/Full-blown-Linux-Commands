@@ -1,0 +1,6 @@
+to generate a keypair on linux do the following:
+
+most new linux already comes with ssh-keygen used to generate the ssh keypair 
+
+to do this ssh-keygen -b andtheminuminmubytelength (2048 - 4096 ) -t statethetypeofkeypair (rsa) -C "placethekindofcommentyouwant"
+and after you do this the generated command will show the path to where the keysa are kept 

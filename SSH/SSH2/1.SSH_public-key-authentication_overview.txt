@@ -14,3 +14,5 @@ NOTE: In PKA , the user creates both the public and private key and transfers th
 to increase security the use of passsword are essntial so as to allow users suply password when authentication is required
 
 on more seucre systems , either by creating an uncrypted key or using an encrypted 
+
+openssh contains a tool called ssh agent and its common to have an unecrypted private key in cases where ssh is used to automate differemt things 

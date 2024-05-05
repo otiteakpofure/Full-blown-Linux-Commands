@@ -1,0 +1,18 @@
+                               GENERATING SSH KEYS ON WINODWS 
+
+we can generated ssh public key authentication  using an ssh clients that supports RSA uahtneitcation 
+a publc and prvated key 
+if we want to autnetivate to networking device like ciso we need an ios 
+SSH SERVER that supports PKA
+
+putty is an ssh client, putty does not generate the keypair 
+putty key generator helps in generating this keypair 
+
+the keypair choosesn should be RSA and minimum length should be 2048 bits srtonger keys 4096 
+NOTE: WHEN GENERATING A KEY PAIR ENSURE YOU MOVE THE MOUSE SO AS TO INCREASE ITS RANDOMNESS 
+
+DO  NOT FORGET TO PUT A PARRPHRASE
+
+PUBLIC EXTENSTION IS PUB 
+PROVATE EXTENSIONS IS PPK 
+
