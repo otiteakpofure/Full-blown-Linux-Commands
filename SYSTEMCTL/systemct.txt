@@ -5,3 +5,4 @@ sysmtemctl stop the name of the service
 sysmtemctl restart the name of the 
 
 
+sudo -i = opens terminal and makes you administrator by default 

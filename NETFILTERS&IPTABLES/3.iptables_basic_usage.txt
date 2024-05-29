@@ -215,4 +215,4 @@ note: the iptables does not show number so you have to count manually ,
 
                       iptables -D output 2 
 
-
+if you see reject if the packet is dropped it will send informatio to the client that the packet was dropedd 

@@ -125,3 +125,12 @@ To change the mac address of an interface run the following command
 
 
 
+NMAP  
+
+TO RUN AN VULNERAABLE NMAP SCRIPT 
+
+RUN nmap -n --script=vuln andtheipaddressyouwanttorunthescriptagainst
+
+
+ip a s =gives the entire networj subnet for example ipaddress/subnet 
+
