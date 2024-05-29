@@ -14,4 +14,4 @@ LIST ALL APPLICATIONS RUNNING ON THE SERVER  = UFW APPLIST
 to cinfigiure the ufw firewall = ufw all (the the name of the service)
 
 
-
+if you do not see the authorize key foles in the public server created the fil authorize key file in the ssh and then copuy the publci key into it 
